@@ -1,4 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/favicon.png">
+
+    <title>Robotics DSL Zoo</title>
+
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="sortable/bootstrap-sortable.css">
+
+  </head>
+
+  <body><nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./index.html">Robotics DSL Zoo</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="./index.html">Home</a></li>
+            <li><a href="./subdomains.html">Subdomains</a></li>
+            <li><a href="./domain-examples.html">Domain Examples</a></li>
+            <li><a href="./contribute.html">Contribute</a></li>
+            <li><a href="http://www.dslrob.org">DSLRob</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="starter-template">
+
 <h1>Robotics DSL Zoo</h1>
 
-Website for the Robotics DSL Zoo coming ...
+<h2>An Overview of Domain-Specific Languages in Robotics</h1>
 
+<p><b>hosted by <a href="http://www.dslrob.org">DSLRob</a>, initiated and maintained  by <a href="http://www.cor-lab.org/users/anordman">A. Nordmann</a>, <a href="http://www2.inf.fh-bonn-rhein-sieg.de/~nhochg2m/">N. Hochgeschwender </a> and <a href="http://www.cor-lab.org/users/swrede">S. Wrede</a>, updated on December 11th 2014</b></p>
+
+<table><tr><td>This page provides an annotated bibliography of domain-specific languages in the area of robotics and automation technology facilitating the exchange between people interested in applying model-driven and domain-specific language engineering in these domains. Our goal is to incrementally capture the state of the art in the adoption of the domain-specific languages (DSL)<a href="#DSL"><sup>1</sup></a> idea and (on the long run) provide an assessment which parts of the design space of relevant robotics domains are already supported.</p>
+
+<p>Practically, we aim to provide not only the references to the underlying publications but also augment the bibliography with metadata about the language workbench or tool used and links to documentation and software if publicly available to support also practical reuse of domain-specific language models. Similar efforts, yet for the wider scope of robotics in general, have been conducted by <a href="#VanDeursen2000">Van Deursen et al.</a>, whose survey inspired the annotated bibliography format or the <a href="http://emftext.org/index.php/EMFText_Concrete_Syntax_Zoo">EMFText concrete syntax</a> zoo as a website focused at the interchange of Eclipse/EMF-based language implementations.</p>
+
+<p>For a survey including a more detailed analysis and discussion, please refer to: 
+<a href="https://pub.uni-bielefeld.de/publication/2685039">A. Nordmann, N. Hochgeschwender, and S. Wrede, “A Survey on Domain-Specific Languages in Robotics”, International Conference on Simulation, Modeling, and Programming for Autonomous Robots, 2014</a> (pre-print available).<td/><td>
+<table class="sortable">
+<tr><thead><th>Subdomain</th><th  data-defaultsort="desc">Number of Publications</th></tr></thead><tbody><tr><td><a href="./components-subdomain.html" title="Subdomain 'Components'" >Components</a></td>
+		    <td style="text-align:center;">3</td>
+		    </tr>
+<tr><td><a href="./coordination-subdomain.html" title="Subdomain 'Coordination'" >Coordination</a></td>
+		    <td style="text-align:center;">8</td>
+		    </tr>
+<tr><td><a href="./robot-structure-subdomain.html" title="Subdomain 'Robot Structure'" >Robot Structure</a></td>
+		    <td style="text-align:center;">3</td>
+		    </tr>
+<tr><td><a href="./motion-control-subdomain.html" title="Subdomain 'Motion Control'" >Motion Control</a></td>
+		    <td style="text-align:center;">5</td>
+		    </tr>
+<tr><td><a href="./transformation-subdomain.html" title="Subdomain 'Transformation'" >Transformation</a></td>
+		    <td style="text-align:center;">2</td>
+		    </tr>
+<tr><td><a href="./architecture-subdomain.html" title="Subdomain 'Architecture'" >Architecture</a></td>
+		    <td style="text-align:center;">2</td>
+		    </tr>
+
+</tbody></table><br />
+</td></tr></table><h3><a id="annotated-bibliography" style="text-decoration:none;color:inherit;">An Annotated Bibliography</a></h3>
+
+<table>
+<tr><td colspan="5"><a id="VanDeursen2000" href="http://www.st.ewi.tudelft.nl/~arie/papers/dslbib.pdf"><b>Domain-Specific Languages: An Annotated Bibliography</b><a/></td></tr>
+<tr><td colspan="5" style="border-top:1px solid #000;">van Deursen  Arie and Klint  Paul and Visser  Joost, 2000</td></tr><tr><td colspan="5" style="border-top:1px solid #000;font-style:italic;">One of the first systematic reviews of domain-specific languages published in the year 2000. It comprises an overview on terminology  risks and opportunities of DSL adoption as well as a brief introduction to DSL design methodologies. However  the main contribution of this paper is an annotated bibliography with 75 key DSL publications across several different domains.</td></tr>
+<tr>
+<td style="width:20%;border-top:1px solid #000;">2000</td><td style="width:20%;border-top:1px solid #000;"></td><td style="width:20%;border-top:1px solid #000;"></td><td style="width:20%;border-top:1px solid #000;"><a href="http://www.st.ewi.tudelft.nl/~arie/papers/dslbib.pdf">Publication</a></td><td style="width:20%;border-top:1px solid #000;"></td></tr>
+
+</table>
+
+<table>
+<tr><td colspan="5"><a id="Frigerio2012" href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber6385694"><b>Code generation of algebraic quantities for robot controllers</b><a/></td></tr>
+<tr><td colspan="5" style="border-top:1px solid #000;">Frigerio  Marco and Buchli  Jonas and Caldwell  Darwin G., 2012</td></tr><tr><td colspan="5" style="border-top:1px solid #000;font-style:italic;">This contribution describes a language focused on modeling coordinate tranformations in kinematic structures. Despite the language model  the authors describe their infrastructure to generate code for arbitrary transforms and geometric Jacobians. This shall support the development of model–based controllers such as operational space controllers and simulators. An example of the C++ code generation is given and the resulting controllers were benchmarked against the Stanford Whole-Body Control (S-wbc) library.</td></tr>
+<tr>
+<td style="width:20%;border-top:1px solid #000;">2012</td><td style="width:20%;border-top:1px solid #000;"><a href="http://www.iit.it/index.php?option=com\_content\&catid=10\&id=1253\&lang=en\&view=article">Website</a></td><td style="width:20%;border-top:1px solid #000;"><a href="http://www.iit.it/index.php?option=com\_content\&catid=10\&id=1253\&lang=en\&view=article">Download</a></td><td style="width:20%;border-top:1px solid #000;"><a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber6385694">Publication</a></td><td style="width:20%;border-top:1px solid #000;">Tool: EMF xtext</td></tr>
+
+</table>
+
+<table>
+<tr><td colspan="5"><a id="Klotzbuecher2011"><b>Reusable Hybrid Force-Velocity controlled Motion Specifications with executable Domain Specific Languages</b><a/></td></tr>
+<tr><td colspan="5" style="border-top:1px solid #000;">Klotzbücher  Markus and Smits  Ruben and Bruyninckx  Herman and Schutter  Joris De, 2011</td></tr><tr><td colspan="5" style="border-top:1px solid #000;font-style:italic;">This contribution described a meta-model and DSL to express force-velocity controlled robot tasks in (i) the Task Frame formalism (TFF)  as well as (ii) the discrete coordination between TFF tasks. The DSL expresses platform-dependencies in terms of (i) the type of the hybrid force-velocity controlled task  (ii) the hardware properties of the robot  tool and sensor  and (iii) the software properties of the applied execution framework. Experiments are conducted on a PR2 and a KUKA LWR IV using the Orocos/RTT framework. A quantitative evaluation analyzes the required number of lines of code for platform-independent and robot/framework specific code.</td></tr>
+<tr>
+<td style="width:20%;border-top:1px solid #000;">2011</td><td style="width:20%;border-top:1px solid #000;"></td><td style="width:20%;border-top:1px solid #000;"><a href="https://github.com/kmarkus/tff\_dsl">Download</a></td><td style="width:20%;border-top:1px solid #000;"></td><td style="width:20%;border-top:1px solid #000;">Tool: EMF</td></tr>
+
+</table>
+
+<table>
+<tr><td colspan="5"><a id="Muhe2010" href="http://arxiv.org/abs/1009.5004"><b>On reverse-engineering the KUKA Robot Language</b><a/></td></tr>
+<tr><td colspan="5" style="border-top:1px solid #000;">Mühe  Henrik and Angerer  Andreas and Hoffmann  Alwin and Reif  Wolfgang, 2010</td></tr><tr><td colspan="5" style="border-top:1px solid #000;font-style:italic;">This paper reports on reverse engineering the KUKA Robot Language (KRL). The grammar was reverse engineered based on an incomplete EBNF-like grammar specification in the user manual  as well as several KRL example programs. To be able to map KRL (legacy) code to a more expressive Java robot interface called RoboticAPI  a mapping from KRL statements to RoboticAPI calls was implemented.  tree-based and a bytecode-based KRL interpreter are implemented and benchmarked in terms of performance.</td></tr>
+<tr>
+<td style="width:20%;border-top:1px solid #000;">2010</td><td style="width:20%;border-top:1px solid #000;"></td><td style="width:20%;border-top:1px solid #000;"></td><td style="width:20%;border-top:1px solid #000;"><a href="http://arxiv.org/abs/1009.5004">Publication</a></td><td style="width:20%;border-top:1px solid #000;">Tool: custom</td></tr>
+
+</table>
+
+<table>
+<tr><td colspan="5"><a id="Thomas2013" href="http://www.se-rwth.de/publications/A-New-Skill-Based-Robot-Programming-Language-Using-UML-P-Statecharts.pdf"><b>A New Skill Based Robot Programming Language Using UML/P Statecharts</b><a/></td></tr>
+<tr><td colspan="5" style="border-top:1px solid #000;">Thomas  U. and Hirzinger  G. and Rumpe  B. and Schulze  C. and Wortmann  A., 2013</td></tr><tr><td colspan="5" style="border-top:1px solid #000;font-style:italic;">This paper proposes the DSL LightRocks to allow robot programming on three abstraction levels: i) elemental action (EA) as fine-grained command with exit condition  provided by the robotics expert ii) skills as combinations of EAs and iii) tasks as combinations of skills  provided by the industrial worker. The language is developed in the MontiCore language workbench and uses its code generators and generic graphical editor. The DSL toolchain is evaluated in a manipulation task on the KUKA LWR industrial robot.</td></tr>
+<tr>
+<td style="width:20%;border-top:1px solid #000;">2013</td><td style="width:20%;border-top:1px solid #000;"></td><td style="width:20%;border-top:1px solid #000;"></td><td style="width:20%;border-top:1px solid #000;"><a href="http://www.se-rwth.de/publications/A-New-Skill-Based-Robot-Programming-Language-Using-UML-P-Statecharts.pdf">Publication</a></td><td style="width:20%;border-top:1px solid #000;">Tool: MontiCore</td></tr>
+
+</table>
+<h3>Overview</h3>
+
+<table class="sortable">
+<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th width="10%">Method/Tool</th><th>Subdomains</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
+		    <td><a href="#Akim2010" id="Akim2010">Akim2010<a/></td><td style="font-weight:bold;">Events! (Reactivity in Urbiscript)</td><td>Akim  Jean-christophe Baillie and Quentin  Demaille and Matthieu  Hocquet and Gostai  S A S and Berlier  Jean-baptiste and Paris  F-</td><td>2010</td>
+		    <td>none</td>
+		    <td> <a href="./components-subdomain.html" title="Subdomain 'components'">components,</a> <a href="./coordination-subdomain.html" title="Subdomain 'coordination'">coordination,</a></td>
+		    </tr>
+<tr style="border-top:1px solid #000;">
+		    <td><a href="#Anderson2012" id="Anderson2012">Anderson2012<a/></td><td style="font-weight:bold;"><a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber6225197 http://ieeexplore.ieee.org/xpls/abs\_all.jsp?arnumber6225197">RDIS: Generalizing Domain Concepts to Specify Device to Framework Mappings</a></td><td>Anderson  Monica and Bowman  Jason and Kilgo  Paul</td><td>2012</td>
+		    <td>EMF xtext</td>
+		    <td></td>
+		    </tr>
+<tr style="border-top:1px solid #000;">
+		    <td><a href="#Anderson2011" id="Anderson2011">Anderson2011<a/></td><td style="font-weight:bold;">Work in Progress: Enabling Robot Device Discovery through Robot Device Descriptions</td><td>Anderson  Monica and Kilgo  Paul and Crawford  Chris and Stanforth  Megan</td><td>2011</td>
+		    <td>none</td>
+		    <td> <a href="./robot-structure-subdomain.html" title="Subdomain 'robot-structure'">robot-structure,</a></td>
+		    </tr>
+<tr style="border-top:1px solid #000;">
+		    <td><a href="#Angerer2012" id="Angerer2012">Angerer2012<a/></td><td style="font-weight:bold;">A Graphical Language for Real-Time Critical Robot Commands</td><td>Angerer  Andreas and Smirra  Remi and Hoffmann  Alwin and Schierl  Andreas and Vistein  Michael and Reif  Wolfgang</td><td>2012</td>
+		    <td>EMF, GMF</td>
+		    <td> <a href="./coordination-subdomain.html" title="Subdomain 'coordination'">coordination,</a> <a href="./robot-structure-subdomain.html" title="Subdomain 'robot-structure'">robot-structure,</a></td>
+		    </tr>
+<tr style="border-top:1px solid #000;">
+		    <td><a href="#Blumenthal2013" id="Blumenthal2013">Blumenthal2013<a/></td><td style="font-weight:bold;">Towards a Domain Specific Language for a Scene Graph based Robotic World Model</td><td>Blumenthal  Sebastian and Bruyninckx  Herman</td><td>2013</td>
+		    <td>acceleo</td>
+		    <td></td>
+		    </tr>
+<tr style="border-top:1px solid #000;">
+		    <td><a href="#Buchmann2013" id="Buchmann2013">Buchmann2013<a/></td><td style="font-weight:bold;">Towards A Domain-Specific Language For Pick-And-Place Applications</td><td>Buchmann  Thomas and Baumgartl  Johannes and Henrich  Dominik and Westfechtel  Bernhard</td><td>2013</td>
+		    <td>EMF xtext</td>
+		    <td></td>
+		    </tr>
+<tr style="border-top:1px solid #000;">
+		    <td><a href="#Cai1987" id="Cai1987">Cai1987<a/></td><td style="font-weight:bold;"><a href="http://ieeexplore.ieee.org/xpls/abs\_all.jsp?arnumber1087760">Operational space motion specification in AL robot language</a></td><td>Cai  Chunsheng and Binford  TO</td><td>1987</td>
+		    <td>internal</td>
+		    <td></td>
+		    </tr>
+<tr style="border-top:1px solid #000;">
+		    <td><a href="#Dai2002" id="Dai2002">Dai2002<a/></td><td style="font-weight:bold;"><a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber1013354">Specifying behavior in C++</a></td><td>Dai  Xiangtian and Hager  Gregory and Peterson  J.</td><td>2002</td>
+		    <td>internal (c++)</td>
+		    <td></td>
+		    </tr>
+<tr style="border-top:1px solid #000;">
+		    <td><a href="#Dantam2012" id="Dantam2012">Dantam2012<a/></td><td style="font-weight:bold;"><a href="http://books.google.com/books?hlen\&lr\&idZiy81kH3KfUC\&oifnd\&pgPA49\&dqThe+Motion+Grammar+:+Linguistic+Perception+ +Planning+ +and+Control\&otsZZ9qq-4m1R\&sigsHnk3ewOTBidG05iKrlXh5zE\_rE">The Motion Grammar: Linguistic Perception  Planning  and Control</a></td><td>Dantam  Neil and Stilman  Mike</td><td>2012</td>
+		    <td>none</td>
+		    <td></td>
+		    </tr>
+<tr style="border-top:1px solid #000;">
+		    <td><a href="#Haas2012" id="Haas2012">Haas2012<a/></td><td style="font-weight:bold;"><a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber6225038">A Scripting-Based Approach to Robot Behavior Engineering using Hierarchical Generators</a></td><td>de Haas  Thijs Jeffry and Laue  Tim and Rofer  Thomas</td><td>2012</td>
+		    <td>internal</td>
+		    <td></td>
+		    </tr>
+<tr style="border-top:1px solid #000;">
+		    <td><a href="#Frigerio2011" id="Frigerio2011">Frigerio2011<a/></td><td style="font-weight:bold;">A Domain Specific Language for Kinematic Models and Fast Implementations of Robot Dynamics Algorithms</td><td>Frigerio  M. and Buchli  J. and Caldwell  D.G.</td><td>2011</td>
+		    <td>EMF xtext</td>
+		    <td> <a href="./motion-control-subdomain.html" title="Subdomain 'motion-control'">motion-control,</a> <a href="./robot-structure-subdomain.html" title="Subdomain 'robot-structure'">robot-structure,</a> <a href="./transformation-subdomain.html" title="Subdomain 'transformation'">transformation,</a></td>
+		    </tr>
+<tr style="border-top:1px solid #000;">
+		    <td><a href="#Frigerio2012" id="Frigerio2012">Frigerio2012<a/></td><td style="font-weight:bold;"><a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber6385694">Code generation of algebraic quantities for robot controllers</a></td><td>Frigerio  Marco and Buchli  Jonas and Caldwell  Darwin G.</td><td>2012</td>
+		    <td>EMF xtext</td>
+		    <td> <a href="./motion-control-subdomain.html" title="Subdomain 'motion-control'">motion-control,</a></td>
+		    </tr>
+<tr style="border-top:1px solid #000;">
+		    <td><a href="#Graves1999" id="Graves1999">Graves1999<a/></td><td style="font-weight:bold;"><a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber770434 http://ieeexplore.ieee.org/xpls/abs\_all.jsp?arnumber770434">Distributed generic control for multiple types of telerobot</a></td><td>Graves  A.R. and Czarnecki  C.</td><td>1999</td>
+		    <td>none</td>
+		    <td></td>
+		    </tr>
+<tr style="border-top:1px solid #000;">
+		    <td><a href="#Hochgeschw2013" id="Hochgeschw2013">Hochgeschw2013<a/></td><td style="font-weight:bold;">Towards a Robot Perception Speciﬁcation Language</td><td>Hochgeschwender  Nico and Schneider  Sven and Voos  Holger and Kraetzschmar  Gerhard K.</td><td>2013</td>
+		    <td>EMF xtext</td>
+		    <td></td>
+		    </tr>
+<tr style="border-top:1px solid #000;">
+		    <td><a href="#Ingles2010" id="Ingles2010">Ingles2010<a/></td><td style="font-weight:bold;">Dealing with Run-Time Variability in Service Robotics : Towards a DSL for Non-Functional Properties</td><td>Ingles-Romero  J.F. and Lotz  A. and Vicente-Chicote  C. and Schlegel  C.</td><td>2010</td>
+		    <td>EMP</td>
+		    <td> <a href="./coordination-subdomain.html" title="Subdomain 'coordination'">coordination,</a></td>
+		    </tr>
+<tr style="border-top:1px solid #000;">
+		    <td><a href="#Kanayama2000" id="Kanayama2000">Kanayama2000<a/></td><td style="font-weight:bold;">It’s Time to Make Mobile Robots Programmable</td><td>Kanayama  Yutaka J. and Wu  C. Thomas</td><td>2000</td>
+		    <td>none</td>
+		    <td></td>
+		    </tr>
+<tr style="border-top:1px solid #000;">
+		    <td><a href="#Kilgo2012" id="Kilgo2012">Kilgo2012<a/></td><td style="font-weight:bold;"><a href="http://link.springer.com/chapter/10.1007/978-3-642-34327-8\_14">A Visual Modeling Language for RDIS and ROS Nodes Using AToM3</a></td><td>Kilgo  Paul and Syriani  Eugene and Anderson  Monica</td><td>2012</td>
+		    <td>AToM3</td>
+		    <td></td>
+		    </tr>
+<tr style="border-top:1px solid #000;">
+		    <td><a href="#Klotzbuecher2012" id="Klotzbuecher2012">Klotzbuecher2012<a/></td><td style="font-weight:bold;">Pure Coordination using the Coordinator – Configurator Pattern</td><td>Klotzbücher  Markus and Biggs  Geoffrey and Bruyninckx  Herman</td><td>2012</td>
+		    <td>internal (lua)</td>
+		    <td> <a href="./coordination-subdomain.html" title="Subdomain 'coordination'">coordination,</a></td>
+		    </tr>
+<tr style="border-top:1px solid #000;">
+		    <td><a href="#Klotzbuecher2011" id="Klotzbuecher2011">Klotzbuecher2011<a/></td><td style="font-weight:bold;">Reusable Hybrid Force-Velocity controlled Motion Specifications with executable Domain Specific Languages</td><td>Klotzbücher  Markus and Smits  Ruben and Bruyninckx  Herman and Schutter  Joris De</td><td>2011</td>
+		    <td>EMF</td>
+		    <td> <a href="./coordination-subdomain.html" title="Subdomain 'coordination'">coordination,</a> <a href="./motion-control-subdomain.html" title="Subdomain 'motion-control'">motion-control,</a></td>
+		    </tr>
+<tr style="border-top:1px solid #000;">
+		    <td><a href="#KressGazit2010" id="KressGazit2010">KressGazit2010<a/></td><td style="font-weight:bold;"><a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber5509402">Automatic synthesis of robot controllers for tasks with locative prepositions</a></td><td>Kress-Gazit  Hadas and Pappas  George J</td><td>2010</td>
+		    <td>none</td>
+		    <td></td>
+		    </tr>
+<tr style="border-top:1px solid #000;">
+		    <td><a href="#Laet2012" id="Laet2012">Laet2012<a/></td><td style="font-weight:bold;"><a href="http://arxiv.org/abs/1304.1346">Domain Specific Language for Geometric Relations between Rigid Bodies targeted to Robotic Applications</a></td><td>Laet  Tinne De and Schaekers  Wouter and de Greef  Jonas and Bruyninckx  Herman</td><td>2012</td>
+		    <td>EMF + internal (Prolog)</td>
+		    <td> <a href="./transformation-subdomain.html" title="Subdomain 'transformation'">transformation,</a></td>
+		    </tr>
+<tr style="border-top:1px solid #000;">
+		    <td><a href="#Muhe2010" id="Muhe2010">Muhe2010<a/></td><td style="font-weight:bold;"><a href="http://arxiv.org/abs/1009.5004">On reverse-engineering the KUKA Robot Language</a></td><td>Mühe  Henrik and Angerer  Andreas and Hoffmann  Alwin and Reif  Wolfgang</td><td>2010</td>
+		    <td>custom</td>
+		    <td> <a href="./coordination-subdomain.html" title="Subdomain 'coordination'">coordination,</a> <a href="./motion-control-subdomain.html" title="Subdomain 'motion-control'">motion-control,</a></td>
+		    </tr>
+<tr style="border-top:1px solid #000;">
+		    <td><a href="#Murray1992" id="Murray1992">Murray1992<a/></td><td style="font-weight:bold;"><a href="http://ieeexplore.ieee.org/xpls/abs\_all.jsp?arnumber141324">Control primitives for robot systems</a></td><td>Murray  Richard M. and Deno  D. Curtis and Pister  Kristofer S. J. and Sastry  S. Shankar</td><td>1992</td>
+		    <td>Mathematica</td>
+		    <td></td>
+		    </tr>
+<tr style="border-top:1px solid #000;">
+		    <td><a href="#Nordmann2012" id="Nordmann2012">Nordmann2012<a/></td><td style="font-weight:bold;">A Domain-Specific Language for Rich Motor Skill Architectures</td><td>Nordmann  Arne and Wrede  Sebastian</td><td>2012</td>
+		    <td>MPS</td>
+		    <td> <a href="./architecture-subdomain.html" title="Subdomain 'architecture'">architecture,</a> <a href="./components-subdomain.html" title="Subdomain 'components'">components,</a> <a href="./motion-control-subdomain.html" title="Subdomain 'motion-control'">motion-control,</a></td>
+		    </tr>
+<tr style="border-top:1px solid #000;">
+		    <td><a href="#Reckhaus2010" id="Reckhaus2010">Reckhaus2010<a/></td><td style="font-weight:bold;"><a href="http://arxiv.org/abs/1010.0886">A Platform-Independent Programming Environment for Robot Control</a></td><td>Reckhaus  M. and Hochgeschwender  N.</td><td>2010</td>
+		    <td>EMP</td>
+		    <td> <a href="./coordination-subdomain.html" title="Subdomain 'coordination'">coordination,</a></td>
+		    </tr>
+<tr style="border-top:1px solid #000;">
+		    <td><a href="#Romero2011" id="Romero2011">Romero2011<a/></td><td style="font-weight:bold;"><a href="http://arxiv.org/abs/1301.6022">Improving the Lifecycle of Robotics Components using Domain-Specific Languages</a></td><td>Romero-Garc\ es  A. and Manso  L.J. and Gutierrez  M.A. and Cintas  R. and Bustos  P.</td><td>2013</td>
+		    <td>EMF xtext</td>
+		    <td> <a href="./components-subdomain.html" title="Subdomain 'components'">components,</a></td>
+		    </tr>
+<tr style="border-top:1px solid #000;">
+		    <td><a href="#Rosa2007" id="Rosa2007">Rosa2007<a/></td><td style="font-weight:bold;"><a href="http://ieeexplore.ieee.org/xpls/abs\_all.jsp?arnumber4209667">Distributed Watchpoints: Debugging large multi-robot systems</a></td><td>Rosa  Michael De and Campbell  Jason</td><td>2007</td>
+		    <td>none</td>
+		    <td></td>
+		    </tr>
+<tr style="border-top:1px solid #000;">
+		    <td><a href="#RuggGunn1994" id="RuggGunn1994">RuggGunn1994<a/></td><td style="font-weight:bold;"><a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber351142">A formal semantics for multiple vehicle task and motion planning</a></td><td>Rugg-Gunn  N. and Cameron  S.</td><td>1994</td>
+		    <td>Matlab</td>
+		    <td></td>
+		    </tr>
+<tr style="border-top:1px solid #000;">
+		    <td><a href="#Steck2011" id="Steck2011">Steck2011<a/></td><td style="font-weight:bold;"><a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber6094732">Managing execution variants in task coordination by exploiting design-time models at run-time</a></td><td>Steck  A. and Schlegel  C.</td><td>2011</td>
+		    <td>internal (common lisp)</td>
+		    <td></td>
+		    </tr>
+<tr style="border-top:1px solid #000;">
+		    <td><a href="#Thomas2013" id="Thomas2013">Thomas2013<a/></td><td style="font-weight:bold;"><a href="http://www.se-rwth.de/publications/A-New-Skill-Based-Robot-Programming-Language-Using-UML-P-Statecharts.pdf">A New Skill Based Robot Programming Language Using UML/P Statecharts</a></td><td>Thomas  U. and Hirzinger  G. and Rumpe  B. and Schulze  C. and Wortmann  A.</td><td>2013</td>
+		    <td>MontiCore</td>
+		    <td></td>
+		    </tr>
+<tr style="border-top:1px solid #000;">
+		    <td><a href="#Tousignant2012" id="Tousignant2012">Tousignant2012<a/></td><td style="font-weight:bold;">XRobots : A Flexible Language for Programming Mobile Robots Based on Hierarchical State Machines</td><td>Tousignant  Steve and Wyk  Eric Van and Gini  Maria</td><td>2012</td>
+		    <td>Silver</td>
+		    <td></td>
+		    </tr>
+<tr style="border-top:1px solid #000;">
+		    <td><a href="#Trojanek2011" id="Trojanek2011">Trojanek2011<a/></td><td style="font-weight:bold;"><a href="http://arxiv.org/abs/1302.5085">Model-Driven Engineering Approach to Design and Implementation of Robot Control System</a></td><td>Trojanek  Piotr</td><td>2011</td>
+		    <td>EMF</td>
+		    <td> <a href="./architecture-subdomain.html" title="Subdomain 'architecture'">architecture,</a> <a href="./coordination-subdomain.html" title="Subdomain 'coordination'">coordination,</a></td>
+		    </tr>
+<tr style="border-top:1px solid #000;">
+		    <td><a href="#Vanthienen2013" id="Vanthienen2013">Vanthienen2013<a/></td><td style="font-weight:bold;">Rapid application development of constrained-based task modelling and execution using Domain Specific Languages</td><td>Vanthienen  Dominick and Klotzbücher  Markus and Schutter  Joris De and Laet  Tinne De and Bruyninckx  Herman</td><td>2013</td>
+		    <td>EMF + internal (lua)</td>
+		    <td></td>
+		    </tr>
+
+</tbody></table><br />
+<p>If you've got a language or robotics-related DSL work on your mind you'd like to include, or spotted erronous or missing information, please <a href="./contribute.html">contribute</a> to this community effort.</p>
+
+<p><a id="DSL"><sup>1</sup></a> A DSL in this context is a <i>"focussed, processable language for describing a specific concern when building a system in a specific domain. The abstractions and notations used are natural/suitable for the stakeholders who specify that particular concern"</i> <a href="http://www.voelter.de/data/presentations/VAMOS2011.pdf">[Voelter]<a/>.</p>
+</div>
+
+    </div>
+    
+    <div class="container">
+    <br />
+    <hr />
+    <a style="font-size:85%; color:#555;" title="A Survey on Domain-Specific Languages in Robotics" href="https://pub.uni-bielefeld.de/publication/2685039">A. Nordmann, N. Hochgeschwender, and S. Wrede, “A Survey on Domain-Specific Languages in Robotics”, International Conference on Simulation, Modeling, and Programming for Autonomous Robots, 2014</a>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="sortable/moment.min.js"></script>
+    <script src="sortable/bootstrap-sortable.js"></script>
+    
+  </body>
+</html>
