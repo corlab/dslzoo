@@ -52,7 +52,12 @@
 
 <h2>Contribute</h1>
 
-<table><tr><td> <p><b>We are constantly updating and extending the Robotics DSL Zoo and are waiting for your input!</b></p> <td/><td>   </td></tr></table><p>All sources of this Robotics DSL Zoo are hosted in github in <a href="https://github.com/corlab/dslzoo">corlab/dslzoo</a>. Fell free to fork the repository and make additions to the source files. Check github help on <a href="https://help.github.com/articles/using-pull-requests/">pull requests</a> on how to request your changes to be added to the DSL Zoo website. Some guidelines to make it easier for you and us:</p><h3>Requirements:</h3><p>We impose some requirements for a publication to be added to the Robotics DSL Zoo. Please check, before adding a publication:<ol><li><b>Technical:</b><br />The publication describes a domain-specific language or its usage. Only (meta-)models is not enough, we want to see at least some kind of syntax, grammar or language examples.</li><li><b>Content-wise:</b><br />Robotics is an interdisciplinary research field. In order to somehow limit the scope of this DSL zoo we introduced <a href="domain-examples.html">domain examples</a> that describe the variability of the field and give us an idea of the subdomains that are relevant in robotics. Please check before adding a publication, if the discussed DSL belongs to one of these <a href="subdomains.html">subdomains</a> or provides support for one of the <a href="domain-examples.html">domain examples</a>.</li></ol></p><h3>Adding a Publication / DSL:</h3><p>The domain-specific language publications are collected in a <a href="https://en.wikipedia.org/wiki/BibTeX">BibTeX</a> file, which is a common format to manage publication lists. If you want to make additions to the overall DSL Zoo, add a new entry to <a href="https://github.com/corlab/dslzoo/blob/master/dslzoo.bib">dslzoo.bib</a><!--. If you want to make an addition to the <a href="./index.html#annotated-bibliography">annotated bibliography</a>, add a new entry to <a href="https://github.com/corlab/dslzoo/blob/master/publications/annotated.bib">publications/annotated.bib</a>-->, including a 2-3 sentence summary of the core contribution. The format is:</p>
+<table><tr><td> <p><b>We are constantly updating and extending the Robotics DSL Zoo and are waiting for your input!</b></p> <td/><td>   </td></tr></table><p>All sources of this Robotics DSL Zoo are hosted in github in <a href="https://github.com/corlab/dslzoo">corlab/dslzoo</a>. Fell free to fork the repository and make additions to the source files. Check github help on <a href="https://help.github.com/articles/using-pull-requests/">pull requests</a> on how to request your changes to be added to the DSL Zoo website. Some guidelines to make it easier for you and us:</p><h3>Requirements</h3><p>We impose some requirements for a publication to be added to the Robotics DSL Zoo. Please check, before adding a publication:<ol><li><b>Technical:</b><br />The publication describes a domain-specific language or its usage. Only (meta-)models is not enough, we want to see at least some kind of syntax, grammar or language examples.</li><li><b>Content-wise:</b><br />Robotics is an interdisciplinary research field. In order to somehow limit the scope of this DSL zoo we introduced <a href="domain-examples.html">domain examples</a> that describe the variability of the field and give us an idea of the subdomains that are relevant in robotics. Please check before adding a publication, if the discussed DSL belongs to one of these <a href="subdomains.html">subdomains</a> or provides support for one of the <a href="domain-examples.html">domain examples</a>.</li></ol></p><h3>Workflow - Adding a Publication / DSL</h3><p>The domain-specific language publications are collected in a <a href="https://en.wikipedia.org/wiki/BibTeX">BibTeX</a> file, which is a common format to manage publication lists. If you want to make additions to the overall DSL Zoo, add a new entry to <a href="https://github.com/corlab/dslzoo/blob/master/dslzoo.bib">dslzoo.bib</a><!--. If you want to make an addition to the <a href="./index.html#annotated-bibliography">annotated bibliography</a>, add a new entry to <a href="https://github.com/corlab/dslzoo/blob/master/publications/annotated.bib">publications/annotated.bib</a>-->, including a 2-3 sentence summary of the core contribution.
+
+<ol>
+
+<li>Go on github and fork the <a href="https://github.com/corlab/dslzoo">corlab/dslzoo repository</a>.</li>
+<li>Add a new entry to <a href="https://github.com/corlab/dslzoo/blob/master/dslzoo.bib">dslzoo.bib</a> of your fork. The format is:</p>
 
 
 <div style="font-style:monospace;border:1px solid #d3d7cf;font-size:90%;background-color:#eeeeec;">
@@ -70,12 +75,18 @@ title = {Publication Title},<br />
 url = {http://publication.link},<br />
 year = {2015},<br />
 zoo-subdomains = {motion-control, architecture, components, perception, robot-structure, transformation, manipulation-and-grasping},<br />
-zoo-tool = {DSL Tool / Workbench (e.g. EMF xtext)},<br />
+zoo-tool = {DSL Tool / Workbench (e.g. 'EMF xtext')},<br />
 zoo-website = {http://dsl.homepage.link},<br />
 zoo-download = {http://dsl.download.link},<br />
 }<br />
 </div>
-<p>There are a lot of free BibTeX tools out there to support you with this format, some of them might hide the zoo-specific custom-fields though. After you added a publication, place a <a href="https://help.github.com/articles/using-pull-requests/">pull requests</a> (one for each publication) to <a href="https://github.com/corlab/dslzoo">corlab/dslzoo</a>.</p>
+
+<p>There are a lot of free BibTeX tools out there to support you with this format, some of them might hide the zoo-specific custom fields though.</p></li>
+
+<li>After you added a publication, place a <a href="https://help.github.com/articles/using-pull-requests/">pull requests</a> (preferably one for each publication) to <a href="https://github.com/corlab/dslzoo">corlab/dslzoo</a>.</p></li>
+
+</ol>
+
 </div>
 
     </div>
