@@ -73,8 +73,14 @@
 <tr><td><a href="./transformation-subdomain.html" title="Subdomain 'Transformation'" >Transformation</a></td>
 		    <td style="text-align:center;">2</td>
 		    </tr>
+<tr><td><a href="./perception-subdomain.html" title="Subdomain 'Perception'" >Perception</a></td>
+		    <td style="text-align:center;">2</td>
+		    </tr>
 <tr><td><a href="./architecture-subdomain.html" title="Subdomain 'Architecture'" >Architecture</a></td>
 		    <td style="text-align:center;">3</td>
+		    </tr>
+<tr><td><a href="./manipulation-and-grasping-subdomain.html" title="Subdomain 'Manipulation And Grasping'" >Manipulation And Grasping</a></td>
+		    <td style="text-align:center;">1</td>
 		    </tr>
 
 </tbody></table><br />
@@ -90,7 +96,7 @@ google.setOnLoadCallback(drawChart);
 function drawChart() {
 
   var data = google.visualization.arrayToDataTable([
-    ['subdomain', '#publications'],    ['components', 3],    ['coordination', 12],    ['robot-structure', 3],    ['motion-control', 5],    ['transformation', 2],    ['architecture', 3],  ]);
+    ['subdomain', '#publications'],    ['components', 3],    ['coordination', 12],    ['robot-structure', 3],    ['motion-control', 5],    ['transformation', 2],    ['perception', 2],    ['architecture', 3],    ['manipulation-and-grasping', 1],  ]);
 
   var options = {
     title: '#publications per subdomain',
@@ -127,11 +133,15 @@ function drawChart() {
             of  position, force, and velocity of the robot joints. This subdomain 
             roughly corresponds to Part A in the Handbook of Robotics (<i>Robotics 
             Foundations</i>).</li>
+<li><a href="./perception-subdomain.html">Perception</a> - </li>
 <li><a href="./architecture-subdomain.html">Architecture</a> - Robot capabilities need to be integrated in an overall
             Architecture with Components as the basic building blocks which are
             preferable re-usable also for other applications. This subdomain
             corresponds roughly to Part A Chapter 8 (<i>Robotic Systems
             Architectures and Programming</i>) in the Handbook of Robotics.</li>
+<li><a href="./manipulation-and-grasping-subdomain.html">Manipulation And Grasping</a> - Manipulation and Grasping abilities are required to grasp
+            interact with objects in the environment. This subdomains roughly
+            correspond to Part D Chapter 28 (<i>Grasping</i>) in the Handbook of Robotics.</li>
 </ul>
 </div>
 

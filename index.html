@@ -56,7 +56,7 @@
 
 <h2>An Overview of Domain-Specific Languages in Robotics</h1>
 
-<p><b>hosted by <a href="http://www.dslrob.org">DSLRob</a>, initiated and maintained  by <a href="http://www.cor-lab.org/users/anordman">A. Nordmann</a>, <a href="http://www2.inf.fh-bonn-rhein-sieg.de/~nhochg2m/">N. Hochgeschwender </a> and <a href="http://www.cor-lab.org/users/swrede">S. Wrede</a>, updated on March 16th 2015</b></p>
+<p><b>hosted by <a href="http://www.dslrob.org">DSLRob</a>, initiated and maintained  by <a href="http://www.cor-lab.org/users/anordman">A. Nordmann</a>, <a href="http://www2.inf.fh-bonn-rhein-sieg.de/~nhochg2m/">N. Hochgeschwender </a> and <a href="http://www.cor-lab.org/users/swrede">S. Wrede</a>, updated on May 13th 2015</b></p>
 
 <table><tr><td>This page provides an annotated bibliography of domain-specific languages in the area of robotics and automation technology facilitating the exchange between people interested in applying model-driven and domain-specific language engineering in these domains. Our goal is to incrementally capture the state of the art in the adoption of the domain-specific languages (DSL)<a href="#DSL"><sup>1</sup></a> idea and (on the long run) provide an assessment which parts of the design space of relevant robotics domains are already supported.</p>
 
@@ -80,8 +80,14 @@
 <tr><td><a href="./transformation-subdomain.html" title="Subdomain 'Transformation'" >Transformation</a></td>
 		    <td style="text-align:center;">2</td>
 		    </tr>
+<tr><td><a href="./perception-subdomain.html" title="Subdomain 'Perception'" >Perception</a></td>
+		    <td style="text-align:center;">2</td>
+		    </tr>
 <tr><td><a href="./architecture-subdomain.html" title="Subdomain 'Architecture'" >Architecture</a></td>
 		    <td style="text-align:center;">3</td>
+		    </tr>
+<tr><td><a href="./manipulation-and-grasping-subdomain.html" title="Subdomain 'Manipulation And Grasping'" >Manipulation And Grasping</a></td>
+		    <td style="text-align:center;">1</td>
 		    </tr>
 
 </tbody></table><br />
@@ -89,40 +95,44 @@
 <svg id="cloudcontainer" name="cloudcontainer" />
 <script>
   var fill = d3.scale.ordinal().range(["#0570b0", "#023858", "#d0d1e6", "#a6bddb", "#74a9cf", "#54799f", "#3690c0", "#045a8d", "#3690c0"]);
-  var words = [{ "text" : "distributed", "size" : 18, "color":	"#555578"},
+  var words = [{ "text" : "robots", "size" : 18, "color":	"#555578"},
           { "text" : "languages", "size" : 26, "color":	"#555582"},
+          { "text" : "systems", "size" : 26, "color":	"#555582"},
+          { "text" : "approach", "size" : 26, "color":	"#555582"},
+          { "text" : "applications", "size" : 18, "color":	"#555578"},
+          { "text" : "towards", "size" : 34, "color":	"#55558c"},
+          { "text" : "controllers", "size" : 18, "color":	"#555578"},
+          { "text" : "language", "size" : 66, "color":	"#5555b4"},
+          { "text" : "variability", "size" : 18, "color":	"#555578"},
+          { "text" : "development", "size" : 18, "color":	"#555578"},
+          { "text" : "models", "size" : 18, "color":	"#555578"},
+          { "text" : "domainspecific", "size" : 26, "color":	"#555582"},
+          { "text" : "architectures", "size" : 18, "color":	"#555578"},
+          { "text" : "behavior", "size" : 18, "color":	"#555578"},
+          { "text" : "specification", "size" : 18, "color":	"#555578"},
           { "text" : "control", "size" : 34, "color":	"#55558c"},
-          { "text" : "motion", "size" : 26, "color":	"#555582"},
-          { "text" : "planning", "size" : 18, "color":	"#555578"},
-          { "text" : "programming", "size" : 26, "color":	"#555582"},
+          { "text" : "execution", "size" : 18, "color":	"#555578"},
+          { "text" : "multiple", "size" : 18, "color":	"#555578"},
+          { "text" : "task", "size" : 26, "color":	"#555582"},
           { "text" : "runtime", "size" : 18, "color":	"#555578"},
           { "text" : "rdis", "size" : 18, "color":	"#555578"},
-          { "text" : "language", "size" : 66, "color":	"#5555b4"},
-          { "text" : "approach", "size" : 26, "color":	"#555582"},
-          { "text" : "mobile", "size" : 18, "color":	"#555578"},
-          { "text" : "task", "size" : 26, "color":	"#555582"},
-          { "text" : "device", "size" : 26, "color":	"#555582"},
-          { "text" : "perception", "size" : 18, "color":	"#555578"},
-          { "text" : "robotics", "size" : 26, "color":	"#555582"},
-          { "text" : "multiple", "size" : 18, "color":	"#555578"},
-          { "text" : "robotic", "size" : 18, "color":	"#555578"},
+          { "text" : "robotics", "size" : 34, "color":	"#55558c"},
           { "text" : "domain", "size" : 42, "color":	"#555596"},
-          { "text" : "towards", "size" : 34, "color":	"#55558c"},
-          { "text" : "specific", "size" : 34, "color":	"#55558c"},
-          { "text" : "controllers", "size" : 18, "color":	"#555578"},
-          { "text" : "skill", "size" : 18, "color":	"#555578"},
-          { "text" : "domainspecific", "size" : 26, "color":	"#555582"},
-          { "text" : "coordination", "size" : 18, "color":	"#555578"},
           { "text" : "robot", "size" : 74, "color":	"#5555be"},
+          { "text" : "design", "size" : 18, "color":	"#555578"},
+          { "text" : "skill", "size" : 18, "color":	"#555578"},
+          { "text" : "specific", "size" : 34, "color":	"#55558c"},
+          { "text" : "distributed", "size" : 18, "color":	"#555578"},
+          { "text" : "mobile", "size" : 18, "color":	"#555578"},
+          { "text" : "device", "size" : 26, "color":	"#555582"},
+          { "text" : "coordination", "size" : 18, "color":	"#555578"},
+          { "text" : "perception", "size" : 26, "color":	"#555582"},
+          { "text" : "motion", "size" : 26, "color":	"#555582"},
+          { "text" : "robotic", "size" : 18, "color":	"#555578"},
+          { "text" : "programming", "size" : 26, "color":	"#555582"},
           { "text" : "engineering", "size" : 18, "color":	"#555578"},
-          { "text" : "models", "size" : 18, "color":	"#555578"},
           { "text" : "hierarchical", "size" : 18, "color":	"#555578"},
-          { "text" : "execution", "size" : 18, "color":	"#555578"},
-          { "text" : "behavior", "size" : 18, "color":	"#555578"},
-          { "text" : "robots", "size" : 18, "color":	"#555578"},
-          { "text" : "applications", "size" : 18, "color":	"#555578"},
-          { "text" : "systems", "size" : 26, "color":	"#555582"},
-          { "text" : "variability", "size" : 18, "color":	"#555578"},
+          { "text" : "planning", "size" : 18, "color":	"#555578"},
           ];
     d3.layout.cloud().size([900, 300])
       .words(words)
