@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="images/favicon.png">
 
-    <title>Motion Control – Robotics DSL Zoo</title>
+    <title>Kinematics – Robotics DSL Zoo</title>
 
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="sortable/bootstrap-sortable.css">
@@ -54,46 +54,44 @@
 
 <h1>Robotics DSL Zoo</h1>
 
-<h2>Subdomain „Motion Control“</h2>
-<p>Motion Control addresses the dynamical model of robotic manipulators. This includes different controller approaches, such as independent-joint, PID as well as torque control.
-        This subdomain corresponds to Part A, Chapter 6 in the Handbook of Robotics.</p>
+<h2>Subdomain „Kinematics“</h2>
+<p>Kinematics refers to the motion of bodies in robotic mechanisms without taking the forces/torques causing the motion into account.
+        Hence, it includes general representations of the position and orientation of a body,
+        the relation among the joints as well as conventions for representing the geometry of rigid bodies connected by joints.
+        This subdomain corresponds to Part A, Chapter 1 in the Handbook of Robotics.</p>
 
 <table class="sortable">
 <thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
-            <td><a href="#thomas2013new" id="thomas2013new">thomas2013new<a/></td><td style="font-weight:bold;">A new skill based robot programming language using UML/P Statecharts,</td><td>Thomas, Ulrike and Hirzinger, Gerd and Rumpe, Bernhard and Schulze, Christoph and Wortmann, Andreas,</td><td>2013,</td>
+            <td><a href="#ramadorai1994generic" id="ramadorai1994generic">ramadorai1994generic<a/></td><td style="font-weight:bold;">A generic kinematics software package,</td><td>Ramadorai, Arvind K and Ganapathy, U and Guida, F,</td><td>1994,</td>
+            <td>unknown</td>
+            </tr>
+<tr style="border-top:1px solid #000;">
+            <td><a href="#manikonda1995motion" id="manikonda1995motion">manikonda1995motion<a/></td><td style="font-weight:bold;">A motion description language and a hybrid architecture for motion planning with nonholonomic robots,</td><td>Manikonda, Vikram and Krishnaprasad, Perinkulam S and Hendler, James,</td><td>1995,</td>
             <td>other</td>
             </tr>
 <tr style="border-top:1px solid #000;">
-            <td><a href="#kitagishi2002development" id="kitagishi2002development">kitagishi2002development<a/></td><td style="font-weight:bold;">Development of motion data description language for robots based on eXtensible Markup Language-realization of better understanding and communication via networks,</td><td>Kitagishi, Ikuo and Machino, Tamotsu and Nakayama, Akira and Iwaki, Satoshi and Okudaira, Masashi,</td><td>2002,</td>
-            <td>XSD</td>
+            <td><a href="#frigerio2012code" id="frigerio2012code">frigerio2012code<a/></td><td style="font-weight:bold;">Code generation of algebraic quantities for robot controllers,</td><td>Frigerio, Marco and Buchli, Jonas and Caldwell, Darwin G,</td><td>2012,</td>
+            <td>ecore</td>
             </tr>
 <tr style="border-top:1px solid #000;">
-            <td><a href="#finucane2010ltlmop" id="finucane2010ltlmop">finucane2010ltlmop<a/></td><td style="font-weight:bold;">LTLMoP: Experimenting with language, temporal logic and robot control,</td><td>Finucane, Cameron and Jing, Gangyuan and Kress-Gazit, Hadas,</td><td>2010,</td>
-            <td>LTL</td>
-            </tr>
-<tr style="border-top:1px solid #000;">
-            <td><a href="#nishiyama1998logic" id="nishiyama1998logic">nishiyama1998logic<a/></td><td style="font-weight:bold;">Logic specifications for multiple robots based on a current programming language,</td><td>Nishiyama, Hiroyuki and Ohwada, Hayato and Mizoguchi, Fumio,</td><td>1998,</td>
+            <td><a href="#hornby2001evolution" id="hornby2001evolution">hornby2001evolution<a/></td><td style="font-weight:bold;">Evolution of generative design systems for modular physical robots,</td><td>Hornby, Gregory S and Lipson, Hod and Pollack, Jordan B,</td><td>2001,</td>
             <td>unknown</td>
             </tr>
 <tr style="border-top:1px solid #000;">
-            <td><a href="#vanthienen2013rapid" id="vanthienen2013rapid">vanthienen2013rapid<a/></td><td style="font-weight:bold;">Rapid application development of constrained-based task modelling and execution using domain specific languages,</td><td>Vanthienen, Dominick and Klotzbuucher, M and De Schutter, Joris and De Laet, Tinne and Bruyninckx, Herman,</td><td>2013,</td>
-            <td>unknown</td>
+            <td><a href="#bordignon2011generalized" id="bordignon2011generalized">bordignon2011generalized<a/></td><td style="font-weight:bold;">Generalized programming of modular robots through kinematic configurations,</td><td>Bordignon, Mirko and Stoy, Kasper and Schultz, Ulrik Pagh,</td><td>2011,</td>
+            <td></td>
             </tr>
 <tr style="border-top:1px solid #000;">
-            <td><a href="#klotzbucher2011reusable" id="klotzbucher2011reusable">klotzbucher2011reusable<a/></td><td style="font-weight:bold;">Reusable hybrid force-velocity controlled motion specifications with executable domain specific languages,</td><td>Klotzbucher, M and Smits, Ruben and Bruyninckx, Herman and De Schutter, Joris,</td><td>2011,</td>
-            <td>unknown</td>
+            <td><a href="#kanayama2000s" id="kanayama2000s">kanayama2000s<a/></td><td style="font-weight:bold;">It s time to make mobile robots programmable,</td><td>Kanayama, Yutaka J and Wu, C Thomas,</td><td>2000,</td>
+            <td></td>
             </tr>
 <tr style="border-top:1px solid #000;">
-            <td><a href="#Muehe2010" id="Muehe2010">Muehe2010<a/></td><td style="font-weight:bold;"><a href="http://arxiv.org/abs/1009.5004,">On Reverse-Engineering the KUKA Robot Language,</a></td><td>Mühe, Henrik and Angerer, Andreas and Hoffmann, Alwin and Reif, Wolfgang,</td><td>2010,</td>
-            <td>unknown</td>
+            <td><a href="#frigerio2012model" id="frigerio2012model">frigerio2012model<a/></td><td style="font-weight:bold;">Model based code generation for kinematics and dynamics computations in robot controllers,</td><td>Frigerio, Marco and Buchli, Jonas and Caldwell, Darwin G,</td><td>2012,</td>
+            <td>ecore</td>
             </tr>
 <tr style="border-top:1px solid #000;">
-            <td><a href="#Nordmann2012c" id="Nordmann2012c">Nordmann2012c<a/></td><td style="font-weight:bold;">A Domain-Specific Language for Rich Motor Skill Architectures,</td><td>Nordmann, Arne and Wrede, Sebastian,</td><td>2012,</td>
-            <td>other</td>
-            </tr>
-<tr style="border-top:1px solid #000;">
-            <td><a href="#Laursen2014" id="Laursen2014">Laursen2014<a/></td><td style="font-weight:bold;"><a href="http://arxiv.org/abs/1412.4538,">Towards Error Handling in a DSL for Robot Assembly Tasks,</a></td><td>Laursen, Johan S. and Buch, Jacob P. and S\o rensen, Lars C. and Kraft, Dirk and Ellekilde, Henrik G. Petersen Lars-Peter and Schultz, Ulrik P.,</td><td>2014,</td>
-            <td>(E)BNF</td>
+            <td><a href="#Laet2012" id="Laet2012">Laet2012<a/></td><td style="font-weight:bold;"><a href="http://arxiv.org/abs/1304.1346,">Domain Specific Language for Geometric Relations between Rigid Bodies targeted to Robotic Applications,</a></td><td>Laet, Tinne De and Schaekers, Wouter and de Greef, Jonas and Bruyninckx, Herman,</td><td>2012,</td>
+            <td>xcore</td>
             </tr>
 
 </tbody></table><br />
