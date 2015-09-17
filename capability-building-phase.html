@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="images/favicon.png">
 
-    <title>Architectures and Programming – Robotics DSL Zoo</title>
+    <title>Capability Building – Robotics DSL Zoo</title>
 
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="sortable/bootstrap-sortable.css">
@@ -54,115 +54,125 @@
 
 <h1>Robotics DSL Zoo</h1>
 
-<h2>Subdomain „Architectures and Programming“</h2>
+<h2>Development Phase „Capability Building“</h2>
+<p>In the Capability Building phase, basic and composite components are constructed up to the application-level and constraints for their deployment are specified.
+This also includes the specification and eventually generation of additional knowledge required for component execution such as knowledge bases and training data.</p>
+<h3>Kinematics</h3>
+<p>Kinematics refers to the motion of bodies in robotic mechanisms without taking the forces/torques causing the motion into account.
+        Hence, it includes general representations of the position and orientation of a body,
+        the relation among the joints as well as conventions for representing the geometry of rigid bodies connected by joints.
+        This subdomain corresponds to Part A, Chapter 1 in the Handbook of Robotics.</p>
+
+<table class="sortable">
+<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
+              <td><a href="#frigerio2012code" id="frigerio2012code">frigerio2012code<a/></td><td style="font-weight:bold;">Code generation of algebraic quantities for robot controllers,</td><td>Frigerio, Marco and Buchli, Jonas and Caldwell, Darwin G,</td><td>2012,</td>
+              <td>ecore</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#kanayama2000s" id="kanayama2000s">kanayama2000s<a/></td><td style="font-weight:bold;">It s time to make mobile robots programmable,</td><td>Kanayama, Yutaka J and Wu, C Thomas,</td><td>2000,</td>
+              <td></td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#Laet2012" id="Laet2012">Laet2012<a/></td><td style="font-weight:bold;"><a href="http://arxiv.org/abs/1304.1346,">Domain Specific Language for Geometric Relations between Rigid Bodies targeted to Robotic Applications,</a></td><td>Laet, Tinne De and Schaekers, Wouter and de Greef, Jonas and Bruyninckx, Herman,</td><td>2012,</td>
+              <td>xcore</td>
+              </tr>
+
+</tbody></table><br />
+<h3>Mechanisms and Actuation</h3>
+<p>Mechanisms and Actuation focuses on the mechanical structure of a robot that creates its movable skeleton.
+        All elements that cause a robotic mechanism to move – so called actuators – are addressed along with the mathematical model that is used to characterize the robot's performance.
+        This subdomain corresponds to Part A, Chapter 3 in the Handbook of Robotics.</p>
+
+<table class="sortable">
+<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
+              <td><a href="#barth2012goto" id="barth2012goto">barth2012goto<a/></td><td style="font-weight:bold;">A GOTO-based concept for intuitive robot programming,</td><td>Barth, Katharina and Henrich, Dominik,</td><td>2012,</td>
+              <td>other</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#schneider2014declarative" id="schneider2014declarative">schneider2014declarative<a/></td><td style="font-weight:bold;">Declarative specification of task-based grasping with constraint validation,</td><td>Schneider, Sven and Hochgeschwender, Nico and Kraetzschmar, Gerhard K,</td><td>2014,</td>
+              <td>ecore</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#fleury1994design" id="fleury1994design">fleury1994design<a/></td><td style="font-weight:bold;">Design of a modular architecture for autonomous robot,</td><td>Fleury, Sara and Herrb, Matthieu and Chatila, Raja,</td><td>1994,</td>
+              <td>unknown</td>
+              </tr>
+
+</tbody></table><br />
+<h3>Sensing and Estimation</h3>
+<p>Sensing and Estimation ranges from robot-state estimation for feedback control to task-oriented interpretation of sensor data of any kind.
+        Apart from estimation techniques, this category also covers different kinds of information representations.
+        This subdomain corresponds to Part A, Chapter 4 in the Handbook of Robotics.</p>
+
+<table class="sortable">
+<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
+              <td><a href="#henderson1984logical" id="henderson1984logical">henderson1984logical<a/></td><td style="font-weight:bold;">Logical sensor systems,</td><td>Henderson, Tom and Shilcrat, Esther,</td><td>1984,</td>
+              <td>(E)BNF</td>
+              </tr>
+
+</tbody></table><br />
+<h3>Motion Planning</h3>
+<p>Motion Planning covers collision-free trajectory planning for mobile platforms as well as robot actuators.
+        This subdomain corresponds to Part A, Chapter 5 in the Handbook of Robotics.</p>
+
+<table class="sortable">
+<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
+              <td><a href="#rugg1994formal" id="rugg1994formal">rugg1994formal<a/></td><td style="font-weight:bold;">A formal semantics for multiple vehicle task and motion planning,</td><td>Rugg-Gunn, Neil and Cameron, Stephen,</td><td>1994,</td>
+              <td>other</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#zhang2003control" id="zhang2003control">zhang2003control<a/></td><td style="font-weight:bold;">Control of small formations using shape coordinates,</td><td>Zhang, Fumin and Goldgeier, Michael and Krishnaprasad, Perinkulam S,</td><td>2003,</td>
+              <td>SDD</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#dantam2013correct" id="dantam2013correct">dantam2013correct<a/></td><td style="font-weight:bold;">Correct Software Synthesis for Stable Speed-Controlled Robotic Walking.,</td><td>Dantam, Neil and Hereid, Ayonga and Ames, Aaron D and Stilman, Mike,</td><td>2013,</td>
+              <td>CFG?</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#dantam2012linguistic" id="dantam2012linguistic">dantam2012linguistic<a/></td><td style="font-weight:bold;">Linguistic transfer of human assembly tasks to robots,</td><td>Dantam, Neil and Essa, Irfan and Stilman, Mike,</td><td>2012,</td>
+              <td>(E)BNF</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#mackenzie1995specification" id="mackenzie1995specification">mackenzie1995specification<a/></td><td style="font-weight:bold;">Specification and execution of multiagent missions,</td><td>MacKenzie, Douglas C and Cameron, Jonathan M and Arkin, Ronald C,</td><td>1995,</td>
+              <td>unknown</td>
+              </tr>
+
+</tbody></table><br />
+<h3>Motion Control</h3>
+<p>Motion Control addresses the dynamical model of robotic manipulators. This includes different controller approaches, such as independent-joint, PID as well as torque control.
+        This subdomain corresponds to Part A, Chapter 6 in the Handbook of Robotics.</p>
+
+<table class="sortable">
+<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
+              <td><a href="#nishiyama1998logic" id="nishiyama1998logic">nishiyama1998logic<a/></td><td style="font-weight:bold;">Logic specifications for multiple robots based on a current programming language,</td><td>Nishiyama, Hiroyuki and Ohwada, Hayato and Mizoguchi, Fumio,</td><td>1998,</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#vanthienen2013rapid" id="vanthienen2013rapid">vanthienen2013rapid<a/></td><td style="font-weight:bold;">Rapid application development of constrained-based task modelling and execution using domain specific languages,</td><td>Vanthienen, Dominick and Klotzbuucher, M and De Schutter, Joris and De Laet, Tinne and Bruyninckx, Herman,</td><td>2013,</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#klotzbucher2011reusable" id="klotzbucher2011reusable">klotzbucher2011reusable<a/></td><td style="font-weight:bold;">Reusable hybrid force-velocity controlled motion specifications with executable domain specific languages,</td><td>Klotzbucher, M and Smits, Ruben and Bruyninckx, Herman and De Schutter, Joris,</td><td>2011,</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#Muehe2010" id="Muehe2010">Muehe2010<a/></td><td style="font-weight:bold;"><a href="http://arxiv.org/abs/1009.5004,">On Reverse-Engineering the KUKA Robot Language,</a></td><td>Mühe, Henrik and Angerer, Andreas and Hoffmann, Alwin and Reif, Wolfgang,</td><td>2010,</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#Nordmann2012c" id="Nordmann2012c">Nordmann2012c<a/></td><td style="font-weight:bold;">A Domain-Specific Language for Rich Motor Skill Architectures,</td><td>Nordmann, Arne and Wrede, Sebastian,</td><td>2012,</td>
+              <td>other</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#Laursen2014" id="Laursen2014">Laursen2014<a/></td><td style="font-weight:bold;"><a href="http://arxiv.org/abs/1412.4538,">Towards Error Handling in a DSL for Robot Assembly Tasks,</a></td><td>Laursen, Johan S. and Buch, Jacob P. and S\o rensen, Lars C. and Kraft, Dirk and Ellekilde, Henrik G. Petersen Lars-Peter and Schultz, Ulrik P.,</td><td>2014,</td>
+              <td>(E)BNF</td>
+              </tr>
+
+</tbody></table><br />
+<h3>Architectures and Programming</h3>
 <p>Architectures and Programming refers to the way a robotic system is designed on the software-level. It can be divided into architectural structure and architectural style.
 The structure is represented by how the system is split up into subsystems and how they interact with each other.
 The style however addresses the underlying computational concepts.
         This subdomain corresponds to Part A, Chapter 8 in the Handbook of Robotics.</p>
-<h3>Scenario Building</h3>
-<p>In the Scenario Building phase, environment features, constraints and characteristics are defined. Furthermore, the robot's task is defined.
-This includes the specification of customer acceptance tests to be performed in the specified and potentially generalized environment.</p>
-
-<table class="sortable">
-<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
-              <td><a href="#knoop2007automatic" id="knoop2007automatic">knoop2007automatic<a/></td><td style="font-weight:bold;">Automatic robot programming from learned abstract task knowledge,</td><td>Knoop, Steffen and Pardowitz, Michael and Dillmann, R\ udiger,</td><td>2007,</td>
-              <td></td>
-              </tr>
-<tr style="border-top:1px solid #000;">
-              <td><a href="#kunze2011towards" id="kunze2011towards">kunze2011towards<a/></td><td style="font-weight:bold;">Towards semantic robot description languages,</td><td>Kunze, Lars and Roehm, Tobias and Beetz, Michael,</td><td>2011,</td>
-              <td>OWL</td>
-              </tr>
-
-</tbody></table><br />
-<h3>Functional Design</h3>
-<p>In the Functional Design phase, hardware requirements and top-level functionalities are derived based on the scenario definition.
-Furthermore, top-level functionalities are decomposed and dependencies among them are identified.
-Also an initial functional design stating which functionalities interact with each other is developed.</p>
-
-<table class="sortable">
-<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
-              <td><a href="#ortiz2014component" id="ortiz2014component">ortiz2014component<a/></td><td style="font-weight:bold;">A Component-Based Meta-Model and Framework in the Model Driven Toolchain C-Forge,</td><td>Ortiz, Francisco J and Alonso, Diego and Rosique, Francisca and S\ anchez-Ledesma, Francisco and Pastor, Juan A,</td><td>2014,</td>
-              <td>unknown</td>
-              </tr>
-<tr style="border-top:1px solid #000;">
-              <td><a href="#causse1993man" id="causse1993man">causse1993man<a/></td><td style="font-weight:bold;">A man machine interface for a mobile robot,</td><td>Causse, Olivier and Crowley, James L,</td><td>1993,</td>
-              <td>(E)BNF</td>
-              </tr>
-<tr style="border-top:1px solid #000;">
-              <td><a href="#hochgeschwender2013model" id="hochgeschwender2013model">hochgeschwender2013model<a/></td><td style="font-weight:bold;">A model-based approach to software deployment in robotics,</td><td>Hochgeschwender, Nico and Gherardi, Luca and Shakhirmardanov, Azamat and Kraetzschmar, Gerhard K and Brugali, Davide and Bruyninckx, Herman,</td><td>2013,</td>
-              <td>ecore</td>
-              </tr>
-<tr style="border-top:1px solid #000;">
-              <td><a href="#buch2014applying" id="buch2014applying">buch2014applying<a/></td><td style="font-weight:bold;">Applying Simulation and a Domain-Specific Language for an Adaptive Action Library,</td><td>Buch, Jacob P\orksen and Laursen, Johan Sund and S\orensen, Lars Car\oe and Ellekilde, Lars-Peter and Kraft, Dirk and Schultz, Ulrik Pagh and Petersen, Henrik Gordon,</td><td>2014,</td>
-              <td>(E)BNF</td>
-              </tr>
-<tr style="border-top:1px solid #000;">
-              <td><a href="#ramirez2011automatic" id="ramirez2011automatic">ramirez2011automatic<a/></td><td style="font-weight:bold;">Automatic derivation of utility functions for monitoring software requirements,</td><td>Ramirez, Andres J and Cheng, Betty HC,</td><td>2011,</td>
-              <td></td>
-              </tr>
-<tr style="border-top:1px solid #000;">
-              <td><a href="#lyons2013getting" id="lyons2013getting">lyons2013getting<a/></td><td style="font-weight:bold;">Getting it right the first time: Robot mission guarantees in the presence of uncertainty,</td><td>Lyons, Damian M and Arkin, Ronald C and Nirmal, Paramesh and Liu, T-M and Deeb, J and others,</td><td>2013,</td>
-              <td>unknown</td>
-              </tr>
-<tr style="border-top:1px solid #000;">
-              <td><a href="#dittes2011intelligent" id="dittes2011intelligent">dittes2011intelligent<a/></td><td style="font-weight:bold;">Intelligent system architectures-comparison by translation,</td><td>Dittes, Benjamin and Goerick, Christian,</td><td>2011,</td>
-              <td></td>
-              </tr>
-<tr style="border-top:1px solid #000;">
-              <td><a href="#gordillo1991high" id="gordillo1991high">gordillo1991high<a/></td><td style="font-weight:bold;">L E: a high level language for specifying vision verification tasks,</td><td>Gordillo, Jose L,</td><td>1991,</td>
-              <td>unknown</td>
-              </tr>
-<tr style="border-top:1px solid #000;">
-              <td><a href="#anderson2012rdis" id="anderson2012rdis">anderson2012rdis<a/></td><td style="font-weight:bold;">RDIS: Generalizing domain concepts to specify device to framework mappings,</td><td>Anderson, Monica and Bowman, Jason and Kilgo, Paul,</td><td>2012,</td>
-              <td>ANTLR grammar</td>
-              </tr>
-<tr style="border-top:1px solid #000;">
-              <td><a href="#dhouib2012robotml" id="dhouib2012robotml">dhouib2012robotml<a/></td><td style="font-weight:bold;">Robotml, a domain-specific language to design, simulate and deploy robotic applications,</td><td>Dhouib, Saadia and Kchir, Selma and Stinckwich, Serge and Ziadi, Tewfik and Ziane, Mikal,</td><td>2012,</td>
-              <td>UML/MOF</td>
-              </tr>
-<tr style="border-top:1px solid #000;">
-              <td><a href="#adam2014towards" id="adam2014towards">adam2014towards<a/></td><td style="font-weight:bold;">Towards rule-based dynamic safety monitoring for mobile robots,</td><td>Adam, Sorin and Larsen, Morten and Jensen, Kjeld and Schultz, Ulrik Pagh,</td><td>2014,</td>
-              <td>unknown</td>
-              </tr>
-<tr style="border-top:1px solid #000;">
-              <td><a href="#Ingles2010" id="Ingles2010">Ingles2010<a/></td><td style="font-weight:bold;">Dealing with Run-Time Variability in Service Robotics: Towards a DSL for Non-Functional Properties,</td><td>Ingles-Romero, J.F. and Lotz, A. and Vicente-Chicote, C. and Schlegel, C.,</td><td>2010,</td>
-              <td>(E)BNF</td>
-              </tr>
-
-</tbody></table><br />
-<h3>Platform Building</h3>
-<p>In the Platform Building phase, the robot hardware is determined. This includes the selection and potential configuration of robot's sensors and actuators meeting the requirements defined in the functional design phase.</p>
-
-<table class="sortable">
-<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
-              <td><a href="#morelli2014control" id="morelli2014control">morelli2014control<a/></td><td style="font-weight:bold;">Control and Scheduling Co-design for a Simulated Quadcopter Robot: A Model-Driven Approach,</td><td>Morelli, Matteo and Di Natale, Marco,</td><td>2014,</td>
-              <td>ecore</td>
-              </tr>
-<tr style="border-top:1px solid #000;">
-              <td><a href="#hochgeschwender2014declarative" id="hochgeschwender2014declarative">hochgeschwender2014declarative<a/></td><td style="font-weight:bold;">Declarative Specification of Robot Perception Architectures,</td><td>Hochgeschwender, Nico and Schneider, Sven and Voos, Holger and Kraetzschmar, Gerhard K,</td><td>2014,</td>
-              <td>ecore</td>
-              </tr>
-<tr style="border-top:1px solid #000;">
-              <td><a href="#jara2011ejs+" id="jara2011ejs+">jara2011ejs+<a/></td><td style="font-weight:bold;">Ejs+ EjsRL: An interactive tool for industrial robots simulation, Computer Vision and remote operation,</td><td>Jara, Carlos A and Candelas, Francisco A and Gil, Pablo and Torres, Fernando and Esquembre, Francisco and Dormido, Sebasti\ an,</td><td>2011,</td>
-              <td>other</td>
-              </tr>
-<tr style="border-top:1px solid #000;">
-              <td><a href="#ljungkrantz2007implementing" id="ljungkrantz2007implementing">ljungkrantz2007implementing<a/></td><td style="font-weight:bold;">Implementing a control system framework for automatic generation of manufacturing cell controllers,</td><td>Ljungkrantz, Oscar and Akesson, K and Richardsson, Johan and Andersson, Kristin,</td><td>2007,</td>
-              <td>XSD</td>
-              </tr>
-<tr style="border-top:1px solid #000;">
-              <td><a href="#ramaswamy2014saferobots" id="ramaswamy2014saferobots">ramaswamy2014saferobots<a/></td><td style="font-weight:bold;">SafeRobots: A model-driven Framework for developing Robotic Systems,</td><td>Ramaswamy, Arunkumar and Monsuez, Bruno and Tapus, Adriana,</td><td>2014,</td>
-              <td>ecore</td>
-              </tr>
-<tr style="border-top:1px solid #000;">
-              <td><a href="#kim2003task" id="kim2003task">kim2003task<a/></td><td style="font-weight:bold;">Task description language for underwater robots,</td><td>Kim, Tae Won and Yuh, Junku,</td><td>2003,</td>
-              <td>(E)BNF</td>
-              </tr>
-
-</tbody></table><br />
-<h3>Capability Building</h3>
-<p>In the Capability Building phase, basic and composite components are constructed up to the application-level and constraints for their deployment are specified.
-This also includes the specification and eventually generation of additional knowledge required for component execution such as knowledge bases and training data.</p>
 
 <table class="sortable">
 <thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
@@ -431,13 +441,16 @@ This also includes the specification and eventually generation of additional kno
               </tr>
 
 </tbody></table><br />
-<h3>System Deployment</h3>
-<p>In the System Deployment phase, top-level component(s) are packaged into a complete application system which defines a mapping of components and composites to computational units. Furthermore, features and procedures for system launch management are developed.</p>
+<h3>Reasoning Methods</h3>
+<p>Reasoning Methods focuse on symbol-based reasoning and knowledge representation.
+It covers logic- as well as probability-based approaches.
+Furthermore, this category also addresses learning, such as inductive logic learning, neuronal networks and reinforcement learning.
+        This subdomain corresponds to Part A, Chapter 9 in the Handbook of Robotics.</p>
 
 <table class="sortable">
 <thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
-              <td><a href="#schlegel2010design" id="schlegel2010design">schlegel2010design<a/></td><td style="font-weight:bold;">Design abstraction and processes in robotics: From code-driven to model-driven engineering,</td><td>Schlegel, Christian and Steck, Andreas and Brugali, Davide and Knoll, Alois,</td><td>2010,</td>
-              <td>UML/MOF</td>
+              <td><a href="#noreils1995plan" id="noreils1995plan">noreils1995plan<a/></td><td style="font-weight:bold;">Plan execution monitoring and control architecture for mobile robots,</td><td>Noreils, Fabrice R and Chatila, Raja G,</td><td>1995,</td>
+              <td>(E)BNF</td>
               </tr>
 
 </tbody></table><br />

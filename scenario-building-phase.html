@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="images/favicon.png">
 
-    <title>Reasoning Methods – Robotics DSL Zoo</title>
+    <title>Scenario Building – Robotics DSL Zoo</title>
 
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="sortable/bootstrap-sortable.css">
@@ -54,40 +54,47 @@
 
 <h1>Robotics DSL Zoo</h1>
 
-<h2>Subdomain „Reasoning Methods“</h2>
+<h2>Development Phase „Scenario Building“</h2>
+<p>In the Scenario Building phase, environment features, constraints and characteristics are defined. Furthermore, the robot's task is defined.
+This includes the specification of customer acceptance tests to be performed in the specified and potentially generalized environment.</p>
+<h3>Motion Control</h3>
+<p>Motion Control addresses the dynamical model of robotic manipulators. This includes different controller approaches, such as independent-joint, PID as well as torque control.
+        This subdomain corresponds to Part A, Chapter 6 in the Handbook of Robotics.</p>
+
+<table class="sortable">
+<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
+              <td><a href="#finucane2010ltlmop" id="finucane2010ltlmop">finucane2010ltlmop<a/></td><td style="font-weight:bold;">LTLMoP: Experimenting with language, temporal logic and robot control,</td><td>Finucane, Cameron and Jing, Gangyuan and Kress-Gazit, Hadas,</td><td>2010,</td>
+              <td>LTL</td>
+              </tr>
+
+</tbody></table><br />
+<h3>Architectures and Programming</h3>
+<p>Architectures and Programming refers to the way a robotic system is designed on the software-level. It can be divided into architectural structure and architectural style.
+The structure is represented by how the system is split up into subsystems and how they interact with each other.
+The style however addresses the underlying computational concepts.
+        This subdomain corresponds to Part A, Chapter 8 in the Handbook of Robotics.</p>
+
+<table class="sortable">
+<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
+              <td><a href="#knoop2007automatic" id="knoop2007automatic">knoop2007automatic<a/></td><td style="font-weight:bold;">Automatic robot programming from learned abstract task knowledge,</td><td>Knoop, Steffen and Pardowitz, Michael and Dillmann, R\ udiger,</td><td>2007,</td>
+              <td></td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#kunze2011towards" id="kunze2011towards">kunze2011towards<a/></td><td style="font-weight:bold;">Towards semantic robot description languages,</td><td>Kunze, Lars and Roehm, Tobias and Beetz, Michael,</td><td>2011,</td>
+              <td>OWL</td>
+              </tr>
+
+</tbody></table><br />
+<h3>Reasoning Methods</h3>
 <p>Reasoning Methods focuse on symbol-based reasoning and knowledge representation.
 It covers logic- as well as probability-based approaches.
 Furthermore, this category also addresses learning, such as inductive logic learning, neuronal networks and reinforcement learning.
         This subdomain corresponds to Part A, Chapter 9 in the Handbook of Robotics.</p>
-<h3>Scenario Building</h3>
-<p>In the Scenario Building phase, environment features, constraints and characteristics are defined. Furthermore, the robot's task is defined.
-This includes the specification of customer acceptance tests to be performed in the specified and potentially generalized environment.</p>
 
 <table class="sortable">
 <thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
               <td><a href="#raman2012avoiding" id="raman2012avoiding">raman2012avoiding<a/></td><td style="font-weight:bold;">Avoiding forgetfulness: Structured English specifications for high-level robot control with implicit memory,</td><td>Raman, Vasumathi and Xu, Bingxin and Kress-Gazit, Hadas,</td><td>2012,</td>
               <td>LTL</td>
-              </tr>
-
-</tbody></table><br />
-<h3>Platform Building</h3>
-<p>In the Platform Building phase, the robot hardware is determined. This includes the selection and potential configuration of robot's sensors and actuators meeting the requirements defined in the functional design phase.</p>
-
-<table class="sortable">
-<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
-              <td><a href="#bocionek1990generating" id="bocionek1990generating">bocionek1990generating<a/></td><td style="font-weight:bold;">Generating expert systems for configuration tasks,</td><td>Bocionek, S and Buchka, P and Schweiger, J,</td><td>1990,</td>
-              <td></td>
-              </tr>
-
-</tbody></table><br />
-<h3>Capability Building</h3>
-<p>In the Capability Building phase, basic and composite components are constructed up to the application-level and constraints for their deployment are specified.
-This also includes the specification and eventually generation of additional knowledge required for component execution such as knowledge bases and training data.</p>
-
-<table class="sortable">
-<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
-              <td><a href="#noreils1995plan" id="noreils1995plan">noreils1995plan<a/></td><td style="font-weight:bold;">Plan execution monitoring and control architecture for mobile robots,</td><td>Noreils, Fabrice R and Chatila, Raja G,</td><td>1995,</td>
-              <td>(E)BNF</td>
               </tr>
 
 </tbody></table><br />

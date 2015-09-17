@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/favicon.png">
+
+    <title>Development Phases – Robotics DSL Zoo</title>
+
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="sortable/bootstrap-sortable.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/custom.css">
+    
+	<script language="javascript" type="text/javascript" src="flot/jquery.js"></script>
+	<script language="javascript" type="text/javascript" src="flot/jquery.flot.js"></script>
+	<script language="javascript" type="text/javascript" src="flot/jquery.flot.categories.js"></script>
+	
+	<script type="text/javascript" src="dist/d3-cloud/lib/d3/d3.js"></script>
+	<script type="text/javascript" src="dist/d3-cloud/d3.layout.cloud.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+  </head>
+
+  <body><nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./index.html">Robotics DSL Zoo</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="./index.html">Home</a></li>
+            <li><a href="./all.html">Index</a></li>
+            <li><a href="./subdomains.html">Subdomains</a></li>
+            <li><a href="./phases.html">Development Phases</a></li>
+            <li><a href="./contribute.html">Contribute</a></li>
+            <li><a href="http://www.dslrob.org">DSLRob</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="starter-template">
+
+<h1>Robotics DSL Zoo</h1>
+
+<h2>DSLs per Development Phase</h1>
+
+ <p>One analysis to structure the domain is grouping the DSLs and their publications along the development phases they support.</p>
+
+
+<p>The table on the right shows the development phases and the numbers of publications we found respectively. This is intended to serve as a map for
+potential DSL users as well as foster discussion and reuse of languages and the underlying models
+for DSL developers.</p><script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+google.setOnLoadCallback(drawChart);
+function drawChart() {
+
+  var data = google.visualization.arrayToDataTable([
+    ['phase', '#publications'],    ['Scenario Building', 5],    ['Functional Design', 32],    ['Platform Building', 24],    ['Capability Building', 122],    ['System Deployment', 21],    ['System Benchmarking', 2],    ['Product Deployment', 2],    ['Product Maintenance', 8],  ]);
+
+  var options = {
+    title: '#publications per phase',
+    legend: { position: 'none' },
+  };
+
+  var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+
+  chart.draw(data, options);
+
+}
+    </script>
+    <div id="chart_div" style="width: 700px; height: 200px; clear:both;"></div><ul>
+<li><a href="./scenario-building-phase.html">Scenario Building</a> - In the Scenario Building phase, environment features, constraints and characteristics are defined. Furthermore, the robot's task is defined.
+This includes the specification of customer acceptance tests to be performed in the specified and potentially generalized environment.</li>
+<li><a href="./functional-design-phase.html">Functional Design</a> - In the Functional Design phase, hardware requirements and top-level functionalities are derived based on the scenario definition.
+Furthermore, top-level functionalities are decomposed and dependencies among them are identified.
+Also an initial functional design stating which functionalities interact with each other is developed.</li>
+<li><a href="./platform-building-phase.html">Platform Building</a> - In the Platform Building phase, the robot hardware is determined. This includes the selection and potential configuration of robot's sensors and actuators meeting the requirements defined in the functional design phase.</li>
+<li><a href="./capability-building-phase.html">Capability Building</a> - In the Capability Building phase, basic and composite components are constructed up to the application-level and constraints for their deployment are specified.
+This also includes the specification and eventually generation of additional knowledge required for component execution such as knowledge bases and training data.</li>
+<li><a href="./system-deployment-phase.html">System Deployment</a> - In the System Deployment phase, top-level component(s) are packaged into a complete application system which defines a mapping of components and composites to computational units. Furthermore, features and procedures for system launch management are developed.</li>
+<li><a href="./system-benchmarking-phase.html">System Benchmarking</a> - In the System Benchmarking phase, certain test procedures targeting different quality attributes
+	are performed such as stress testing, safety and security testing, reliability and durability testing, and performance testing.</li>
+<li><a href="./product-deployment-phase.html">Product Deployment</a> - In the Product Deployment phase, an application is tailored to a specific robot system. This includes also the installation of maintenance instrumentation and a final target platform system testing.</li>
+<li><a href="./product-maintenance-phase.html">Product Maintenance</a> - In the Product Maintenance phase, the robot application is operated and maintained. This includes eventually the analysis of log files and the tuning of system parameters.</li>
+</ul>
+</div>
+
+    </div>
+    
+    <div class="container">
+    <br />
+    <hr />
+    <a style="font-size:85%; color:#555;" title="A Survey on Domain-Specific Languages in Robotics" href="https://pub.uni-bielefeld.de/publication/2685039">A. Nordmann, N. Hochgeschwender, and S. Wrede, “A Survey on Domain-Specific Languages in Robotics”, International Conference on Simulation, Modeling, and Programming for Autonomous Robots, 2014</a>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="sortable/moment.min.js"></script>
+    <script src="sortable/bootstrap-sortable.js"></script>
+    
+  </body>
+</html>

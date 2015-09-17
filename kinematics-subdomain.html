@@ -40,7 +40,7 @@
             <li class="active"><a href="./index.html">Home</a></li>
             <li><a href="./all.html">Index</a></li>
             <li><a href="./subdomains.html">Subdomains</a></li>
-            <li><a href="./domain-examples.html">Domain Examples</a></li>
+            <li><a href="./phases.html">Development Phases</a></li>
             <li><a href="./contribute.html">Contribute</a></li>
             <li><a href="http://www.dslrob.org">DSLRob</a></li>
           </ul>
@@ -59,40 +59,57 @@
         Hence, it includes general representations of the position and orientation of a body,
         the relation among the joints as well as conventions for representing the geometry of rigid bodies connected by joints.
         This subdomain corresponds to Part A, Chapter 1 in the Handbook of Robotics.</p>
+<h3>Functional Design</h3>
+<p>In the Functional Design phase, hardware requirements and top-level functionalities are derived based on the scenario definition.
+Furthermore, top-level functionalities are decomposed and dependencies among them are identified.
+Also an initial functional design stating which functionalities interact with each other is developed.</p>
 
 <table class="sortable">
 <thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
-            <td><a href="#ramadorai1994generic" id="ramadorai1994generic">ramadorai1994generic<a/></td><td style="font-weight:bold;">A generic kinematics software package,</td><td>Ramadorai, Arvind K and Ganapathy, U and Guida, F,</td><td>1994,</td>
-            <td>unknown</td>
-            </tr>
+              <td><a href="#manikonda1995motion" id="manikonda1995motion">manikonda1995motion<a/></td><td style="font-weight:bold;">A motion description language and a hybrid architecture for motion planning with nonholonomic robots,</td><td>Manikonda, Vikram and Krishnaprasad, Perinkulam S and Hendler, James,</td><td>1995,</td>
+              <td>other</td>
+              </tr>
 <tr style="border-top:1px solid #000;">
-            <td><a href="#manikonda1995motion" id="manikonda1995motion">manikonda1995motion<a/></td><td style="font-weight:bold;">A motion description language and a hybrid architecture for motion planning with nonholonomic robots,</td><td>Manikonda, Vikram and Krishnaprasad, Perinkulam S and Hendler, James,</td><td>1995,</td>
-            <td>other</td>
-            </tr>
+              <td><a href="#hornby2001evolution" id="hornby2001evolution">hornby2001evolution<a/></td><td style="font-weight:bold;">Evolution of generative design systems for modular physical robots,</td><td>Hornby, Gregory S and Lipson, Hod and Pollack, Jordan B,</td><td>2001,</td>
+              <td>unknown</td>
+              </tr>
 <tr style="border-top:1px solid #000;">
-            <td><a href="#frigerio2012code" id="frigerio2012code">frigerio2012code<a/></td><td style="font-weight:bold;">Code generation of algebraic quantities for robot controllers,</td><td>Frigerio, Marco and Buchli, Jonas and Caldwell, Darwin G,</td><td>2012,</td>
-            <td>ecore</td>
-            </tr>
+              <td><a href="#frigerio2012model" id="frigerio2012model">frigerio2012model<a/></td><td style="font-weight:bold;">Model based code generation for kinematics and dynamics computations in robot controllers,</td><td>Frigerio, Marco and Buchli, Jonas and Caldwell, Darwin G,</td><td>2012,</td>
+              <td>ecore</td>
+              </tr>
+
+</tbody></table><br />
+<h3>Platform Building</h3>
+<p>In the Platform Building phase, the robot hardware is determined. This includes the selection and potential configuration of robot's sensors and actuators meeting the requirements defined in the functional design phase.</p>
+
+<table class="sortable">
+<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
+              <td><a href="#ramadorai1994generic" id="ramadorai1994generic">ramadorai1994generic<a/></td><td style="font-weight:bold;">A generic kinematics software package,</td><td>Ramadorai, Arvind K and Ganapathy, U and Guida, F,</td><td>1994,</td>
+              <td>unknown</td>
+              </tr>
 <tr style="border-top:1px solid #000;">
-            <td><a href="#hornby2001evolution" id="hornby2001evolution">hornby2001evolution<a/></td><td style="font-weight:bold;">Evolution of generative design systems for modular physical robots,</td><td>Hornby, Gregory S and Lipson, Hod and Pollack, Jordan B,</td><td>2001,</td>
-            <td>unknown</td>
-            </tr>
+              <td><a href="#bordignon2011generalized" id="bordignon2011generalized">bordignon2011generalized<a/></td><td style="font-weight:bold;">Generalized programming of modular robots through kinematic configurations,</td><td>Bordignon, Mirko and Stoy, Kasper and Schultz, Ulrik Pagh,</td><td>2011,</td>
+              <td></td>
+              </tr>
+
+</tbody></table><br />
+<h3>Capability Building</h3>
+<p>In the Capability Building phase, basic and composite components are constructed up to the application-level and constraints for their deployment are specified.
+This also includes the specification and eventually generation of additional knowledge required for component execution such as knowledge bases and training data.</p>
+
+<table class="sortable">
+<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
+              <td><a href="#frigerio2012code" id="frigerio2012code">frigerio2012code<a/></td><td style="font-weight:bold;">Code generation of algebraic quantities for robot controllers,</td><td>Frigerio, Marco and Buchli, Jonas and Caldwell, Darwin G,</td><td>2012,</td>
+              <td>ecore</td>
+              </tr>
 <tr style="border-top:1px solid #000;">
-            <td><a href="#bordignon2011generalized" id="bordignon2011generalized">bordignon2011generalized<a/></td><td style="font-weight:bold;">Generalized programming of modular robots through kinematic configurations,</td><td>Bordignon, Mirko and Stoy, Kasper and Schultz, Ulrik Pagh,</td><td>2011,</td>
-            <td></td>
-            </tr>
+              <td><a href="#kanayama2000s" id="kanayama2000s">kanayama2000s<a/></td><td style="font-weight:bold;">It s time to make mobile robots programmable,</td><td>Kanayama, Yutaka J and Wu, C Thomas,</td><td>2000,</td>
+              <td></td>
+              </tr>
 <tr style="border-top:1px solid #000;">
-            <td><a href="#kanayama2000s" id="kanayama2000s">kanayama2000s<a/></td><td style="font-weight:bold;">It s time to make mobile robots programmable,</td><td>Kanayama, Yutaka J and Wu, C Thomas,</td><td>2000,</td>
-            <td></td>
-            </tr>
-<tr style="border-top:1px solid #000;">
-            <td><a href="#frigerio2012model" id="frigerio2012model">frigerio2012model<a/></td><td style="font-weight:bold;">Model based code generation for kinematics and dynamics computations in robot controllers,</td><td>Frigerio, Marco and Buchli, Jonas and Caldwell, Darwin G,</td><td>2012,</td>
-            <td>ecore</td>
-            </tr>
-<tr style="border-top:1px solid #000;">
-            <td><a href="#Laet2012" id="Laet2012">Laet2012<a/></td><td style="font-weight:bold;"><a href="http://arxiv.org/abs/1304.1346,">Domain Specific Language for Geometric Relations between Rigid Bodies targeted to Robotic Applications,</a></td><td>Laet, Tinne De and Schaekers, Wouter and de Greef, Jonas and Bruyninckx, Herman,</td><td>2012,</td>
-            <td>xcore</td>
-            </tr>
+              <td><a href="#Laet2012" id="Laet2012">Laet2012<a/></td><td style="font-weight:bold;"><a href="http://arxiv.org/abs/1304.1346,">Domain Specific Language for Geometric Relations between Rigid Bodies targeted to Robotic Applications,</a></td><td>Laet, Tinne De and Schaekers, Wouter and de Greef, Jonas and Bruyninckx, Herman,</td><td>2012,</td>
+              <td>xcore</td>
+              </tr>
 
 </tbody></table><br />
 </div>

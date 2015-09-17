@@ -40,7 +40,7 @@
             <li class="active"><a href="./index.html">Home</a></li>
             <li><a href="./all.html">Index</a></li>
             <li><a href="./subdomains.html">Subdomains</a></li>
-            <li><a href="./domain-examples.html">Domain Examples</a></li>
+            <li><a href="./phases.html">Development Phases</a></li>
             <li><a href="./contribute.html">Contribute</a></li>
             <li><a href="http://www.dslrob.org">DSLRob</a></li>
           </ul>
@@ -57,44 +57,68 @@
 <h2>Subdomain „Motion Control“</h2>
 <p>Motion Control addresses the dynamical model of robotic manipulators. This includes different controller approaches, such as independent-joint, PID as well as torque control.
         This subdomain corresponds to Part A, Chapter 6 in the Handbook of Robotics.</p>
+<h3>Scenario Building</h3>
+<p>In the Scenario Building phase, environment features, constraints and characteristics are defined. Furthermore, the robot's task is defined.
+This includes the specification of customer acceptance tests to be performed in the specified and potentially generalized environment.</p>
 
 <table class="sortable">
 <thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
-            <td><a href="#thomas2013new" id="thomas2013new">thomas2013new<a/></td><td style="font-weight:bold;">A new skill based robot programming language using UML/P Statecharts,</td><td>Thomas, Ulrike and Hirzinger, Gerd and Rumpe, Bernhard and Schulze, Christoph and Wortmann, Andreas,</td><td>2013,</td>
-            <td>other</td>
-            </tr>
+              <td><a href="#finucane2010ltlmop" id="finucane2010ltlmop">finucane2010ltlmop<a/></td><td style="font-weight:bold;">LTLMoP: Experimenting with language, temporal logic and robot control,</td><td>Finucane, Cameron and Jing, Gangyuan and Kress-Gazit, Hadas,</td><td>2010,</td>
+              <td>LTL</td>
+              </tr>
+
+</tbody></table><br />
+<h3>Functional Design</h3>
+<p>In the Functional Design phase, hardware requirements and top-level functionalities are derived based on the scenario definition.
+Furthermore, top-level functionalities are decomposed and dependencies among them are identified.
+Also an initial functional design stating which functionalities interact with each other is developed.</p>
+
+<table class="sortable">
+<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
+              <td><a href="#thomas2013new" id="thomas2013new">thomas2013new<a/></td><td style="font-weight:bold;">A new skill based robot programming language using UML/P Statecharts,</td><td>Thomas, Ulrike and Hirzinger, Gerd and Rumpe, Bernhard and Schulze, Christoph and Wortmann, Andreas,</td><td>2013,</td>
+              <td>other</td>
+              </tr>
+
+</tbody></table><br />
+<h3>Platform Building</h3>
+<p>In the Platform Building phase, the robot hardware is determined. This includes the selection and potential configuration of robot's sensors and actuators meeting the requirements defined in the functional design phase.</p>
+
+<table class="sortable">
+<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
+              <td><a href="#kitagishi2002development" id="kitagishi2002development">kitagishi2002development<a/></td><td style="font-weight:bold;">Development of motion data description language for robots based on eXtensible Markup Language-realization of better understanding and communication via networks,</td><td>Kitagishi, Ikuo and Machino, Tamotsu and Nakayama, Akira and Iwaki, Satoshi and Okudaira, Masashi,</td><td>2002,</td>
+              <td>XSD</td>
+              </tr>
+
+</tbody></table><br />
+<h3>Capability Building</h3>
+<p>In the Capability Building phase, basic and composite components are constructed up to the application-level and constraints for their deployment are specified.
+This also includes the specification and eventually generation of additional knowledge required for component execution such as knowledge bases and training data.</p>
+
+<table class="sortable">
+<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
+              <td><a href="#nishiyama1998logic" id="nishiyama1998logic">nishiyama1998logic<a/></td><td style="font-weight:bold;">Logic specifications for multiple robots based on a current programming language,</td><td>Nishiyama, Hiroyuki and Ohwada, Hayato and Mizoguchi, Fumio,</td><td>1998,</td>
+              <td>unknown</td>
+              </tr>
 <tr style="border-top:1px solid #000;">
-            <td><a href="#kitagishi2002development" id="kitagishi2002development">kitagishi2002development<a/></td><td style="font-weight:bold;">Development of motion data description language for robots based on eXtensible Markup Language-realization of better understanding and communication via networks,</td><td>Kitagishi, Ikuo and Machino, Tamotsu and Nakayama, Akira and Iwaki, Satoshi and Okudaira, Masashi,</td><td>2002,</td>
-            <td>XSD</td>
-            </tr>
+              <td><a href="#vanthienen2013rapid" id="vanthienen2013rapid">vanthienen2013rapid<a/></td><td style="font-weight:bold;">Rapid application development of constrained-based task modelling and execution using domain specific languages,</td><td>Vanthienen, Dominick and Klotzbuucher, M and De Schutter, Joris and De Laet, Tinne and Bruyninckx, Herman,</td><td>2013,</td>
+              <td>unknown</td>
+              </tr>
 <tr style="border-top:1px solid #000;">
-            <td><a href="#finucane2010ltlmop" id="finucane2010ltlmop">finucane2010ltlmop<a/></td><td style="font-weight:bold;">LTLMoP: Experimenting with language, temporal logic and robot control,</td><td>Finucane, Cameron and Jing, Gangyuan and Kress-Gazit, Hadas,</td><td>2010,</td>
-            <td>LTL</td>
-            </tr>
+              <td><a href="#klotzbucher2011reusable" id="klotzbucher2011reusable">klotzbucher2011reusable<a/></td><td style="font-weight:bold;">Reusable hybrid force-velocity controlled motion specifications with executable domain specific languages,</td><td>Klotzbucher, M and Smits, Ruben and Bruyninckx, Herman and De Schutter, Joris,</td><td>2011,</td>
+              <td>unknown</td>
+              </tr>
 <tr style="border-top:1px solid #000;">
-            <td><a href="#nishiyama1998logic" id="nishiyama1998logic">nishiyama1998logic<a/></td><td style="font-weight:bold;">Logic specifications for multiple robots based on a current programming language,</td><td>Nishiyama, Hiroyuki and Ohwada, Hayato and Mizoguchi, Fumio,</td><td>1998,</td>
-            <td>unknown</td>
-            </tr>
+              <td><a href="#Muehe2010" id="Muehe2010">Muehe2010<a/></td><td style="font-weight:bold;"><a href="http://arxiv.org/abs/1009.5004,">On Reverse-Engineering the KUKA Robot Language,</a></td><td>Mühe, Henrik and Angerer, Andreas and Hoffmann, Alwin and Reif, Wolfgang,</td><td>2010,</td>
+              <td>unknown</td>
+              </tr>
 <tr style="border-top:1px solid #000;">
-            <td><a href="#vanthienen2013rapid" id="vanthienen2013rapid">vanthienen2013rapid<a/></td><td style="font-weight:bold;">Rapid application development of constrained-based task modelling and execution using domain specific languages,</td><td>Vanthienen, Dominick and Klotzbuucher, M and De Schutter, Joris and De Laet, Tinne and Bruyninckx, Herman,</td><td>2013,</td>
-            <td>unknown</td>
-            </tr>
+              <td><a href="#Nordmann2012c" id="Nordmann2012c">Nordmann2012c<a/></td><td style="font-weight:bold;">A Domain-Specific Language for Rich Motor Skill Architectures,</td><td>Nordmann, Arne and Wrede, Sebastian,</td><td>2012,</td>
+              <td>other</td>
+              </tr>
 <tr style="border-top:1px solid #000;">
-            <td><a href="#klotzbucher2011reusable" id="klotzbucher2011reusable">klotzbucher2011reusable<a/></td><td style="font-weight:bold;">Reusable hybrid force-velocity controlled motion specifications with executable domain specific languages,</td><td>Klotzbucher, M and Smits, Ruben and Bruyninckx, Herman and De Schutter, Joris,</td><td>2011,</td>
-            <td>unknown</td>
-            </tr>
-<tr style="border-top:1px solid #000;">
-            <td><a href="#Muehe2010" id="Muehe2010">Muehe2010<a/></td><td style="font-weight:bold;"><a href="http://arxiv.org/abs/1009.5004,">On Reverse-Engineering the KUKA Robot Language,</a></td><td>Mühe, Henrik and Angerer, Andreas and Hoffmann, Alwin and Reif, Wolfgang,</td><td>2010,</td>
-            <td>unknown</td>
-            </tr>
-<tr style="border-top:1px solid #000;">
-            <td><a href="#Nordmann2012c" id="Nordmann2012c">Nordmann2012c<a/></td><td style="font-weight:bold;">A Domain-Specific Language for Rich Motor Skill Architectures,</td><td>Nordmann, Arne and Wrede, Sebastian,</td><td>2012,</td>
-            <td>other</td>
-            </tr>
-<tr style="border-top:1px solid #000;">
-            <td><a href="#Laursen2014" id="Laursen2014">Laursen2014<a/></td><td style="font-weight:bold;"><a href="http://arxiv.org/abs/1412.4538,">Towards Error Handling in a DSL for Robot Assembly Tasks,</a></td><td>Laursen, Johan S. and Buch, Jacob P. and S\o rensen, Lars C. and Kraft, Dirk and Ellekilde, Henrik G. Petersen Lars-Peter and Schultz, Ulrik P.,</td><td>2014,</td>
-            <td>(E)BNF</td>
-            </tr>
+              <td><a href="#Laursen2014" id="Laursen2014">Laursen2014<a/></td><td style="font-weight:bold;"><a href="http://arxiv.org/abs/1412.4538,">Towards Error Handling in a DSL for Robot Assembly Tasks,</a></td><td>Laursen, Johan S. and Buch, Jacob P. and S\o rensen, Lars C. and Kraft, Dirk and Ellekilde, Henrik G. Petersen Lars-Peter and Schultz, Ulrik P.,</td><td>2014,</td>
+              <td>(E)BNF</td>
+              </tr>
 
 </tbody></table><br />
 </div>

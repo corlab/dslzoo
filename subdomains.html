@@ -40,7 +40,7 @@
             <li class="active"><a href="./index.html">Home</a></li>
             <li><a href="./all.html">Index</a></li>
             <li><a href="./subdomains.html">Subdomains</a></li>
-            <li><a href="./domain-examples.html">Domain Examples</a></li>
+            <li><a href="./phases.html">Development Phases</a></li>
             <li><a href="./contribute.html">Contribute</a></li>
             <li><a href="http://www.dslrob.org">DSLRob</a></li>
           </ul>
@@ -56,67 +56,22 @@
 
 <h2>DSLs per Subdomain</h1>
 
-
-<table class="sortable" style="float:right;">
-<tr><thead><th>subdomain</th><th  data-defaultsort="desc">#publications</th></tr></thead><tbody><tr><td><a href="./mechanisms-and-actuation-subdomain.html" title="Subdomain 'Mechanisms and Actuation'" >Mechanisms and Actuation</a></td>
-		    <td style="text-align:center;">11</td>
-		    </tr>
-<tr><td><a href="./architectures-and-programming-subdomain.html" title="Subdomain 'Architectures and Programming'" >Architectures and Programming</a></td>
-		    <td style="text-align:center;">114</td>
-		    </tr>
-<tr><td><a href="./kinematics-subdomain.html" title="Subdomain 'Kinematics'" >Kinematics</a></td>
-		    <td style="text-align:center;">13</td>
-		    </tr>
-<tr><td><a href="./components-subdomain.html" title="Subdomain 'Components'" >Components</a></td>
-		    <td style="text-align:center;">6</td>
-		    </tr>
-<tr><td><a href="./motion-control-subdomain.html" title="Subdomain 'Motion Control'" >Motion Control</a></td>
-		    <td style="text-align:center;">26</td>
-		    </tr>
-<tr><td><a href="./reasoning-methods-subdomain.html" title="Subdomain 'Reasoning Methods'" >Reasoning Methods</a></td>
-		    <td style="text-align:center;">17</td>
-		    </tr>
-<tr><td><a href="./sensing-and-estimation-subdomain.html" title="Subdomain 'Sensing and Estimation'" >Sensing and Estimation</a></td>
-		    <td style="text-align:center;">9</td>
-		    </tr>
-<tr><td><a href="./motion-planning-subdomain.html" title="Subdomain 'Motion Planning'" >Motion Planning</a></td>
-		    <td style="text-align:center;">15</td>
-		    </tr>
-<tr><td><a href="./coordination-subdomain.html" title="Subdomain 'Coordination'" >Coordination</a></td>
-		    <td style="text-align:center;">46</td>
-		    </tr>
-<tr><td><a href="./computation-subdomain.html" title="Subdomain 'Computation'" >Computation</a></td>
-		    <td style="text-align:center;">1</td>
-		    </tr>
-<tr><td><a href="./dynamics-subdomain.html" title="Subdomain 'Dynamics'" >Dynamics</a></td>
-		    <td style="text-align:center;">4</td>
-		    </tr>
-<tr><td><a href="./composition-subdomain.html" title="Subdomain 'Composition'" >Composition</a></td>
-		    <td style="text-align:center;">1</td>
-		    </tr>
-<tr><td><a href="./communication-subdomain.html" title="Subdomain 'Communication'" >Communication</a></td>
-		    <td style="text-align:center;">1</td>
-		    </tr>
-<tr><td><a href="./force-control-subdomain.html" title="Subdomain 'Force Control'" >Force Control</a></td>
-		    <td style="text-align:center;">2</td>
-		    </tr>
-
-</tbody></table><br />
  <p>One analysis to structure the domain is grouping the DSLs and their publications by common
-semantics, abstractions and use-cases according to our <a href="./domain-examples.html">domain examples</a>. The table on the right shows the identified subdomains and the numbers of publications we found in the subdomains respectively.</p>
-
-
-<p>This is intended to serve as a map for potential DSL users as well as foster discussion and reuse of languages and the underlying models
-for DSL developers. Here, Part&nbsp;A (<i>Robotics Foundations</i>) covers the fundamental principles and methods needed to create a robotic system.
+semantics, abstractions and use-cases. Here, Part&nbsp;A (<i>Robotics Foundations</i>) covers the fundamental principles and methods needed to create a robotic system.
 While developing such a system, various challenges have to be tackled in kinematics, dynamics, actuation, sensing, motion planning, control, programming and task planning.
-Thus, the subdomains chosen in this overview correspond to these categories.</p><script type="text/javascript" src="https://www.google.com/jsapi"></script>
+Thus, the subdomains chosen in this overview correspond to these categories.</p>
+
+
+<p>The table on the right shows the identified subdomains and the numbers of publications we found in the subdomains respectively.
+This is intended to serve as a map for potential DSL users as well as foster discussion and reuse of languages and the underlying models
+for DSL developers.</p><script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
 google.setOnLoadCallback(drawChart);
 function drawChart() {
 
   var data = google.visualization.arrayToDataTable([
-    ['subdomain', '#publications'],    ['Mechanisms and Actuation', 11],    ['Architectures and Programming', 114],    ['Kinematics', 13],    ['Components', 6],    ['Motion Control', 26],    ['Reasoning Methods', 17],    ['Sensing and Estimation', 9],    ['Motion Planning', 15],    ['Coordination', 46],    ['Computation', 1],    ['Dynamics', 4],    ['Composition', 1],    ['Communication', 1],    ['Force Control', 2],  ]);
+    ['subdomain', '#publications'],    ['Kinematics', 13],    ['Dynamics', 4],    ['Mechanisms and Actuation', 11],    ['Sensing and Estimation', 9],    ['Motion Planning', 15],    ['Motion Control', 26],    ['Force Control', 2],    ['Architectures and Programming', 114],    ['Reasoning Methods', 17],  ]);
 
   var options = {
     title: '#publications per subdomain',
@@ -130,43 +85,36 @@ function drawChart() {
 }
     </script>
     <div id="chart_div" style="width: 700px; height: 200px; clear:both;"></div><ul>
-<li><a href="./mechanisms-and-actuation-subdomain.html">Mechanisms and Actuation</a> - Mechanisms and Actuation focuses on the mechanical structure of a robot that creates its movable skeleton.
-        All elements that cause a robotic mechanism to move – so called actuators – are addressed along with the mathematical model that is used to characterize the robot's performance.
-        This subdomain corresponds to Part A, Chapter 3 in the Handbook of Robotics.</li>
-<li><a href="./architectures-and-programming-subdomain.html">Architectures and Programming</a> - Architectures and Programming refers to the way a robotic system is designed on the software-level. It can be divided into architectural structure and architectural style.
-The structure is represented by how the system is split up into subsystems and how they interact with each other.
-The style however addresses the underlying computational concepts.
-        This subdomain corresponds to Part A, Chapter 8 in the Handbook of Robotics.</li>
 <li><a href="./kinematics-subdomain.html">Kinematics</a> - Kinematics refers to the motion of bodies in robotic mechanisms without taking the forces/torques causing the motion into account.
         Hence, it includes general representations of the position and orientation of a body,
         the relation among the joints as well as conventions for representing the geometry of rigid bodies connected by joints.
         This subdomain corresponds to Part A, Chapter 1 in the Handbook of Robotics.</li>
-<li><a href="./components-subdomain.html">Components</a> - </li>
-<li><a href="./motion-control-subdomain.html">Motion Control</a> - Motion Control addresses the dynamical model of robotic manipulators. This includes different controller approaches, such as independent-joint, PID as well as torque control.
-        This subdomain corresponds to Part A, Chapter 6 in the Handbook of Robotics.</li>
-<li><a href="./reasoning-methods-subdomain.html">Reasoning Methods</a> - Reasoning Methods focuse on symbol-based reasoning and knowledge representation.
-It covers logic- as well as probability-based approaches.
-Furthermore, this category also addresses learning, such as inductive logic learning, neuronal networks and reinforcement learning.
-        This subdomain corresponds to Part A, Chapter 9 in the Handbook of Robotics.</li>
+<li><a href="./dynamics-subdomain.html">Dynamics</a> - Dynamics covers the relationships between actuation and contact forces that act on robot mechanisms.
+        Such a mechanism in this sense is described by rigid bodies connected by joints.
+        Furthermore, it pertains to the acceleration and motion trajectories resulting from these relationships.
+        This subdomain corresponds to Part A, Chapter 2 in the Handbook of Robotics.</li>
+<li><a href="./mechanisms-and-actuation-subdomain.html">Mechanisms and Actuation</a> - Mechanisms and Actuation focuses on the mechanical structure of a robot that creates its movable skeleton.
+        All elements that cause a robotic mechanism to move – so called actuators – are addressed along with the mathematical model that is used to characterize the robot's performance.
+        This subdomain corresponds to Part A, Chapter 3 in the Handbook of Robotics.</li>
 <li><a href="./sensing-and-estimation-subdomain.html">Sensing and Estimation</a> - Sensing and Estimation ranges from robot-state estimation for feedback control to task-oriented interpretation of sensor data of any kind.
         Apart from estimation techniques, this category also covers different kinds of information representations.
         This subdomain corresponds to Part A, Chapter 4 in the Handbook of Robotics.</li>
 <li><a href="./motion-planning-subdomain.html">Motion Planning</a> - Motion Planning covers collision-free trajectory planning for mobile platforms as well as robot actuators.
         This subdomain corresponds to Part A, Chapter 5 in the Handbook of Robotics.</li>
-<li><a href="./coordination-subdomain.html">Coordination</a> - For most robot tasks like object detection/recognition and
-        object manipulation, there are several options to approach the
-        problem which requires Coordination primitives such as finite-state machines.</li>
-<li><a href="./computation-subdomain.html">Computation</a> - </li>
-<li><a href="./dynamics-subdomain.html">Dynamics</a> - Dynamics covers the relationships between actuation and contact forces that act on robot mechanisms.
-        Such a mechanism in this sense is described by rigid bodies connected by joints.
-        Furthermore, it pertains to the acceleration and motion trajectories resulting from these relationships.
-        This subdomain corresponds to Part A, Chapter 2 in the Handbook of Robotics.</li>
-<li><a href="./composition-subdomain.html">Composition</a> - </li>
-<li><a href="./communication-subdomain.html">Communication</a> - </li>
+<li><a href="./motion-control-subdomain.html">Motion Control</a> - Motion Control addresses the dynamical model of robotic manipulators. This includes different controller approaches, such as independent-joint, PID as well as torque control.
+        This subdomain corresponds to Part A, Chapter 6 in the Handbook of Robotics.</li>
 <li><a href="./force-control-subdomain.html">Force Control</a> - Force Control pertains to the achievement of a robust and dynamic behavior of robotic systems in compliant interaction between robot and environment.
 Similar to the Motion Control category, it includes different control aspects,
 e.g., stiffness and impedance control.
         This subdomain corresponds to Part A, Chapter 7 in the Handbook of Robotics.</li>
+<li><a href="./architectures-and-programming-subdomain.html">Architectures and Programming</a> - Architectures and Programming refers to the way a robotic system is designed on the software-level. It can be divided into architectural structure and architectural style.
+The structure is represented by how the system is split up into subsystems and how they interact with each other.
+The style however addresses the underlying computational concepts.
+        This subdomain corresponds to Part A, Chapter 8 in the Handbook of Robotics.</li>
+<li><a href="./reasoning-methods-subdomain.html">Reasoning Methods</a> - Reasoning Methods focuse on symbol-based reasoning and knowledge representation.
+It covers logic- as well as probability-based approaches.
+Furthermore, this category also addresses learning, such as inductive logic learning, neuronal networks and reinforcement learning.
+        This subdomain corresponds to Part A, Chapter 9 in the Handbook of Robotics.</li>
 </ul>
 </div>
 

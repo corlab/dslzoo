@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/favicon.png">
+
+    <title>Platform Building – Robotics DSL Zoo</title>
+
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="sortable/bootstrap-sortable.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/custom.css">
+    
+	<script language="javascript" type="text/javascript" src="flot/jquery.js"></script>
+	<script language="javascript" type="text/javascript" src="flot/jquery.flot.js"></script>
+	<script language="javascript" type="text/javascript" src="flot/jquery.flot.categories.js"></script>
+	
+	<script type="text/javascript" src="dist/d3-cloud/lib/d3/d3.js"></script>
+	<script type="text/javascript" src="dist/d3-cloud/d3.layout.cloud.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+  </head>
+
+  <body><nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./index.html">Robotics DSL Zoo</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="./index.html">Home</a></li>
+            <li><a href="./all.html">Index</a></li>
+            <li><a href="./subdomains.html">Subdomains</a></li>
+            <li><a href="./phases.html">Development Phases</a></li>
+            <li><a href="./contribute.html">Contribute</a></li>
+            <li><a href="http://www.dslrob.org">DSLRob</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="starter-template">
+
+<h1>Robotics DSL Zoo</h1>
+
+<h2>Development Phase „Platform Building“</h2>
+<p>In the Platform Building phase, the robot hardware is determined. This includes the selection and potential configuration of robot's sensors and actuators meeting the requirements defined in the functional design phase.</p>
+<h3>Kinematics</h3>
+<p>Kinematics refers to the motion of bodies in robotic mechanisms without taking the forces/torques causing the motion into account.
+        Hence, it includes general representations of the position and orientation of a body,
+        the relation among the joints as well as conventions for representing the geometry of rigid bodies connected by joints.
+        This subdomain corresponds to Part A, Chapter 1 in the Handbook of Robotics.</p>
+
+<table class="sortable">
+<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
+              <td><a href="#ramadorai1994generic" id="ramadorai1994generic">ramadorai1994generic<a/></td><td style="font-weight:bold;">A generic kinematics software package,</td><td>Ramadorai, Arvind K and Ganapathy, U and Guida, F,</td><td>1994,</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#bordignon2011generalized" id="bordignon2011generalized">bordignon2011generalized<a/></td><td style="font-weight:bold;">Generalized programming of modular robots through kinematic configurations,</td><td>Bordignon, Mirko and Stoy, Kasper and Schultz, Ulrik Pagh,</td><td>2011,</td>
+              <td></td>
+              </tr>
+
+</tbody></table><br />
+<h3>Mechanisms and Actuation</h3>
+<p>Mechanisms and Actuation focuses on the mechanical structure of a robot that creates its movable skeleton.
+        All elements that cause a robotic mechanism to move – so called actuators – are addressed along with the mathematical model that is used to characterize the robot's performance.
+        This subdomain corresponds to Part A, Chapter 3 in the Handbook of Robotics.</p>
+
+<table class="sortable">
+<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
+              <td><a href="#kilgo2012visual" id="kilgo2012visual">kilgo2012visual<a/></td><td style="font-weight:bold;">A Visual Modeling Language for RDIS and ROS Nodes Using AToM3,</td><td>Kilgo, Paul and Syriani, Eugene and Anderson, Monica,</td><td>2012,</td>
+              <td></td>
+              </tr>
+
+</tbody></table><br />
+<h3>Sensing and Estimation</h3>
+<p>Sensing and Estimation ranges from robot-state estimation for feedback control to task-oriented interpretation of sensor data of any kind.
+        Apart from estimation techniques, this category also covers different kinds of information representations.
+        This subdomain corresponds to Part A, Chapter 4 in the Handbook of Robotics.</p>
+
+<table class="sortable">
+<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
+              <td><a href="#fryer1998resource" id="fryer1998resource">fryer1998resource<a/></td><td style="font-weight:bold;">Resource modelling and combination in modular robotics systems,</td><td>Fryer, J Andrew and McKee, Gerard T,</td><td>1998,</td>
+              <td>unknown</td>
+              </tr>
+
+</tbody></table><br />
+<h3>Motion Control</h3>
+<p>Motion Control addresses the dynamical model of robotic manipulators. This includes different controller approaches, such as independent-joint, PID as well as torque control.
+        This subdomain corresponds to Part A, Chapter 6 in the Handbook of Robotics.</p>
+
+<table class="sortable">
+<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
+              <td><a href="#kitagishi2002development" id="kitagishi2002development">kitagishi2002development<a/></td><td style="font-weight:bold;">Development of motion data description language for robots based on eXtensible Markup Language-realization of better understanding and communication via networks,</td><td>Kitagishi, Ikuo and Machino, Tamotsu and Nakayama, Akira and Iwaki, Satoshi and Okudaira, Masashi,</td><td>2002,</td>
+              <td>XSD</td>
+              </tr>
+
+</tbody></table><br />
+<h3>Architectures and Programming</h3>
+<p>Architectures and Programming refers to the way a robotic system is designed on the software-level. It can be divided into architectural structure and architectural style.
+The structure is represented by how the system is split up into subsystems and how they interact with each other.
+The style however addresses the underlying computational concepts.
+        This subdomain corresponds to Part A, Chapter 8 in the Handbook of Robotics.</p>
+
+<table class="sortable">
+<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
+              <td><a href="#morelli2014control" id="morelli2014control">morelli2014control<a/></td><td style="font-weight:bold;">Control and Scheduling Co-design for a Simulated Quadcopter Robot: A Model-Driven Approach,</td><td>Morelli, Matteo and Di Natale, Marco,</td><td>2014,</td>
+              <td>ecore</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#hochgeschwender2014declarative" id="hochgeschwender2014declarative">hochgeschwender2014declarative<a/></td><td style="font-weight:bold;">Declarative Specification of Robot Perception Architectures,</td><td>Hochgeschwender, Nico and Schneider, Sven and Voos, Holger and Kraetzschmar, Gerhard K,</td><td>2014,</td>
+              <td>ecore</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#jara2011ejs+" id="jara2011ejs+">jara2011ejs+<a/></td><td style="font-weight:bold;">Ejs+ EjsRL: An interactive tool for industrial robots simulation, Computer Vision and remote operation,</td><td>Jara, Carlos A and Candelas, Francisco A and Gil, Pablo and Torres, Fernando and Esquembre, Francisco and Dormido, Sebasti\ an,</td><td>2011,</td>
+              <td>other</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#ljungkrantz2007implementing" id="ljungkrantz2007implementing">ljungkrantz2007implementing<a/></td><td style="font-weight:bold;">Implementing a control system framework for automatic generation of manufacturing cell controllers,</td><td>Ljungkrantz, Oscar and Akesson, K and Richardsson, Johan and Andersson, Kristin,</td><td>2007,</td>
+              <td>XSD</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#ramaswamy2014saferobots" id="ramaswamy2014saferobots">ramaswamy2014saferobots<a/></td><td style="font-weight:bold;">SafeRobots: A model-driven Framework for developing Robotic Systems,</td><td>Ramaswamy, Arunkumar and Monsuez, Bruno and Tapus, Adriana,</td><td>2014,</td>
+              <td>ecore</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#kim2003task" id="kim2003task">kim2003task<a/></td><td style="font-weight:bold;">Task description language for underwater robots,</td><td>Kim, Tae Won and Yuh, Junku,</td><td>2003,</td>
+              <td>(E)BNF</td>
+              </tr>
+
+</tbody></table><br />
+<h3>Reasoning Methods</h3>
+<p>Reasoning Methods focuse on symbol-based reasoning and knowledge representation.
+It covers logic- as well as probability-based approaches.
+Furthermore, this category also addresses learning, such as inductive logic learning, neuronal networks and reinforcement learning.
+        This subdomain corresponds to Part A, Chapter 9 in the Handbook of Robotics.</p>
+
+<table class="sortable">
+<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
+              <td><a href="#bocionek1990generating" id="bocionek1990generating">bocionek1990generating<a/></td><td style="font-weight:bold;">Generating expert systems for configuration tasks,</td><td>Bocionek, S and Buchka, P and Schweiger, J,</td><td>1990,</td>
+              <td></td>
+              </tr>
+
+</tbody></table><br />
+</div>
+
+    </div>
+    
+    <div class="container">
+    <br />
+    <hr />
+    <a style="font-size:85%; color:#555;" title="A Survey on Domain-Specific Languages in Robotics" href="https://pub.uni-bielefeld.de/publication/2685039">A. Nordmann, N. Hochgeschwender, and S. Wrede, “A Survey on Domain-Specific Languages in Robotics”, International Conference on Simulation, Modeling, and Programming for Autonomous Robots, 2014</a>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="sortable/moment.min.js"></script>
+    <script src="sortable/bootstrap-sortable.js"></script>
+    
+  </body>
+</html>
