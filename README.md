@@ -7,7 +7,7 @@ query.py is a Python script that performs a number of queries to Google Scholar 
 Dependendies
 ------------
 
-The script builds upon [scholar.py](https://github.com/norro/scholar.py) by Christian Kreibich, in a patched version available [here](https://github.com/norro/scholar.py).
+The script requires [scholar.py](https://github.com/ckreibich/scholar.py) by Christian Kreibich, in a patched version available [here](https://github.com/norro/scholar.py).
 
 
 Note
