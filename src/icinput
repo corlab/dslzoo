@@ -1,0 +1,111 @@
+{
+  'IC1': { # robotics
+      'conferences' : {
+          'IROS': {       # IROS
+              'query':    '"Intelligent Robots and Systems"',
+              'valid':    'international.conference.on|Int..Conf..on|IROS|Intelligent.Robots.and.Systems',
+              'invalid':  'workshop|tutorial|symposium'
+            },
+          'ICRA': {       # ICRA
+              'query':    '"Robotics and Automation"',
+              'valid':    'international.conference.on|Int..Conf..on|ICRA',
+              'invalid':  'workshop|tutorial|symposium|signal.processing'
+            },
+          'SIMPAR': {     # SIMPAR
+              'query':    '"Simulation Modeling and Programming for Autonomous Robots"',
+              'invalid':  'workshop|tutorial|symposium'
+            },
+          'RSS': {        # RSS
+              'query':    '"Robotics Science and Systems"',
+              'invalid':  'workshop|tutorial|symposium'
+            },
+          'JOSER': {      # JOSER
+              'query':    'Journal Software Engineering Robotics',
+              'valid':    'Journal.of|JOSER|Software.Engineering.for.Robotics',
+              'invalid':  'workshop|tutorial|symposium|conference'
+            },
+          'TRO': {        # TRO
+              'query':    'Transactions Robotics',
+              'valid':    'Transactions|TRO',
+              'invalid':  'workshop|tutorial|symposium|conference'
+            },
+          'AURO': {       # AURO
+              'query':    '"Autonomous Robots"',
+              'valid':    'Autonomous.Robots|AURO|Springer',
+              'invalid':  'workshop|tutorial|symposium|conference|simulation|simpar'
+            },
+          'RAS': {        # RAS
+              'query':    '"Robotics and Autonomous Systems"',
+              'valid':    'RAS|Elsevier|Robotics.and.Autonomous.Systems',
+              'invalid':  'workshop|tutorial|symposium|conference'
+            },
+          'SDIR': {       # SDIR
+              'query':    'Software Development and Integration in Robotics',
+              'valid':    'workshop|SDIR|Software.Development.and.Integration.in.Robotics',
+            },
+          'IJRS': {       # IJRS
+              'query':    'Journal of Robotic Systems',
+              'valid':    'Journal.of.Robotic.Systems|jhrs|hrs',
+              'invalid':  'Intelligent|ADVANCED'
+            },
+          'IJFR': {       # IJFR
+              'query':    'Journal of Field Robotics',
+              'valid':    'Journal.of.Field.Robotics|ijfr|jfr',
+            },
+        },
+      'keywords': [
+        'domain specific language',
+        'domain specific languages',
+        'domain specific modeling language',
+        'domain specific modeling languages',
+        'generative programming',
+        'specification language',
+        'specification languages',
+        'description language',
+        'description languages',
+        'code generation',
+        'dsl',
+        'dsls',
+        'metamodeling',
+        'meta modeling',
+        'metamodel',
+        'metamodels',
+        'meta model',
+        'meta models',
+        'MDE',
+        'MDSD',
+        ],
+    },
+  'IC2': { # software
+      'conferences' : {
+          'CG': {         # CG
+              'query':    'Code Generation',
+              'invalid':  'workshop|tutorial|symposium'
+            },
+          'GPCE': {       # GPCE
+              'query':    'Generative Programming Concepts and Experiences',
+              'invalid':  'workshop|tutorial|symposium'
+            },
+          'MODELS': {     # MODELS
+              'query':    'Model Driven Engineering Languages and Systems',
+              'invalid':  'workshop|tutorial|symposium'
+            },
+          'MODELSWARD': { # MODELSWARD
+              'query':    'Model Driven Engineering and Software Development',
+              'invalid':  'workshop|tutorial|symposium'
+            },
+          'SE': {         # SE
+              'query':    'Conference "Software Engineering"',
+              'valid':    'proceedings|international.conference|ICSE',
+              'invalid':  'workshop|tutorial|symposium|Data.Mining|SEDM|Working|Artificial.Intelligence|Networking|SNPD|SEAA|SEFM|CiSE|SERP|SERA|Knowledge|Computer.Science|Asia|Automated|Real.Time|ICSEA|CSEE|ICSESS|Korea|IASTED|Education|Formal|Malaysian|Companion|European|Techniques|ICODSE|WSEAS|Applications|GE|Computer.Systems|Future|Information.Technology|Predictive.Models|Australian|Economics|Improving|Advances|Annual'
+            },
+        },
+      'keywords': [
+        'robot',
+        'robots',
+        'robotic',
+        'robotics',
+        ],
+    },
+}
+
