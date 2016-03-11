@@ -57,67 +57,67 @@
 
 <h2>An Overview of Domain-Specific Languages in Robotics</h1>
 
-<p><b>hosted by <a href="http://www.dslrob.org">DSLRob</a>, initiated and maintained  by <a href="http://www.cor-lab.org/users/anordman">A. Nordmann</a>, <a href="http://www2.inf.fh-bonn-rhein-sieg.de/~nhochg2m/">N. Hochgeschwender </a> and <a href="http://www.cor-lab.org/users/swrede">S. Wrede</a>, updated on March 11th 2016</b></p>
+<p><b>hosted by <a href="http://www.dslrob.org">DSLRob</a>, initiated and maintained  by <a href="http://www.cor-lab.org/users/anordman">A. Nordmann</a>, <a href="http://www2.inf.fh-bonn-rhein-sieg.de/~nhochg2m/">N. Hochgeschwender </a>, <a href="http://www.cor-lab.org/users/dwigand">D. Wigand</a>, and <a href="http://www.cor-lab.org/users/swrede">S. Wrede</a>, updated on March 11th 2016</b></p>
 
 <table><tr><td>This page provides an annotated bibliography of domain-specific languages in the area of robotics and automation technology facilitating the exchange between people interested in applying model-driven and domain-specific language engineering in these domains. Our goal is to incrementally capture the state of the art in the adoption of the domain-specific languages (DSL)<a href="#DSL"><sup>1</sup></a> idea and (on the long run) provide an assessment which parts of the design space of relevant robotics domains are already supported.</p>
 
-<p>Practically, we aim to provide not only the references to the underlying publications but also augment the bibliography with metadata about the language workbench or tool used and links to documentation and software if publicly available to support also practical reuse of domain-specific language models. Similar efforts, yet for the wider scope of robotics in general, have been conducted by <a href="#VanDeursen2000">Van Deursen et al.</a>, whose survey inspired the annotated bibliography format or the <a href="http://emftext.org/index.php/EMFText_Concrete_Syntax_Zoo">EMFText concrete syntax</a> zoo as a website focused at the interchange of Eclipse/EMF-based language implementations.</p>
+<p>Practically, we aim to provide not only the references to the underlying publications but also augment the bibliography with metadata about the language workbench or tool used and links to documentation and software if publicly available to support also practical reuse of domain-specific language models. Similar efforts, yet for the wider scope of robotics in general, have been conducted by Van Deursen et al. <a href="#VanDeursen2000">[1]</a>, whose survey inspired the annotated bibliography format or the <a href="http://emftext.org/index.php/EMFText_Concrete_Syntax_Zoo">EMFText concrete syntax</a> zoo as a website focused at the interchange of Eclipse/EMF-based language implementations.</p>
 
 <p>For a survey including a more detailed analysis and discussion, please refer to: 
-<a href="">A. Nordmann, N. Hochgeschwender, and S. Wrede, “A Survey on Domain-Specific Languages in Robotics”, Journal of Software Engineering for Robotics (JOSER), 2016.<td/><td></td></tr></table><div>
+<a href="https://pub.uni-bielefeld.de/publication/2788380">A. Nordmann, N. Hochgeschwender, D. Wigand, and S. Wrede, “A Survey on Domain-Specific Modeling and Languages in Robotics”, Journal of Software Engineering for Robotics (JOSER), 2016.<td/><td></td></tr></table><div>
 <svg id="cloudcontainer" name="cloudcontainer" width="100%" style="width:100%;" />
 <script>
   var fill = d3.scale.ordinal().range(["#0570b0", "#023858", "#d0d1e6", "#a6bddb", "#74a9cf", "#54799f", "#3690c0", "#045a8d", "#3690c0"]);
-  var words = [{ "text" : "motion", "size" : 26, "color":	"#555582"},
-          { "text" : "tasks", "size" : 18, "color":	"#555578"},
-          { "text" : "robot", "size" : 74, "color":	"#5555be"},
-          { "text" : "domain", "size" : 26, "color":	"#555582"},
-          { "text" : "development", "size" : 18, "color":	"#555578"},
-          { "text" : "description", "size" : 18, "color":	"#555578"},
-          { "text" : "engineering", "size" : 18, "color":	"#555578"},
-          { "text" : "semantics", "size" : 10, "color":	"#55556e"},
-          { "text" : "language", "size" : 66, "color":	"#5555b4"},
-          { "text" : "multiple", "size" : 18, "color":	"#555578"},
-          { "text" : "languages", "size" : 18, "color":	"#555578"},
-          { "text" : "specific", "size" : 18, "color":	"#555578"},
-          { "text" : "hierarchical", "size" : 18, "color":	"#555578"},
-          { "text" : "prototyping", "size" : 10, "color":	"#55556e"},
-          { "text" : "component", "size" : 10, "color":	"#55556e"},
-          { "text" : "execution", "size" : 26, "color":	"#555582"},
-          { "text" : "automatic", "size" : 18, "color":	"#555578"},
-          { "text" : "virtual", "size" : 10, "color":	"#55556e"},
-          { "text" : "managing", "size" : 10, "color":	"#55556e"},
-          { "text" : "exploration", "size" : 10, "color":	"#55556e"},
-          { "text" : "rdis", "size" : 10, "color":	"#55556e"},
-          { "text" : "time", "size" : 10, "color":	"#55556e"},
-          { "text" : "functional", "size" : 10, "color":	"#55556e"},
-          { "text" : "architectures", "size" : 10, "color":	"#55556e"},
-          { "text" : "object", "size" : 10, "color":	"#55556e"},
-          { "text" : "enabling", "size" : 10, "color":	"#55556e"},
-          { "text" : "environment", "size" : 18, "color":	"#555578"},
-          { "text" : "control", "size" : 42, "color":	"#555596"},
-          { "text" : "kinematics", "size" : 10, "color":	"#55556e"},
-          { "text" : "synthesis", "size" : 18, "color":	"#555578"},
-          { "text" : "controller", "size" : 10, "color":	"#55556e"},
-          { "text" : "declarative", "size" : 18, "color":	"#555578"},
-          { "text" : "reconfigurable", "size" : 10, "color":	"#55556e"},
-          { "text" : "controllers", "size" : 18, "color":	"#555578"},
-          { "text" : "implementation", "size" : 10, "color":	"#55556e"},
-          { "text" : "complex", "size" : 10, "color":	"#55556e"},
-          { "text" : "generation", "size" : 18, "color":	"#555578"},
-          { "text" : "domainspecific", "size" : 18, "color":	"#555578"},
-          { "text" : "variants", "size" : 10, "color":	"#55556e"},
-          { "text" : "hybrid", "size" : 10, "color":	"#55556e"},
-          { "text" : "application", "size" : 10, "color":	"#55556e"},
-          { "text" : "dynamic", "size" : 18, "color":	"#555578"},
-          { "text" : "architecture", "size" : 26, "color":	"#555582"},
-          { "text" : "dynamics", "size" : 10, "color":	"#55556e"},
-          { "text" : "state", "size" : 10, "color":	"#55556e"},
-          { "text" : "modelling", "size" : 18, "color":	"#555578"},
-          { "text" : "specifications", "size" : 10, "color":	"#55556e"},
-          { "text" : "logic", "size" : 10, "color":	"#55556e"},
-          { "text" : "verification", "size" : 10, "color":	"#55556e"},
-          { "text" : "validation", "size" : 10, "color":	"#55556e"},
+  var words = [{ "text" : "semantics", "size" : 18, "color":	"#555578"},
+          { "text" : "verification", "size" : 18, "color":	"#555578"},
+          { "text" : "controller", "size" : 26, "color":	"#555582"},
+          { "text" : "systems", "size" : 74, "color":	"#5555be"},
+          { "text" : "specifying", "size" : 26, "color":	"#555582"},
+          { "text" : "variants", "size" : 18, "color":	"#555578"},
+          { "text" : "controllers", "size" : 34, "color":	"#55558c"},
+          { "text" : "monitoring", "size" : 26, "color":	"#555582"},
+          { "text" : "assembly", "size" : 18, "color":	"#555578"},
+          { "text" : "functional", "size" : 18, "color":	"#555578"},
+          { "text" : "task", "size" : 58, "color":	"#5555aa"},
+          { "text" : "hybrid", "size" : 26, "color":	"#555582"},
+          { "text" : "english", "size" : 18, "color":	"#555578"},
+          { "text" : "autonomous", "size" : 42, "color":	"#555596"},
+          { "text" : "through", "size" : 18, "color":	"#555578"},
+          { "text" : "tasks", "size" : 42, "color":	"#555596"},
+          { "text" : "modelling", "size" : 26, "color":	"#555582"},
+          { "text" : "motion", "size" : 58, "color":	"#5555aa"},
+          { "text" : "modelbased", "size" : 18, "color":	"#555578"},
+          { "text" : "toolchain", "size" : 18, "color":	"#555578"},
+          { "text" : "modular", "size" : 42, "color":	"#555596"},
+          { "text" : "robotic", "size" : 74, "color":	"#5555be"},
+          { "text" : "linguistic", "size" : 18, "color":	"#555578"},
+          { "text" : "robotics", "size" : 66, "color":	"#5555b4"},
+          { "text" : "primitives", "size" : 18, "color":	"#555578"},
+          { "text" : "multirobot", "size" : 18, "color":	"#555578"},
+          { "text" : "architectures", "size" : 26, "color":	"#555582"},
+          { "text" : "dynamics", "size" : 18, "color":	"#555578"},
+          { "text" : "simulation", "size" : 26, "color":	"#555582"},
+          { "text" : "physical", "size" : 18, "color":	"#555578"},
+          { "text" : "kinematic", "size" : 18, "color":	"#555578"},
+          { "text" : "specific", "size" : 50, "color":	"#5555a0"},
+          { "text" : "exploration", "size" : 18, "color":	"#555578"},
+          { "text" : "specifications", "size" : 26, "color":	"#555582"},
+          { "text" : "service", "size" : 26, "color":	"#555582"},
+          { "text" : "formal", "size" : 26, "color":	"#555582"},
+          { "text" : "framework", "size" : 66, "color":	"#5555b4"},
+          { "text" : "system", "size" : 42, "color":	"#555596"},
+          { "text" : "programming", "size" : 74, "color":	"#5555be"},
+          { "text" : "declarative", "size" : 26, "color":	"#555582"},
+          { "text" : "rdis", "size" : 18, "color":	"#555578"},
+          { "text" : "managing", "size" : 26, "color":	"#555582"},
+          { "text" : "programmable", "size" : 18, "color":	"#555578"},
+          { "text" : "skill", "size" : 26, "color":	"#555582"},
+          { "text" : "approach", "size" : 50, "color":	"#5555a0"},
+          { "text" : "highlevel", "size" : 26, "color":	"#555582"},
+          { "text" : "rapid", "size" : 26, "color":	"#555582"},
+          { "text" : "engineering", "size" : 34, "color":	"#55558c"},
+          { "text" : "specification", "size" : 66, "color":	"#5555b4"},
+          { "text" : "variability", "size" : 18, "color":	"#555578"},
           ];
     d3.layout.cloud().size([900, 300])
       .words(words)
@@ -145,7 +145,7 @@
         .text(function(d) { return d.text; });
   }
 </script>
-</div><p>If you've got a language or robotics-related DSL work on your mind you'd like to include, or spotted erronous or missing information, please <a href="./contribute.html">contribute</a> to this community effort.</p>
+</div><p></p>
 
 <p><a id="DSL"><sup>1</sup></a> A DSL in this context is a <i>"focussed, processable language for describing a specific concern when building a system in a specific domain. The abstractions and notations used are natural/suitable for the stakeholders who specify that particular concern"</i> <a href="http://www.voelter.de/data/presentations/VAMOS2011.pdf">[Voelter]<a/>.</p>
 </div>
