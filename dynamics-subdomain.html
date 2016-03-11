@@ -60,7 +60,37 @@
         Such a mechanism in this sense is described by rigid bodies connected by joints.
         Furthermore, it pertains to the acceleration and motion trajectories resulting from these relationships.
         This subdomain corresponds to Part A, Chapter 2 in the Handbook of Robotics.</p>
-<h3>Functional Design</h3>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+          google.load("visualization", "1", {packages:["corechart"]});
+    google.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['phase', '#publications'],    ['Scenario Building', 0],    ['Functional Design', 2],    ['Platform Building', 1],    ['Capability Building', 4],    ['System Deployment', 0],    ['System Benchmarking', 0],    ['Product Deployment', 0],    ['Product Maintenance', 0],  ]);
+      var options = {
+        title: '#publications per development phase',
+        legend: { position: 'none' },
+      };
+      var chart_ph = new google.visualization.ColumnChart(document.getElementById('chart_div_ph'));
+      chart_ph.draw(data, options);
+    }
+        </script>
+        <div id="chart_div_ph" style="width: 550px; height: 200px; float:left;"></div><script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+          google.load("visualization", "1", {packages:["corechart"]});
+    google.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['year', '#publications'],    ['1984', 0],    ['1985', 0],    ['1986', 0],    ['1987', 0],    ['1988', 0],    ['1989', 0],    ['1990', 0],    ['1991', 0],    ['1992', 0],    ['1993', 0],    ['1994', 0],    ['1995', 0],    ['1996', 0],    ['1997', 0],    ['1998', 0],    ['1999', 0],    ['2000', 0],    ['2001', 0],    ['2002', 0],    ['2003', 0],    ['2004', 0],    ['2005', 0],    ['2006', 0],    ['2007', 0],    ['2008', 0],    ['2009', 0],    ['2010', 0],    ['2011', 1],    ['2012', 2],    ['2013', 0],    ['2014', 1],    ['2015', 0],    ['2016', 0],  ]);
+      var options = {
+        title: '#publications per year',
+        legend: { position: 'none' },
+      };
+      var chart_disc = new google.visualization.ColumnChart(document.getElementById('chart_div_year'));
+      chart_disc.draw(data, options);
+    }
+        </script>
+        <div id="chart_div_year" style="width: 550px; height: 200px; float:left;"></div><h3>Functional Design</h3>
 <p>In the Functional Design phase, hardware requirements and top-level functionalities are derived based on the scenario definition.
 Furthermore, top-level functionalities are decomposed and dependencies among them are identified.
 Also an initial functional design stating which functionalities interact with each other is developed.</p>
@@ -116,7 +146,10 @@ This also includes the specification and eventually generation of additional kno
     <div class="container">
     <br />
     <hr />
-    <a style="font-size:85%; color:#555;" title="A Survey on Domain-Specific Modeling Languages in Robotics" href="">A. Nordmann, N. Hochgeschwender, D.Wigand and S. Wrede, “A Survey on Domain-Specific Modeling Languages in Robotics”, Journal of Software Engineering for Robotics (JOSER), 2016</a>
+    <p style="font-size:85%; color:#555;" ><a style="color:#555;" title="A Survey on Domain-Specific Modeling Languages in Robotics" href="">A. Nordmann, N. Hochgeschwender, D.Wigand and S. Wrede, “A Survey on Domain-Specific Modeling Languages in Robotics”, Journal of Software Engineering for Robotics (JOSER), 2016</a><br />
+    An important DSL is missing? Here is how to <a href="./contribute.html">contribute</a>.<br />
+    When referring to l<br />
+    </p>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

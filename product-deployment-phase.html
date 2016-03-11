@@ -57,7 +57,37 @@
 
 <h2>Development Phase „Product Deployment“</h2>
 <p>In the Product Deployment phase, an application is tailored to a specific robot system. This includes also the installation of maintenance instrumentation and a final target platform system testing.</p>
-<h3>Architectures and Programming</h3>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+          google.load("visualization", "1", {packages:["corechart"]});
+    google.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['phase', '#publications'],    ['Kinematics', 0],    ['Dynamics', 0],    ['Mechanisms and Actuation', 0],    ['Sensing and Estimation', 0],    ['Motion Planning', 0],    ['Motion Control', 0],    ['Force Control', 0],    ['Architectures and Programming', 1],    ['Reasoning Methods', 0],  ]);
+      var options = {
+        title: '#publications per subdomain',
+        legend: { position: 'none' },
+      };
+      var chart_disc = new google.visualization.ColumnChart(document.getElementById('chart_div_subd'));
+      chart_disc.draw(data, options);
+    }
+        </script>
+        <div id="chart_div_subd" style="width: 550px; height: 200px; float:left;"></div><script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+          google.load("visualization", "1", {packages:["corechart"]});
+    google.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['year', '#publications'],    ['1984', 0],    ['1985', 0],    ['1986', 0],    ['1987', 0],    ['1988', 0],    ['1989', 0],    ['1990', 0],    ['1991', 0],    ['1992', 0],    ['1993', 0],    ['1994', 0],    ['1995', 0],    ['1996', 0],    ['1997', 0],    ['1998', 0],    ['1999', 0],    ['2000', 0],    ['2001', 0],    ['2002', 0],    ['2003', 0],    ['2004', 0],    ['2005', 0],    ['2006', 0],    ['2007', 0],    ['2008', 0],    ['2009', 1],    ['2010', 0],    ['2011', 0],    ['2012', 0],    ['2013', 0],    ['2014', 0],    ['2015', 0],    ['2016', 0],  ]);
+      var options = {
+        title: '#publications per year',
+        legend: { position: 'none' },
+      };
+      var chart_disc = new google.visualization.ColumnChart(document.getElementById('chart_div_year'));
+      chart_disc.draw(data, options);
+    }
+        </script>
+        <div id="chart_div_year" style="width: 550px; height: 200px; float:left;"></div><h3>Architectures and Programming</h3>
 <p>Architectures and Programming refers to the way a robotic system is designed on the software-level. It can be divided into architectural structure and architectural style.
 The structure is represented by how the system is split up into subsystems and how they interact with each other.
 The style however addresses the underlying computational concepts.
@@ -78,7 +108,10 @@ The style however addresses the underlying computational concepts.
     <div class="container">
     <br />
     <hr />
-    <a style="font-size:85%; color:#555;" title="A Survey on Domain-Specific Modeling Languages in Robotics" href="">A. Nordmann, N. Hochgeschwender, D.Wigand and S. Wrede, “A Survey on Domain-Specific Modeling Languages in Robotics”, Journal of Software Engineering for Robotics (JOSER), 2016</a>
+    <p style="font-size:85%; color:#555;" ><a style="color:#555;" title="A Survey on Domain-Specific Modeling Languages in Robotics" href="">A. Nordmann, N. Hochgeschwender, D.Wigand and S. Wrede, “A Survey on Domain-Specific Modeling Languages in Robotics”, Journal of Software Engineering for Robotics (JOSER), 2016</a><br />
+    An important DSL is missing? Here is how to <a href="./contribute.html">contribute</a>.<br />
+    When referring to l<br />
+    </p>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

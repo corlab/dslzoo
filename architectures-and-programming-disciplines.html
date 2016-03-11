@@ -62,26 +62,21 @@
 
 <p>The following chart shows the identified disciplines according to the Software Engineering Body of Knowledge (SWEBOK) and the numbers of publications we found in the disciplines respectively.
 This is intended to serve as a map for potential DSL users as well as foster discussion and reuse of languages and the underlying models for DSL developers.</p><script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript">
+<script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
 google.setOnLoadCallback(drawChart);
 function drawChart() {
-
   var data = google.visualization.arrayToDataTable([
     ['discipline', '#publications'],    ['Concurrency', 17],    ['Control and Handling of Events', 48],    ['Data Persistence', 2],    ['Distribution of Components', 16],    ['Error and Exception Handling and Fault Tolerance', 0],    ['Interaction and Presentation', 11],    ['Security and Safety', 8],    ['Architectural Structures and Viewpoints', 25],    ['Architectural Styles', 15],    ['Design Patterns', 4],    ['Architecture Design Decisions', 5],    ['Families of Programs and Frameworks', 4],  ]);
-
   var options = {
     title: '#publications per discipline',
     legend: { position: 'none' },
   };
-
-  var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
-
-  chart.draw(data, options);
-
+  var chart_disc = new google.visualization.ColumnChart(document.getElementById('chart_div_disc'));
+  chart_disc.draw(data, options);
 }
     </script>
-    <div id="chart_div" style="width: 700px; height: 200px; clear:both;"></div><ul>
+    <div id="chart_div_disc" style="width: 700px; height: 200px; clear:both;"></div><ul>
 <li><a href="./concurrency-discipline.html">Concurrency</a> - Decomposition of software into processes, tasks, and threads, dealing with related issues of efficiency, atomicity, synchronization, and scheduling.
         This discipline corresponds to the Section 2.2.1 in the SWEBOK.</li>
 <li><a href="./control-and-handling-of-events-discipline.html">Control and Handling of Events</a> - Organization of data and control flow as well as handling of reactive and temporal events.
@@ -114,7 +109,10 @@ function drawChart() {
     <div class="container">
     <br />
     <hr />
-    <a style="font-size:85%; color:#555;" title="A Survey on Domain-Specific Modeling Languages in Robotics" href="">A. Nordmann, N. Hochgeschwender, D.Wigand and S. Wrede, “A Survey on Domain-Specific Modeling Languages in Robotics”, Journal of Software Engineering for Robotics (JOSER), 2016</a>
+    <p style="font-size:85%; color:#555;" ><a style="color:#555;" title="A Survey on Domain-Specific Modeling Languages in Robotics" href="">A. Nordmann, N. Hochgeschwender, D.Wigand and S. Wrede, “A Survey on Domain-Specific Modeling Languages in Robotics”, Journal of Software Engineering for Robotics (JOSER), 2016</a><br />
+    An important DSL is missing? Here is how to <a href="./contribute.html">contribute</a>.<br />
+    When referring to l<br />
+    </p>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
