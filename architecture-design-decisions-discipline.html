@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="images/favicon.png">
 
-    <title>Dynamics – Robotics DSL Zoo</title>
+    <title>Architecture Design Decisions – Robotics DSL Zoo</title>
 
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="sortable/bootstrap-sortable.css">
@@ -55,11 +55,20 @@
 
 <h1>Robotics DSL Zoo</h1>
 
-<h2>Subdomain „Dynamics“</h2>
-<p>Dynamics covers the relationships between actuation and contact forces that act on robot mechanisms.
-        Such a mechanism in this sense is described by rigid bodies connected by joints.
-        Furthermore, it pertains to the acceleration and motion trajectories resulting from these relationships.
-        This subdomain corresponds to Part A, Chapter 2 in the Handbook of Robotics.</p>
+<h2>Subdomain „Architecture Design Decisions“</h2>
+<p>Impact of quality attributes and the tradeoffs among competing quality attributes that provide the basis for  design decisions.
+        This discipline corresponds to the Section 2.3.4 in the SWEBOK.</p>
+<h3>Scenario Building</h3>
+<p>In the Scenario Building phase, environment features, constraints and characteristics are defined. Furthermore, the robot's task is defined.
+This includes the specification of customer acceptance tests to be performed in the specified and potentially generalized environment.</p>
+
+<table class="sortable">
+<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
+              <td><a href="#kunze2011towards" id="kunze2011towards">kunze2011towards<a/></td><td style="font-weight:bold;">Towards semantic robot description languages</td><td>Kunze, Lars and Roehm, Tobias and Beetz, Michael</td><td>2011</td>
+              <td>OWL</td>
+              </tr>
+
+</tbody></table><br />
 <h3>Functional Design</h3>
 <p>In the Functional Design phase, hardware requirements and top-level functionalities are derived based on the scenario definition.
 Furthermore, top-level functionalities are decomposed and dependencies among them are identified.
@@ -67,11 +76,11 @@ Also an initial functional design stating which functionalities interact with ea
 
 <table class="sortable">
 <thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
-              <td><a href="#frigerio2012model" id="frigerio2012model">frigerio2012model<a/></td><td style="font-weight:bold;">Model based code generation for kinematics and dynamics computations in robot controllers</td><td>Frigerio, Marco and Buchli, Jonas and Caldwell, Darwin G</td><td>2012</td>
-              <td>ecore</td>
+              <td><a href="#dittes2011intelligent" id="dittes2011intelligent">dittes2011intelligent<a/></td><td style="font-weight:bold;">Intelligent system architectures-comparison by translation</td><td>Dittes, Benjamin and Goerick, Christian</td><td>2011</td>
+              <td></td>
               </tr>
 <tr style="border-top:1px solid #000;">
-              <td><a href="#jara2011ejs+" id="jara2011ejs+">jara2011ejs+<a/></td><td style="font-weight:bold;">Ejs+ EjsRL: An interactive tool for industrial robots simulation, Computer Vision and remote operation</td><td>Jara, Carlos A and Candelas, Francisco A and Gil, Pablo and Torres, Fernando and Esquembre, Francisco and Dormido, Sebasti\ an</td><td>2011</td>
+              <td><a href="#dittes2011language" id="dittes2011language">dittes2011language<a/></td><td style="font-weight:bold;">A language for formal design of embedded intelligence research systems</td><td>Dittes, Benjamin and Goerick, Christian</td><td>2011</td>
               <td>other</td>
               </tr>
 
@@ -81,8 +90,8 @@ Also an initial functional design stating which functionalities interact with ea
 
 <table class="sortable">
 <thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
-              <td><a href="#jara2011ejs+" id="jara2011ejs+">jara2011ejs+<a/></td><td style="font-weight:bold;">Ejs+ EjsRL: An interactive tool for industrial robots simulation, Computer Vision and remote operation</td><td>Jara, Carlos A and Candelas, Francisco A and Gil, Pablo and Torres, Fernando and Esquembre, Francisco and Dormido, Sebasti\ an</td><td>2011</td>
-              <td>other</td>
+              <td><a href="#bordignon2011generalized" id="bordignon2011generalized">bordignon2011generalized<a/></td><td style="font-weight:bold;">Generalized programming of modular robots through kinematic configurations</td><td>Bordignon, Mirko and Stoy, Kasper and Schultz, Ulrik Pagh</td><td>2011</td>
+              <td></td>
               </tr>
 
 </tbody></table><br />
@@ -92,20 +101,24 @@ This also includes the specification and eventually generation of additional kno
 
 <table class="sortable">
 <thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
-              <td><a href="#aertbelien2014etasl" id="aertbelien2014etasl">aertbelien2014etasl<a/></td><td style="font-weight:bold;">eTaSL/eTC: A constraint-based task specification language and robot controller using expression graphs</td><td>Aertbeli\ en, Erwin and De Schutter, Joris</td><td>2014</td>
+              <td><a href="#bordignon2011generalized" id="bordignon2011generalized">bordignon2011generalized<a/></td><td style="font-weight:bold;">Generalized programming of modular robots through kinematic configurations</td><td>Bordignon, Mirko and Stoy, Kasper and Schultz, Ulrik Pagh</td><td>2011</td>
               <td></td>
               </tr>
 <tr style="border-top:1px solid #000;">
-              <td><a href="#frigerio2012code" id="frigerio2012code">frigerio2012code<a/></td><td style="font-weight:bold;"><a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber6385694">Code Generation of Algebraic Quantities for Robot Controllers</a></td><td>Frigerio, Marco and Buchli, Jonas and Caldwell, Darwin G</td><td>2012</td>
-              <td>ecore</td>
+              <td><a href="#burbidge2009grammatical" id="burbidge2009grammatical">burbidge2009grammatical<a/></td><td style="font-weight:bold;">Grammatical evolution of a robot controller</td><td>Burbidge, Robert and Walker, Joanne H and Wilson, Myra S</td><td>2009</td>
+              <td>(E)BNF</td>
               </tr>
 <tr style="border-top:1px solid #000;">
-              <td><a href="#frigerio2012model" id="frigerio2012model">frigerio2012model<a/></td><td style="font-weight:bold;">Model based code generation for kinematics and dynamics computations in robot controllers</td><td>Frigerio, Marco and Buchli, Jonas and Caldwell, Darwin G</td><td>2012</td>
-              <td>ecore</td>
+              <td><a href="#dittes2011intelligent" id="dittes2011intelligent">dittes2011intelligent<a/></td><td style="font-weight:bold;">Intelligent system architectures-comparison by translation</td><td>Dittes, Benjamin and Goerick, Christian</td><td>2011</td>
+              <td></td>
               </tr>
 <tr style="border-top:1px solid #000;">
-              <td><a href="#jara2011ejs+" id="jara2011ejs+">jara2011ejs+<a/></td><td style="font-weight:bold;">Ejs+ EjsRL: An interactive tool for industrial robots simulation, Computer Vision and remote operation</td><td>Jara, Carlos A and Candelas, Francisco A and Gil, Pablo and Torres, Fernando and Esquembre, Francisco and Dormido, Sebasti\ an</td><td>2011</td>
+              <td><a href="#dittes2011language" id="dittes2011language">dittes2011language<a/></td><td style="font-weight:bold;">A language for formal design of embedded intelligence research systems</td><td>Dittes, Benjamin and Goerick, Christian</td><td>2011</td>
               <td>other</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#kunze2011towards" id="kunze2011towards">kunze2011towards<a/></td><td style="font-weight:bold;">Towards semantic robot description languages</td><td>Kunze, Lars and Roehm, Tobias and Beetz, Michael</td><td>2011</td>
+              <td>OWL</td>
               </tr>
 
 </tbody></table><br />

@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="images/favicon.png">
 
-    <title>Motion Planning – Robotics DSL Zoo</title>
+    <title>Architectural Styles – Robotics DSL Zoo</title>
 
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="sortable/bootstrap-sortable.css">
@@ -55,17 +55,17 @@
 
 <h1>Robotics DSL Zoo</h1>
 
-<h2>Subdomain „Motion Planning“</h2>
-<p>Motion Planning covers collision-free trajectory planning for mobile platforms as well as robot actuators.
-        This subdomain corresponds to Part A, Chapter 5 in the Handbook of Robotics.</p>
+<h2>Subdomain „Architectural Styles“</h2>
+<p>Descriptions and guidance for the high-level organization of software providing "a specialization of element and relation types, together with a set of constraints on how they can be used".
+        This discipline corresponds to the Section 2.3.2 in the SWEBOK.</p>
 <h3>Scenario Building</h3>
 <p>In the Scenario Building phase, environment features, constraints and characteristics are defined. Furthermore, the robot's task is defined.
 This includes the specification of customer acceptance tests to be performed in the specified and potentially generalized environment.</p>
 
 <table class="sortable">
 <thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
-              <td><a href="#finucane2010ltlmop" id="finucane2010ltlmop">finucane2010ltlmop<a/></td><td style="font-weight:bold;">LTLMoP: Experimenting with language, temporal logic and robot control</td><td>Finucane, Cameron and Jing, Gangyuan and Kress-Gazit, Hadas</td><td>2010</td>
-              <td>LTL</td>
+              <td><a href="#noreils1995plan" id="noreils1995plan">noreils1995plan<a/></td><td style="font-weight:bold;">Plan execution monitoring and control architecture for mobile robots</td><td>Noreils, Fabrice R and Chatila, Raja G</td><td>1995</td>
+              <td>(E)BNF</td>
               </tr>
 
 </tbody></table><br />
@@ -76,20 +76,16 @@ Also an initial functional design stating which functionalities interact with ea
 
 <table class="sortable">
 <thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
-              <td><a href="#feniello2014program" id="feniello2014program">feniello2014program<a/></td><td style="font-weight:bold;">Program synthesis by examples for object repositioning tasks</td><td>Feniello, Ashley and Dang, Hao and Birchfield, Stan</td><td>2014</td>
-              <td>unknown</td>
-              </tr>
-<tr style="border-top:1px solid #000;">
-              <td><a href="#finucane2010ltlmop" id="finucane2010ltlmop">finucane2010ltlmop<a/></td><td style="font-weight:bold;">LTLMoP: Experimenting with language, temporal logic and robot control</td><td>Finucane, Cameron and Jing, Gangyuan and Kress-Gazit, Hadas</td><td>2010</td>
-              <td>LTL</td>
-              </tr>
-<tr style="border-top:1px solid #000;">
-              <td><a href="#kanayama2000s" id="kanayama2000s">kanayama2000s<a/></td><td style="font-weight:bold;">It s time to make mobile robots programmable</td><td>Kanayama, Yutaka J and Wu, C Thomas</td><td>2000</td>
+              <td><a href="#braberman2013controller" id="braberman2013controller">braberman2013controller<a/></td><td style="font-weight:bold;">Controller synthesis: From modelling to enactment</td><td>Braberman, V\ \ictor and D Ippolito, Nicolas and Piterman, Nir and Sykes, Daniel and Uchitel, Sebastian</td><td>2013</td>
               <td></td>
               </tr>
 <tr style="border-top:1px solid #000;">
-              <td><a href="#kress2007structured" id="kress2007structured">kress2007structured<a/></td><td style="font-weight:bold;">From structured english to robot motion</td><td>Kress-Gazit, Hadas and Fainekos, Georgios E and Pappas, George J</td><td>2007</td>
-              <td>LTL</td>
+              <td><a href="#dittes2011intelligent" id="dittes2011intelligent">dittes2011intelligent<a/></td><td style="font-weight:bold;">Intelligent system architectures-comparison by translation</td><td>Dittes, Benjamin and Goerick, Christian</td><td>2011</td>
+              <td></td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#dittes2011language" id="dittes2011language">dittes2011language<a/></td><td style="font-weight:bold;">A language for formal design of embedded intelligence research systems</td><td>Dittes, Benjamin and Goerick, Christian</td><td>2011</td>
+              <td>other</td>
               </tr>
 
 </tbody></table><br />
@@ -98,8 +94,8 @@ Also an initial functional design stating which functionalities interact with ea
 
 <table class="sortable">
 <thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
-              <td><a href="#schneider2014declarative" id="schneider2014declarative">schneider2014declarative<a/></td><td style="font-weight:bold;">Declarative specification of task-based grasping with constraint validation</td><td>Schneider, Sven and Hochgeschwender, Nico and Kraetzschmar, Gerhard K</td><td>2014</td>
-              <td>ecore</td>
+              <td><a href="#noreils1995plan" id="noreils1995plan">noreils1995plan<a/></td><td style="font-weight:bold;">Plan execution monitoring and control architecture for mobile robots</td><td>Noreils, Fabrice R and Chatila, Raja G</td><td>1995</td>
+              <td>(E)BNF</td>
               </tr>
 
 </tbody></table><br />
@@ -109,43 +105,47 @@ This also includes the specification and eventually generation of additional kno
 
 <table class="sortable">
 <thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
-              <td><a href="#dantam2011motion" id="dantam2011motion">dantam2011motion<a/></td><td style="font-weight:bold;">The motion grammar for physical human-robot games</td><td>Dantam, Neil and Koine, P and Stilman, Mike</td><td>2011</td>
-              <td>other</td>
-              </tr>
-<tr style="border-top:1px solid #000;">
-              <td><a href="#dantam2012linguistic" id="dantam2012linguistic">dantam2012linguistic<a/></td><td style="font-weight:bold;">Linguistic transfer of human assembly tasks to robots</td><td>Dantam, Neil and Essa, Irfan and Stilman, Mike</td><td>2012</td>
-              <td>(E)BNF</td>
-              </tr>
-<tr style="border-top:1px solid #000;">
-              <td><a href="#dantam2013correct" id="dantam2013correct">dantam2013correct<a/></td><td style="font-weight:bold;">Correct Software Synthesis for Stable Speed-Controlled Robotic Walking.</td><td>Dantam, Neil and Hereid, Ayonga and Ames, Aaron D and Stilman, Mike</td><td>2013</td>
-              <td>CFG?</td>
-              </tr>
-<tr style="border-top:1px solid #000;">
-              <td><a href="#feniello2014program" id="feniello2014program">feniello2014program<a/></td><td style="font-weight:bold;">Program synthesis by examples for object repositioning tasks</td><td>Feniello, Ashley and Dang, Hao and Birchfield, Stan</td><td>2014</td>
+              <td><a href="#berenz2014targets" id="berenz2014targets">berenz2014targets<a/></td><td style="font-weight:bold;">Targets-Drives-Means: A declarative approach to dynamic behavior specification with higher usability</td><td>Berenz, Vincent and Suzuki, Kenji</td><td>2014</td>
               <td>unknown</td>
               </tr>
 <tr style="border-top:1px solid #000;">
-              <td><a href="#finucane2010ltlmop" id="finucane2010ltlmop">finucane2010ltlmop<a/></td><td style="font-weight:bold;">LTLMoP: Experimenting with language, temporal logic and robot control</td><td>Finucane, Cameron and Jing, Gangyuan and Kress-Gazit, Hadas</td><td>2010</td>
-              <td>LTL</td>
-              </tr>
-<tr style="border-top:1px solid #000;">
-              <td><a href="#hsieh2007adaptive" id="hsieh2007adaptive">hsieh2007adaptive<a/></td><td style="font-weight:bold;">Adaptive teams of autonomous aerial and ground robots for situational awareness</td><td>Hsieh, M Ani and Cowley, Anthony and Keller, James F and Chaimowicz, Luiz and Grocholsky, Ben and Kumar, Vijay and Taylor, Camillo J and Endo, Yoichiro and Arkin, Ronald C and Jung, Boyoon and others</td><td>2007</td>
-              <td>unknown</td>
-              </tr>
-<tr style="border-top:1px solid #000;">
-              <td><a href="#kanayama2000s" id="kanayama2000s">kanayama2000s<a/></td><td style="font-weight:bold;">It s time to make mobile robots programmable</td><td>Kanayama, Yutaka J and Wu, C Thomas</td><td>2000</td>
+              <td><a href="#braberman2013controller" id="braberman2013controller">braberman2013controller<a/></td><td style="font-weight:bold;">Controller synthesis: From modelling to enactment</td><td>Braberman, V\ \ictor and D Ippolito, Nicolas and Piterman, Nir and Sykes, Daniel and Uchitel, Sebastian</td><td>2013</td>
               <td></td>
               </tr>
 <tr style="border-top:1px solid #000;">
-              <td><a href="#kress2007structured" id="kress2007structured">kress2007structured<a/></td><td style="font-weight:bold;">From structured english to robot motion</td><td>Kress-Gazit, Hadas and Fainekos, Georgios E and Pappas, George J</td><td>2007</td>
-              <td>LTL</td>
+              <td><a href="#dai2002specifying" id="dai2002specifying">dai2002specifying<a/></td><td style="font-weight:bold;"><a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber1013354">Specifying behavior in C++</a></td><td>Dai, Xiangtian and Hager, Gregory and Peterson, John</td><td>2002</td>
+              <td></td>
               </tr>
 <tr style="border-top:1px solid #000;">
-              <td><a href="#mackenzie1995specification" id="mackenzie1995specification">mackenzie1995specification<a/></td><td style="font-weight:bold;">Specification and execution of multiagent missions</td><td>MacKenzie, Douglas C and Cameron, Jonathan M and Arkin, Ronald C</td><td>1995</td>
+              <td><a href="#dittes2011intelligent" id="dittes2011intelligent">dittes2011intelligent<a/></td><td style="font-weight:bold;">Intelligent system architectures-comparison by translation</td><td>Dittes, Benjamin and Goerick, Christian</td><td>2011</td>
+              <td></td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#dittes2011language" id="dittes2011language">dittes2011language<a/></td><td style="font-weight:bold;">A language for formal design of embedded intelligence research systems</td><td>Dittes, Benjamin and Goerick, Christian</td><td>2011</td>
+              <td>other</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#gat1991alfa" id="gat1991alfa">gat1991alfa<a/></td><td style="font-weight:bold;">Alfa: A language for programming reactive robotic control systems</td><td>Gat, Erann</td><td>1991</td>
               <td>unknown</td>
               </tr>
 <tr style="border-top:1px solid #000;">
-              <td><a href="#mosemann2001automatic" id="mosemann2001automatic">mosemann2001automatic<a/></td><td style="font-weight:bold;">Automatic decomposition of planned assembly sequences into skill primitives</td><td>Mosemann, Heiko and Wahl, Friedrich M</td><td>2001</td>
+              <td><a href="#horswill2000functional" id="horswill2000functional">horswill2000functional<a/></td><td style="font-weight:bold;">Functional programming of behavior-based systems</td><td>Horswill, Ian Douglas</td><td>2000</td>
+              <td></td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#joyeux2010managing" id="joyeux2010managing">joyeux2010managing<a/></td><td style="font-weight:bold;">Managing plans: Integrating deliberation and reactive execution schemes</td><td>Joyeux, Sylvain and Kirchner, Frank and Lacroix, Simon</td><td>2010</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#noreils1995plan" id="noreils1995plan">noreils1995plan<a/></td><td style="font-weight:bold;">Plan execution monitoring and control architecture for mobile robots</td><td>Noreils, Fabrice R and Chatila, Raja G</td><td>1995</td>
+              <td>(E)BNF</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#pembeci2003functional" id="pembeci2003functional">pembeci2003functional<a/></td><td style="font-weight:bold;">Functional reactive programming as a hybrid system framework</td><td>Pembeci, Izzet and Hager, Gregory</td><td>2003</td>
+              <td></td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#peterson1999language" id="peterson1999language">peterson1999language<a/></td><td style="font-weight:bold;">A language for declarative robotic programming</td><td>Peterson, John and Hager, Gregory D and Hudak, Paul</td><td>1999</td>
               <td>other</td>
               </tr>
 <tr style="border-top:1px solid #000;">
@@ -153,22 +153,16 @@ This also includes the specification and eventually generation of additional kno
               <td>other</td>
               </tr>
 <tr style="border-top:1px solid #000;">
-              <td><a href="#schneider2014declarative" id="schneider2014declarative">schneider2014declarative<a/></td><td style="font-weight:bold;">Declarative specification of task-based grasping with constraint validation</td><td>Schneider, Sven and Hochgeschwender, Nico and Kraetzschmar, Gerhard K</td><td>2014</td>
-              <td>ecore</td>
+              <td><a href="#tousignant2011overview" id="tousignant2011overview">tousignant2011overview<a/></td><td style="font-weight:bold;">An overview of XRobots: A hierarchical state machine based language</td><td>Tousignant, Steve and Van Wyk, Eric and Gini, Maria</td><td>2011</td>
+              <td>silver</td>
               </tr>
 <tr style="border-top:1px solid #000;">
-              <td><a href="#zhang2003control" id="zhang2003control">zhang2003control<a/></td><td style="font-weight:bold;">Control of small formations using shape coordinates</td><td>Zhang, Fumin and Goldgeier, Michael and Krishnaprasad, Perinkulam S</td><td>2003</td>
-              <td>SDD</td>
+              <td><a href="#tousignant2012xrobots" id="tousignant2012xrobots">tousignant2012xrobots<a/></td><td style="font-weight:bold;">XRobots: A flexible language for programming mobile robots based on hierarchical state machines</td><td>Tousignant, Steve and Van Wyk, Eric and Gini, Maria</td><td>2012</td>
+              <td>unknown</td>
               </tr>
-
-</tbody></table><br />
-<h3>Product Maintenance</h3>
-<p>In the Product Maintenance phase, the robot application is operated and maintained. This includes eventually the analysis of log files and the tuning of system parameters.</p>
-
-<table class="sortable">
-<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
-              <td><a href="#dantam2011motion" id="dantam2011motion">dantam2011motion<a/></td><td style="font-weight:bold;">The motion grammar for physical human-robot games</td><td>Dantam, Neil and Koine, P and Stilman, Mike</td><td>2011</td>
-              <td>other</td>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#utz2005hierarchical" id="utz2005hierarchical">utz2005hierarchical<a/></td><td style="font-weight:bold;">Hierarchical behavior organization</td><td>Utz, Hans and Kraetzschmar, Gerhard and Mayer, Gerd and Palm, G\ unther</td><td>2005</td>
+              <td>XSD</td>
               </tr>
 
 </tbody></table><br />

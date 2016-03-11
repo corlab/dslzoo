@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="images/favicon.png">
 
-    <title>Dynamics – Robotics DSL Zoo</title>
+    <title>Design Patterns – Robotics DSL Zoo</title>
 
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="sortable/bootstrap-sortable.css">
@@ -55,11 +55,9 @@
 
 <h1>Robotics DSL Zoo</h1>
 
-<h2>Subdomain „Dynamics“</h2>
-<p>Dynamics covers the relationships between actuation and contact forces that act on robot mechanisms.
-        Such a mechanism in this sense is described by rigid bodies connected by joints.
-        Furthermore, it pertains to the acceleration and motion trajectories resulting from these relationships.
-        This subdomain corresponds to Part A, Chapter 2 in the Handbook of Robotics.</p>
+<h2>Subdomain „Design Patterns“</h2>
+<p>Provide "a common solution to a common problem in a given context". Typically employed at a lower abstraction level than architectural styles.
+        This discipline corresponds to the Section 2.3.3 in the SWEBOK.</p>
 <h3>Functional Design</h3>
 <p>In the Functional Design phase, hardware requirements and top-level functionalities are derived based on the scenario definition.
 Furthermore, top-level functionalities are decomposed and dependencies among them are identified.
@@ -67,22 +65,12 @@ Also an initial functional design stating which functionalities interact with ea
 
 <table class="sortable">
 <thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
-              <td><a href="#frigerio2012model" id="frigerio2012model">frigerio2012model<a/></td><td style="font-weight:bold;">Model based code generation for kinematics and dynamics computations in robot controllers</td><td>Frigerio, Marco and Buchli, Jonas and Caldwell, Darwin G</td><td>2012</td>
-              <td>ecore</td>
+              <td><a href="#buch2014applying" id="buch2014applying">buch2014applying<a/></td><td style="font-weight:bold;">Applying Simulation and a Domain-Specific Language for an Adaptive Action Library</td><td>Buch, Jacob P\orksen and Laursen, Johan Sund and S\orensen, Lars Car\oe and Ellekilde, Lars-Peter and Kraft, Dirk and Schultz, Ulrik Pagh and Petersen, Henrik Gordon</td><td>2014</td>
+              <td>(E)BNF</td>
               </tr>
 <tr style="border-top:1px solid #000;">
-              <td><a href="#jara2011ejs+" id="jara2011ejs+">jara2011ejs+<a/></td><td style="font-weight:bold;">Ejs+ EjsRL: An interactive tool for industrial robots simulation, Computer Vision and remote operation</td><td>Jara, Carlos A and Candelas, Francisco A and Gil, Pablo and Torres, Fernando and Esquembre, Francisco and Dormido, Sebasti\ an</td><td>2011</td>
-              <td>other</td>
-              </tr>
-
-</tbody></table><br />
-<h3>Platform Building</h3>
-<p>In the Platform Building phase, the robot hardware is determined. This includes the selection and potential configuration of robot's sensors and actuators meeting the requirements defined in the functional design phase.</p>
-
-<table class="sortable">
-<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
-              <td><a href="#jara2011ejs+" id="jara2011ejs+">jara2011ejs+<a/></td><td style="font-weight:bold;">Ejs+ EjsRL: An interactive tool for industrial robots simulation, Computer Vision and remote operation</td><td>Jara, Carlos A and Candelas, Francisco A and Gil, Pablo and Torres, Fernando and Esquembre, Francisco and Dormido, Sebasti\ an</td><td>2011</td>
-              <td>other</td>
+              <td><a href="#gherardi2014modeling" id="gherardi2014modeling">gherardi2014modeling<a/></td><td style="font-weight:bold;">Modeling and reusing robotic software architectures: the hyperflex toolchain</td><td>Gherardi, Luca and Brugali, Davide</td><td>2014</td>
+              <td>ecore</td>
               </tr>
 
 </tbody></table><br />
@@ -92,19 +80,19 @@ This also includes the specification and eventually generation of additional kno
 
 <table class="sortable">
 <thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
-              <td><a href="#aertbelien2014etasl" id="aertbelien2014etasl">aertbelien2014etasl<a/></td><td style="font-weight:bold;">eTaSL/eTC: A constraint-based task specification language and robot controller using expression graphs</td><td>Aertbeli\ en, Erwin and De Schutter, Joris</td><td>2014</td>
-              <td></td>
+              <td><a href="#barth2012goto" id="barth2012goto">barth2012goto<a/></td><td style="font-weight:bold;">A GOTO-based concept for intuitive robot programming</td><td>Barth, Katharina and Henrich, Dominik</td><td>2012</td>
+              <td>other</td>
               </tr>
 <tr style="border-top:1px solid #000;">
-              <td><a href="#frigerio2012code" id="frigerio2012code">frigerio2012code<a/></td><td style="font-weight:bold;"><a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber6385694">Code Generation of Algebraic Quantities for Robot Controllers</a></td><td>Frigerio, Marco and Buchli, Jonas and Caldwell, Darwin G</td><td>2012</td>
+              <td><a href="#buch2014applying" id="buch2014applying">buch2014applying<a/></td><td style="font-weight:bold;">Applying Simulation and a Domain-Specific Language for an Adaptive Action Library</td><td>Buch, Jacob P\orksen and Laursen, Johan Sund and S\orensen, Lars Car\oe and Ellekilde, Lars-Peter and Kraft, Dirk and Schultz, Ulrik Pagh and Petersen, Henrik Gordon</td><td>2014</td>
+              <td>(E)BNF</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#gherardi2014modeling" id="gherardi2014modeling">gherardi2014modeling<a/></td><td style="font-weight:bold;">Modeling and reusing robotic software architectures: the hyperflex toolchain</td><td>Gherardi, Luca and Brugali, Davide</td><td>2014</td>
               <td>ecore</td>
               </tr>
 <tr style="border-top:1px solid #000;">
-              <td><a href="#frigerio2012model" id="frigerio2012model">frigerio2012model<a/></td><td style="font-weight:bold;">Model based code generation for kinematics and dynamics computations in robot controllers</td><td>Frigerio, Marco and Buchli, Jonas and Caldwell, Darwin G</td><td>2012</td>
-              <td>ecore</td>
-              </tr>
-<tr style="border-top:1px solid #000;">
-              <td><a href="#jara2011ejs+" id="jara2011ejs+">jara2011ejs+<a/></td><td style="font-weight:bold;">Ejs+ EjsRL: An interactive tool for industrial robots simulation, Computer Vision and remote operation</td><td>Jara, Carlos A and Candelas, Francisco A and Gil, Pablo and Torres, Fernando and Esquembre, Francisco and Dormido, Sebasti\ an</td><td>2011</td>
+              <td><a href="#mosemann2001automatic" id="mosemann2001automatic">mosemann2001automatic<a/></td><td style="font-weight:bold;">Automatic decomposition of planned assembly sequences into skill primitives</td><td>Mosemann, Heiko and Wahl, Friedrich M</td><td>2001</td>
               <td>other</td>
               </tr>
 

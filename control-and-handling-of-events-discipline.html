@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/favicon.png">
+
+    <title>Control and Handling of Events – Robotics DSL Zoo</title>
+
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="sortable/bootstrap-sortable.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/custom.css">
+    
+	<script language="javascript" type="text/javascript" src="flot/jquery.js"></script>
+	<script language="javascript" type="text/javascript" src="flot/jquery.flot.js"></script>
+	<script language="javascript" type="text/javascript" src="flot/jquery.flot.categories.js"></script>
+	
+	<script type="text/javascript" src="dist/d3-cloud/lib/d3/d3.js"></script>
+	<script type="text/javascript" src="dist/d3-cloud/d3.layout.cloud.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+  </head>
+
+  <body><nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./index.html">Robotics DSL Zoo</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="./index.html">Home</a></li>
+            <li><a href="./all.html">Index</a></li>
+            <li><a href="./subdomains.html">Subdomains</a></li>
+            <li><a href="./architectures-and-programming-disciplines.html">A&P Disciplines</a></li>
+            <li><a href="./phases.html">Development Phases</a></li>
+            <li><a href="./contribute.html">Contribute</a></li>
+            <li><a href="http://www.dslrob.org">DSLRob</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="starter-template">
+
+<h1>Robotics DSL Zoo</h1>
+
+<h2>Subdomain „Control and Handling of Events“</h2>
+<p>Organization of data and control flow as well as handling of reactive and temporal events.
+        This discipline corresponds to the Section 2.2.2 in the SWEBOK.</p>
+<h3>Scenario Building</h3>
+<p>In the Scenario Building phase, environment features, constraints and characteristics are defined. Furthermore, the robot's task is defined.
+This includes the specification of customer acceptance tests to be performed in the specified and potentially generalized environment.</p>
+
+<table class="sortable">
+<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
+              <td><a href="#knoop2007automatic" id="knoop2007automatic">knoop2007automatic<a/></td><td style="font-weight:bold;">Automatic robot programming from learned abstract task knowledge</td><td>Knoop, Steffen and Pardowitz, Michael and Dillmann, R\ udiger</td><td>2007</td>
+              <td></td>
+              </tr>
+
+</tbody></table><br />
+<h3>Functional Design</h3>
+<p>In the Functional Design phase, hardware requirements and top-level functionalities are derived based on the scenario definition.
+Furthermore, top-level functionalities are decomposed and dependencies among them are identified.
+Also an initial functional design stating which functionalities interact with each other is developed.</p>
+
+<table class="sortable">
+<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
+              <td><a href="#coste1997maestro" id="coste1997maestro">coste1997maestro<a/></td><td style="font-weight:bold;">The maestro language and its environment: Specification, validation and control of robotic missions</td><td>Coste-Maniere, Eve and Turro, Nicolas</td><td>1997</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#dhouib2012robotml" id="dhouib2012robotml">dhouib2012robotml<a/></td><td style="font-weight:bold;">Robotml, a domain-specific language to design, simulate and deploy robotic applications</td><td>Dhouib, Saadia and Kchir, Selma and Stinckwich, Serge and Ziadi, Tewfik and Ziane, Mikal</td><td>2012</td>
+              <td>UML/MOF</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#fleurey2009domain" id="fleurey2009domain">fleurey2009domain<a/></td><td style="font-weight:bold;">A domain specific modeling language supporting specification, simulation and execution of dynamic adaptive systems</td><td>Fleurey, Franck and Solberg, Arnor</td><td>2009</td>
+              <td>ecore</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#gordillo1991high" id="gordillo1991high">gordillo1991high<a/></td><td style="font-weight:bold;">L E: a high level language for specifying vision verification tasks</td><td>Gordillo, Jose L</td><td>1991</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#kang20053d" id="kang20053d">kang20053d<a/></td><td style="font-weight:bold;">3d virtual prototyping of home service robots using asadal/obj</td><td>Kang, Kyo Chul and Kim, Moonzoo and Lee, Jaejoon and Kim, Byungkil and Hong, Youngjin and Lee, Hyoungki and Bang, Seokwon</td><td>2005</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#ortiz2014component" id="ortiz2014component">ortiz2014component<a/></td><td style="font-weight:bold;">A Component-Based Meta-Model and Framework in the Model Driven Toolchain C-Forge</td><td>Ortiz, Francisco J and Alonso, Diego and Rosique, Francisca and S\ anchez-Ledesma, Francisco and Pastor, Juan A</td><td>2014</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#ramirez2011automatic" id="ramirez2011automatic">ramirez2011automatic<a/></td><td style="font-weight:bold;">Automatic derivation of utility functions for monitoring software requirements</td><td>Ramirez, Andres J and Cheng, Betty HC</td><td>2011</td>
+              <td></td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#thomas2013new" id="thomas2013new">thomas2013new<a/></td><td style="font-weight:bold;"><a href="http://www.se-rwth.de/publications/A-New-Skill-Based-Robot-Programming-Language-Using-UML-P-Statecharts.pdf">A New Skill Based Robot Programming Language Using UML/P Statecharts</a></td><td>Thomas, Ulrike and Hirzinger, Gerd and Rumpe, Bernhard and Schulze, Christoph and Wortmann, Andreas</td><td>2013</td>
+              <td>other</td>
+              </tr>
+
+</tbody></table><br />
+<h3>Platform Building</h3>
+<p>In the Platform Building phase, the robot hardware is determined. This includes the selection and potential configuration of robot's sensors and actuators meeting the requirements defined in the functional design phase.</p>
+
+<table class="sortable">
+<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
+              <td><a href="#datta2012robostudio" id="datta2012robostudio">datta2012robostudio<a/></td><td style="font-weight:bold;">Robostudio: A visual programming environment for rapid authoring and customization of complex services on a personal service robot</td><td>Datta, Chandan and Jayawardena, Chandimal and Kuo, I Han and MacDonald, Bruce A</td><td>2012</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#gobillot2014modeling" id="gobillot2014modeling">gobillot2014modeling<a/></td><td style="font-weight:bold;">A Modeling Framework for Software Architecture Specification and Validation</td><td>Gobillot, Nicolas and Lesire, Charles and Doose, David</td><td>2014</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#kang20053d" id="kang20053d">kang20053d<a/></td><td style="font-weight:bold;">3d virtual prototyping of home service robots using asadal/obj</td><td>Kang, Kyo Chul and Kim, Moonzoo and Lee, Jaejoon and Kim, Byungkil and Hong, Youngjin and Lee, Hyoungki and Bang, Seokwon</td><td>2005</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#kim2003task" id="kim2003task">kim2003task<a/></td><td style="font-weight:bold;">Task description language for underwater robots</td><td>Kim, Tae Won and Yuh, Junku</td><td>2003</td>
+              <td>(E)BNF</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#nishiyama1998logic" id="nishiyama1998logic">nishiyama1998logic<a/></td><td style="font-weight:bold;">Logic specifications for multiple robots based on a current programming language</td><td>Nishiyama, Hiroyuki and Ohwada, Hayato and Mizoguchi, Fumio</td><td>1998</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#ramaswamy2014solution" id="ramaswamy2014solution">ramaswamy2014solution<a/></td><td style="font-weight:bold;">Solution space modeling for robotic systems</td><td>Ramaswamy, Arun Kumar and Monsuez, Bruno and Tapus, Adriana</td><td>2014</td>
+              <td>ecore</td>
+              </tr>
+
+</tbody></table><br />
+<h3>Capability Building</h3>
+<p>In the Capability Building phase, basic and composite components are constructed up to the application-level and constraints for their deployment are specified.
+This also includes the specification and eventually generation of additional knowledge required for component execution such as knowledge bases and training data.</p>
+
+<table class="sortable">
+<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
+              <td><a href="#aertbelien2014etasl" id="aertbelien2014etasl">aertbelien2014etasl<a/></td><td style="font-weight:bold;">eTaSL/eTC: A constraint-based task specification language and robot controller using expression graphs</td><td>Aertbeli\ en, Erwin and De Schutter, Joris</td><td>2014</td>
+              <td></td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#aggarwal1994specification" id="aggarwal1994specification">aggarwal1994specification<a/></td><td style="font-weight:bold;">Specification and automated implementation of coordination protocols in distributed controls for flexible manufacturing cells</td><td>Aggarwal, Sudhir and Mitra, Sandeep and Jagdale, Sanjay S</td><td>1994</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#alonso2010v3cmm" id="alonso2010v3cmm">alonso2010v3cmm<a/></td><td style="font-weight:bold;">V3cmm: A 3-view component meta-model for model-driven robotic software development</td><td>Alonso, Diego and Vicente-Chicote, Cristina and Ortiz, Francisco and Pastor, Juan and Alvarez, Barbara</td><td>2010</td>
+              <td>ecore</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#berenz2014targets" id="berenz2014targets">berenz2014targets<a/></td><td style="font-weight:bold;">Targets-Drives-Means: A declarative approach to dynamic behavior specification with higher usability</td><td>Berenz, Vincent and Suzuki, Kenji</td><td>2014</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#biggs2008evaluating" id="biggs2008evaluating">biggs2008evaluating<a/></td><td style="font-weight:bold;">Evaluating a reactive semantics for robotics</td><td>Biggs, Geoffrey and MacDonald, Bruce A</td><td>2008</td>
+              <td></td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#bouzouia1998three" id="bouzouia1998three">bouzouia1998three<a/></td><td style="font-weight:bold;">A three-layer workcell control architecture design</td><td>Bouzouia, Brahim and Guerroumi, Fawzi and Boukhezar, Abdelmalek</td><td>1998</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#coste1997maestro" id="coste1997maestro">coste1997maestro<a/></td><td style="font-weight:bold;">The maestro language and its environment: Specification, validation and control of robotic missions</td><td>Coste-Maniere, Eve and Turro, Nicolas</td><td>1997</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#dai2002specifying" id="dai2002specifying">dai2002specifying<a/></td><td style="font-weight:bold;"><a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber1013354">Specifying behavior in C++</a></td><td>Dai, Xiangtian and Hager, Gregory and Peterson, John</td><td>2002</td>
+              <td></td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#dantam2011motion" id="dantam2011motion">dantam2011motion<a/></td><td style="font-weight:bold;">The motion grammar for physical human-robot games</td><td>Dantam, Neil and Koine, P and Stilman, Mike</td><td>2011</td>
+              <td>other</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#dantam2012linguistic" id="dantam2012linguistic">dantam2012linguistic<a/></td><td style="font-weight:bold;">Linguistic transfer of human assembly tasks to robots</td><td>Dantam, Neil and Essa, Irfan and Stilman, Mike</td><td>2012</td>
+              <td>(E)BNF</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#datta2012robostudio" id="datta2012robostudio">datta2012robostudio<a/></td><td style="font-weight:bold;">Robostudio: A visual programming environment for rapid authoring and customization of complex services on a personal service robot</td><td>Datta, Chandan and Jayawardena, Chandimal and Kuo, I Han and MacDonald, Bruce A</td><td>2012</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#de2012scripting" id="de2012scripting">de2012scripting<a/></td><td style="font-weight:bold;"><a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber6225038">A Scripting-Based Approach to Robot Behavior Engineering using Hierarchical Generators</a></td><td>de Haas, Thijs Jeffry and Laue, Tim and Rofer, T</td><td>2012</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#dhouib2012robotml" id="dhouib2012robotml">dhouib2012robotml<a/></td><td style="font-weight:bold;">Robotml, a domain-specific language to design, simulate and deploy robotic applications</td><td>Dhouib, Saadia and Kchir, Selma and Stinckwich, Serge and Ziadi, Tewfik and Ziane, Mikal</td><td>2012</td>
+              <td>UML/MOF</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#fayman1999av" id="fayman1999av">fayman1999av<a/></td><td style="font-weight:bold;">AV-shell, an environment for autonomous robotic applications using active vision</td><td>Fayman, Jeffrey A and Rivlin, Ehud and Christensen, Henrik I</td><td>1999</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#fleurey2009domain" id="fleurey2009domain">fleurey2009domain<a/></td><td style="font-weight:bold;">A domain specific modeling language supporting specification, simulation and execution of dynamic adaptive systems</td><td>Fleurey, Franck and Solberg, Arnor</td><td>2009</td>
+              <td>ecore</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#fleury1994design" id="fleury1994design">fleury1994design<a/></td><td style="font-weight:bold;">Design of a modular architecture for autonomous robot</td><td>Fleury, Sara and Herrb, Matthieu and Chatila, Raja</td><td>1994</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#freund2001state" id="freund2001state">freund2001state<a/></td><td style="font-weight:bold;">State oriented modeling as enabling technology for projective virtual reality</td><td>Freund, Eckhard and Schluse, Michael and Rossmann, J\ urgen</td><td>2001</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#gat1991alfa" id="gat1991alfa">gat1991alfa<a/></td><td style="font-weight:bold;">Alfa: A language for programming reactive robotic control systems</td><td>Gat, Erann</td><td>1991</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#gobillot2014modeling" id="gobillot2014modeling">gobillot2014modeling<a/></td><td style="font-weight:bold;">A Modeling Framework for Software Architecture Specification and Validation</td><td>Gobillot, Nicolas and Lesire, Charles and Doose, David</td><td>2014</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#gordillo1991high" id="gordillo1991high">gordillo1991high<a/></td><td style="font-weight:bold;">L E: a high level language for specifying vision verification tasks</td><td>Gordillo, Jose L</td><td>1991</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#horswill2000functional" id="horswill2000functional">horswill2000functional<a/></td><td style="font-weight:bold;">Functional programming of behavior-based systems</td><td>Horswill, Ian Douglas</td><td>2000</td>
+              <td></td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#joyeux2010managing" id="joyeux2010managing">joyeux2010managing<a/></td><td style="font-weight:bold;">Managing plans: Integrating deliberation and reactive execution schemes</td><td>Joyeux, Sylvain and Kirchner, Frank and Lacroix, Simon</td><td>2010</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#kang20053d" id="kang20053d">kang20053d<a/></td><td style="font-weight:bold;">3d virtual prototyping of home service robots using asadal/obj</td><td>Kang, Kyo Chul and Kim, Moonzoo and Lee, Jaejoon and Kim, Byungkil and Hong, Youngjin and Lee, Hyoungki and Bang, Seokwon</td><td>2005</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#kim2003task" id="kim2003task">kim2003task<a/></td><td style="font-weight:bold;">Task description language for underwater robots</td><td>Kim, Tae Won and Yuh, Junku</td><td>2003</td>
+              <td>(E)BNF</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#kovsecka1997experiments" id="kovsecka1997experiments">kovsecka1997experiments<a/></td><td style="font-weight:bold;">Experiments in behavior composition</td><td>Ko\vseck\ a, Jan</td><td>1997</td>
+              <td>other</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#kubica2002creating" id="kubica2002creating">kubica2002creating<a/></td><td style="font-weight:bold;">Creating a smarter membrane: Automatic code generation for modular self-reconfigurable robots</td><td>Kubica, Jeremy and Rieffel, Eleanor</td><td>2002</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#kulakowski2012modeling" id="kulakowski2012modeling">kulakowski2012modeling<a/></td><td style="font-weight:bold;">Modeling robot behavior with CCL</td><td>Ku\lakowski, Konrad and Szmuc, Tomasz</td><td>2012</td>
+              <td></td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#loetzsch2006xabsl" id="loetzsch2006xabsl">loetzsch2006xabsl<a/></td><td style="font-weight:bold;">XABSL-a pragmatic approach to behavior engineering</td><td>Loetzsch, Martin and Risler, Max and Jungel, Matthias</td><td>2006</td>
+              <td>(E)BNF</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#mackenzie1995specification" id="mackenzie1995specification">mackenzie1995specification<a/></td><td style="font-weight:bold;">Specification and execution of multiagent missions</td><td>MacKenzie, Douglas C and Cameron, Jonathan M and Arkin, Ronald C</td><td>1995</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#maenpaa2004distributed" id="maenpaa2004distributed">maenpaa2004distributed<a/></td><td style="font-weight:bold;">A distributed architecture for executing complex tasks with multiple robots</td><td>Maenpaa, Topi and Tikanmaki, Antti and Riekki, Jukka and Roning, Juha</td><td>2004</td>
+              <td>XSD</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#mallet2002specification" id="mallet2002specification">mallet2002specification<a/></td><td style="font-weight:bold;">A specification of generic robotics software components: future evolutions of G en o M in the Orocos context</td><td>Mallet, Anthony and Fleury, Sara and Bruyninckx, Herman</td><td>2002</td>
+              <td>(E)BNF</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#nishiyama1998logic" id="nishiyama1998logic">nishiyama1998logic<a/></td><td style="font-weight:bold;">Logic specifications for multiple robots based on a current programming language</td><td>Nishiyama, Hiroyuki and Ohwada, Hayato and Mizoguchi, Fumio</td><td>1998</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#o2014automatic" id="o2014automatic">o2014automatic<a/></td><td style="font-weight:bold;">Automatic Verification of Autonomous Robot Missions</td><td>O’Brien, Matthew and Arkin, Ronald C and Harrington, Dagan and Lyons, Damian and Jiang, Shu</td><td>2014</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#ortiz2014component" id="ortiz2014component">ortiz2014component<a/></td><td style="font-weight:bold;">A Component-Based Meta-Model and Framework in the Model Driven Toolchain C-Forge</td><td>Ortiz, Francisco J and Alonso, Diego and Rosique, Francisca and S\ anchez-Ledesma, Francisco and Pastor, Juan A</td><td>2014</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#peterson1999language" id="peterson1999language">peterson1999language<a/></td><td style="font-weight:bold;">A language for declarative robotic programming</td><td>Peterson, John and Hager, Gregory D and Hudak, Paul</td><td>1999</td>
+              <td>other</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#ramaswamy2014solution" id="ramaswamy2014solution">ramaswamy2014solution<a/></td><td style="font-weight:bold;">Solution space modeling for robotic systems</td><td>Ramaswamy, Arun Kumar and Monsuez, Bruno and Tapus, Adriana</td><td>2014</td>
+              <td>ecore</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#ramirez2011automatic" id="ramirez2011automatic">ramirez2011automatic<a/></td><td style="font-weight:bold;">Automatic derivation of utility functions for monitoring software requirements</td><td>Ramirez, Andres J and Cheng, Betty HC</td><td>2011</td>
+              <td></td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#rugg1994formal" id="rugg1994formal">rugg1994formal<a/></td><td style="font-weight:bold;"><a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber351142">A formal semantics for multiple vehicle task and motion planning</a></td><td>Rugg-Gunn, Neil and Cameron, Stephen</td><td>1994</td>
+              <td>other</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#rusakov2014simple" id="rusakov2014simple">rusakov2014simple<a/></td><td style="font-weight:bold;">Simple concurrency for robotics with the Roboscoop framework</td><td>Rusakov, Andrey and Shin, Jiwon and Meyer, Bertrand</td><td>2014</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#simmons1998task" id="simmons1998task">simmons1998task<a/></td><td style="font-weight:bold;">A task description language for robot control</td><td>Simmons, Reid and Apfelbaum, David</td><td>1998</td>
+              <td>(E)BNF</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#steck2011managing" id="steck2011managing">steck2011managing<a/></td><td style="font-weight:bold;"><a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber6094732">Managing execution variants in task coordination by exploiting design-time models at run-time</a></td><td>Steck, Andreas and Schlegel, Christian</td><td>2011</td>
+              <td></td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#sun2012model" id="sun2012model">sun2012model<a/></td><td style="font-weight:bold;">A model-driven approach to support engineering changes in industrial robotics software</td><td>Sun, Yu and Gray, Jeff and Bulheller, Karlheinz and von Baillou, Nicolaus</td><td>2012</td>
+              <td></td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#thomas2013new" id="thomas2013new">thomas2013new<a/></td><td style="font-weight:bold;"><a href="http://www.se-rwth.de/publications/A-New-Skill-Based-Robot-Programming-Language-Using-UML-P-Statecharts.pdf">A New Skill Based Robot Programming Language Using UML/P Statecharts</a></td><td>Thomas, Ulrike and Hirzinger, Gerd and Rumpe, Bernhard and Schulze, Christoph and Wortmann, Andreas</td><td>2013</td>
+              <td>other</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#tousignant2011overview" id="tousignant2011overview">tousignant2011overview<a/></td><td style="font-weight:bold;">An overview of XRobots: A hierarchical state machine based language</td><td>Tousignant, Steve and Van Wyk, Eric and Gini, Maria</td><td>2011</td>
+              <td>silver</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#tousignant2012xrobots" id="tousignant2012xrobots">tousignant2012xrobots<a/></td><td style="font-weight:bold;">XRobots: A flexible language for programming mobile robots based on hierarchical state machines</td><td>Tousignant, Steve and Van Wyk, Eric and Gini, Maria</td><td>2012</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#wang2001reconfigurable" id="wang2001reconfigurable">wang2001reconfigurable<a/></td><td style="font-weight:bold;">Reconfigurable software for open architecture controllers</td><td>Wang, Shige and Shin, Kang G</td><td>2001</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#woithe2009programming" id="woithe2009programming">woithe2009programming<a/></td><td style="font-weight:bold;">A programming architecture for smart autonomous underwater vehicles</td><td>Woithe, Hans C and Kremer, Ulrich</td><td>2009</td>
+              <td>other</td>
+              </tr>
+
+</tbody></table><br />
+<h3>System Deployment</h3>
+<p>In the System Deployment phase, top-level component(s) are packaged into a complete application system which defines a mapping of components and composites to computational units. Furthermore, features and procedures for system launch management are developed.</p>
+
+<table class="sortable">
+<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
+              <td><a href="#alonso2010v3cmm" id="alonso2010v3cmm">alonso2010v3cmm<a/></td><td style="font-weight:bold;">V3cmm: A 3-view component meta-model for model-driven robotic software development</td><td>Alonso, Diego and Vicente-Chicote, Cristina and Ortiz, Francisco and Pastor, Juan and Alvarez, Barbara</td><td>2010</td>
+              <td>ecore</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#bouzouia1998three" id="bouzouia1998three">bouzouia1998three<a/></td><td style="font-weight:bold;">A three-layer workcell control architecture design</td><td>Bouzouia, Brahim and Guerroumi, Fawzi and Boukhezar, Abdelmalek</td><td>1998</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#datta2012robostudio" id="datta2012robostudio">datta2012robostudio<a/></td><td style="font-weight:bold;">Robostudio: A visual programming environment for rapid authoring and customization of complex services on a personal service robot</td><td>Datta, Chandan and Jayawardena, Chandimal and Kuo, I Han and MacDonald, Bruce A</td><td>2012</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#dhouib2012robotml" id="dhouib2012robotml">dhouib2012robotml<a/></td><td style="font-weight:bold;">Robotml, a domain-specific language to design, simulate and deploy robotic applications</td><td>Dhouib, Saadia and Kchir, Selma and Stinckwich, Serge and Ziadi, Tewfik and Ziane, Mikal</td><td>2012</td>
+              <td>UML/MOF</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#gobillot2014modeling" id="gobillot2014modeling">gobillot2014modeling<a/></td><td style="font-weight:bold;">A Modeling Framework for Software Architecture Specification and Validation</td><td>Gobillot, Nicolas and Lesire, Charles and Doose, David</td><td>2014</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#loetzsch2006xabsl" id="loetzsch2006xabsl">loetzsch2006xabsl<a/></td><td style="font-weight:bold;">XABSL-a pragmatic approach to behavior engineering</td><td>Loetzsch, Martin and Risler, Max and Jungel, Matthias</td><td>2006</td>
+              <td>(E)BNF</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#mallet2002specification" id="mallet2002specification">mallet2002specification<a/></td><td style="font-weight:bold;">A specification of generic robotics software components: future evolutions of G en o M in the Orocos context</td><td>Mallet, Anthony and Fleury, Sara and Bruyninckx, Herman</td><td>2002</td>
+              <td>(E)BNF</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#ortiz2014component" id="ortiz2014component">ortiz2014component<a/></td><td style="font-weight:bold;">A Component-Based Meta-Model and Framework in the Model Driven Toolchain C-Forge</td><td>Ortiz, Francisco J and Alonso, Diego and Rosique, Francisca and S\ anchez-Ledesma, Francisco and Pastor, Juan A</td><td>2014</td>
+              <td>unknown</td>
+              </tr>
+
+</tbody></table><br />
+<h3>Product Deployment</h3>
+<p>In the Product Deployment phase, an application is tailored to a specific robot system. This includes also the installation of maintenance instrumentation and a final target platform system testing.</p>
+
+<table class="sortable">
+<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
+              <td><a href="#fleurey2009domain" id="fleurey2009domain">fleurey2009domain<a/></td><td style="font-weight:bold;">A domain specific modeling language supporting specification, simulation and execution of dynamic adaptive systems</td><td>Fleurey, Franck and Solberg, Arnor</td><td>2009</td>
+              <td>ecore</td>
+              </tr>
+
+</tbody></table><br />
+<h3>Product Maintenance</h3>
+<p>In the Product Maintenance phase, the robot application is operated and maintained. This includes eventually the analysis of log files and the tuning of system parameters.</p>
+
+<table class="sortable">
+<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
+              <td><a href="#dantam2011motion" id="dantam2011motion">dantam2011motion<a/></td><td style="font-weight:bold;">The motion grammar for physical human-robot games</td><td>Dantam, Neil and Koine, P and Stilman, Mike</td><td>2011</td>
+              <td>other</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#fleurey2009domain" id="fleurey2009domain">fleurey2009domain<a/></td><td style="font-weight:bold;">A domain specific modeling language supporting specification, simulation and execution of dynamic adaptive systems</td><td>Fleurey, Franck and Solberg, Arnor</td><td>2009</td>
+              <td>ecore</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#ramirez2011automatic" id="ramirez2011automatic">ramirez2011automatic<a/></td><td style="font-weight:bold;">Automatic derivation of utility functions for monitoring software requirements</td><td>Ramirez, Andres J and Cheng, Betty HC</td><td>2011</td>
+              <td></td>
+              </tr>
+
+</tbody></table><br />
+</div>
+
+    </div>
+    
+    <div class="container">
+    <br />
+    <hr />
+    <a style="font-size:85%; color:#555;" title="A Survey on Domain-Specific Modeling Languages in Robotics" href="">A. Nordmann, N. Hochgeschwender, D.Wigand and S. Wrede, “A Survey on Domain-Specific Modeling Languages in Robotics”, Journal of Software Engineering for Robotics (JOSER), 2016</a>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="sortable/moment.min.js"></script>
+    <script src="sortable/bootstrap-sortable.js"></script>
+    
+  </body>
+</html>

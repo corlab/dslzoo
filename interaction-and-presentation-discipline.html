@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="images/favicon.png">
 
-    <title>Motion Planning – Robotics DSL Zoo</title>
+    <title>Interaction and Presentation – Robotics DSL Zoo</title>
 
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="sortable/bootstrap-sortable.css">
@@ -55,9 +55,9 @@
 
 <h1>Robotics DSL Zoo</h1>
 
-<h2>Subdomain „Motion Planning“</h2>
-<p>Motion Planning covers collision-free trajectory planning for mobile platforms as well as robot actuators.
-        This subdomain corresponds to Part A, Chapter 5 in the Handbook of Robotics.</p>
+<h2>Subdomain „Interaction and Presentation“</h2>
+<p>Structuring and organization of interactions with users as well as the presentation of information.
+        This discipline corresponds to the Section 2.2.6 in the SWEBOK.</p>
 <h3>Scenario Building</h3>
 <p>In the Scenario Building phase, environment features, constraints and characteristics are defined. Furthermore, the robot's task is defined.
 This includes the specification of customer acceptance tests to be performed in the specified and potentially generalized environment.</p>
@@ -76,6 +76,10 @@ Also an initial functional design stating which functionalities interact with ea
 
 <table class="sortable">
 <thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
+              <td><a href="#causse1993man" id="causse1993man">causse1993man<a/></td><td style="font-weight:bold;">A man machine interface for a mobile robot</td><td>Causse, Olivier and Crowley, James L</td><td>1993</td>
+              <td>(E)BNF</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
               <td><a href="#feniello2014program" id="feniello2014program">feniello2014program<a/></td><td style="font-weight:bold;">Program synthesis by examples for object repositioning tasks</td><td>Feniello, Ashley and Dang, Hao and Birchfield, Stan</td><td>2014</td>
               <td>unknown</td>
               </tr>
@@ -84,12 +88,16 @@ Also an initial functional design stating which functionalities interact with ea
               <td>LTL</td>
               </tr>
 <tr style="border-top:1px solid #000;">
-              <td><a href="#kanayama2000s" id="kanayama2000s">kanayama2000s<a/></td><td style="font-weight:bold;">It s time to make mobile robots programmable</td><td>Kanayama, Yutaka J and Wu, C Thomas</td><td>2000</td>
-              <td></td>
+              <td><a href="#jara2011ejs+" id="jara2011ejs+">jara2011ejs+<a/></td><td style="font-weight:bold;">Ejs+ EjsRL: An interactive tool for industrial robots simulation, Computer Vision and remote operation</td><td>Jara, Carlos A and Candelas, Francisco A and Gil, Pablo and Torres, Fernando and Esquembre, Francisco and Dormido, Sebasti\ an</td><td>2011</td>
+              <td>other</td>
               </tr>
 <tr style="border-top:1px solid #000;">
               <td><a href="#kress2007structured" id="kress2007structured">kress2007structured<a/></td><td style="font-weight:bold;">From structured english to robot motion</td><td>Kress-Gazit, Hadas and Fainekos, Georgios E and Pappas, George J</td><td>2007</td>
               <td>LTL</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#lyons2013getting" id="lyons2013getting">lyons2013getting<a/></td><td style="font-weight:bold;">Getting it right the first time: Robot mission guarantees in the presence of uncertainty</td><td>Lyons, Damian M and Arkin, Ronald C and Nirmal, Paramesh and Liu, T-M and Deeb, J and others</td><td>2013</td>
+              <td>unknown</td>
               </tr>
 
 </tbody></table><br />
@@ -98,8 +106,16 @@ Also an initial functional design stating which functionalities interact with ea
 
 <table class="sortable">
 <thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
-              <td><a href="#schneider2014declarative" id="schneider2014declarative">schneider2014declarative<a/></td><td style="font-weight:bold;">Declarative specification of task-based grasping with constraint validation</td><td>Schneider, Sven and Hochgeschwender, Nico and Kraetzschmar, Gerhard K</td><td>2014</td>
-              <td>ecore</td>
+              <td><a href="#causse1993man" id="causse1993man">causse1993man<a/></td><td style="font-weight:bold;">A man machine interface for a mobile robot</td><td>Causse, Olivier and Crowley, James L</td><td>1993</td>
+              <td>(E)BNF</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#datta2012robostudio" id="datta2012robostudio">datta2012robostudio<a/></td><td style="font-weight:bold;">Robostudio: A visual programming environment for rapid authoring and customization of complex services on a personal service robot</td><td>Datta, Chandan and Jayawardena, Chandimal and Kuo, I Han and MacDonald, Bruce A</td><td>2012</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#jara2011ejs+" id="jara2011ejs+">jara2011ejs+<a/></td><td style="font-weight:bold;">Ejs+ EjsRL: An interactive tool for industrial robots simulation, Computer Vision and remote operation</td><td>Jara, Carlos A and Candelas, Francisco A and Gil, Pablo and Torres, Fernando and Esquembre, Francisco and Dormido, Sebasti\ an</td><td>2011</td>
+              <td>other</td>
               </tr>
 
 </tbody></table><br />
@@ -109,16 +125,20 @@ This also includes the specification and eventually generation of additional kno
 
 <table class="sortable">
 <thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
-              <td><a href="#dantam2011motion" id="dantam2011motion">dantam2011motion<a/></td><td style="font-weight:bold;">The motion grammar for physical human-robot games</td><td>Dantam, Neil and Koine, P and Stilman, Mike</td><td>2011</td>
-              <td>other</td>
+              <td><a href="#bouzouia1998three" id="bouzouia1998three">bouzouia1998three<a/></td><td style="font-weight:bold;">A three-layer workcell control architecture design</td><td>Bouzouia, Brahim and Guerroumi, Fawzi and Boukhezar, Abdelmalek</td><td>1998</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#causse1993man" id="causse1993man">causse1993man<a/></td><td style="font-weight:bold;">A man machine interface for a mobile robot</td><td>Causse, Olivier and Crowley, James L</td><td>1993</td>
+              <td>(E)BNF</td>
               </tr>
 <tr style="border-top:1px solid #000;">
               <td><a href="#dantam2012linguistic" id="dantam2012linguistic">dantam2012linguistic<a/></td><td style="font-weight:bold;">Linguistic transfer of human assembly tasks to robots</td><td>Dantam, Neil and Essa, Irfan and Stilman, Mike</td><td>2012</td>
               <td>(E)BNF</td>
               </tr>
 <tr style="border-top:1px solid #000;">
-              <td><a href="#dantam2013correct" id="dantam2013correct">dantam2013correct<a/></td><td style="font-weight:bold;">Correct Software Synthesis for Stable Speed-Controlled Robotic Walking.</td><td>Dantam, Neil and Hereid, Ayonga and Ames, Aaron D and Stilman, Mike</td><td>2013</td>
-              <td>CFG?</td>
+              <td><a href="#datta2012robostudio" id="datta2012robostudio">datta2012robostudio<a/></td><td style="font-weight:bold;">Robostudio: A visual programming environment for rapid authoring and customization of complex services on a personal service robot</td><td>Datta, Chandan and Jayawardena, Chandimal and Kuo, I Han and MacDonald, Bruce A</td><td>2012</td>
+              <td>unknown</td>
               </tr>
 <tr style="border-top:1px solid #000;">
               <td><a href="#feniello2014program" id="feniello2014program">feniello2014program<a/></td><td style="font-weight:bold;">Program synthesis by examples for object repositioning tasks</td><td>Feniello, Ashley and Dang, Hao and Birchfield, Stan</td><td>2014</td>
@@ -129,46 +149,38 @@ This also includes the specification and eventually generation of additional kno
               <td>LTL</td>
               </tr>
 <tr style="border-top:1px solid #000;">
-              <td><a href="#hsieh2007adaptive" id="hsieh2007adaptive">hsieh2007adaptive<a/></td><td style="font-weight:bold;">Adaptive teams of autonomous aerial and ground robots for situational awareness</td><td>Hsieh, M Ani and Cowley, Anthony and Keller, James F and Chaimowicz, Luiz and Grocholsky, Ben and Kumar, Vijay and Taylor, Camillo J and Endo, Yoichiro and Arkin, Ronald C and Jung, Boyoon and others</td><td>2007</td>
+              <td><a href="#graves1999distributed" id="graves1999distributed">graves1999distributed<a/></td><td style="font-weight:bold;"><a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber770434 http://ieeexplore.ieee.org/xpls/abs\_all.jsp?arnumber770434">Distributed generic control for multiple types of telerobot</a></td><td>Graves, Alan R and Czarnecki, Chris</td><td>1999</td>
               <td>unknown</td>
               </tr>
 <tr style="border-top:1px solid #000;">
-              <td><a href="#kanayama2000s" id="kanayama2000s">kanayama2000s<a/></td><td style="font-weight:bold;">It s time to make mobile robots programmable</td><td>Kanayama, Yutaka J and Wu, C Thomas</td><td>2000</td>
-              <td></td>
+              <td><a href="#jara2011ejs+" id="jara2011ejs+">jara2011ejs+<a/></td><td style="font-weight:bold;">Ejs+ EjsRL: An interactive tool for industrial robots simulation, Computer Vision and remote operation</td><td>Jara, Carlos A and Candelas, Francisco A and Gil, Pablo and Torres, Fernando and Esquembre, Francisco and Dormido, Sebasti\ an</td><td>2011</td>
+              <td>other</td>
               </tr>
 <tr style="border-top:1px solid #000;">
               <td><a href="#kress2007structured" id="kress2007structured">kress2007structured<a/></td><td style="font-weight:bold;">From structured english to robot motion</td><td>Kress-Gazit, Hadas and Fainekos, Georgios E and Pappas, George J</td><td>2007</td>
               <td>LTL</td>
               </tr>
 <tr style="border-top:1px solid #000;">
-              <td><a href="#mackenzie1995specification" id="mackenzie1995specification">mackenzie1995specification<a/></td><td style="font-weight:bold;">Specification and execution of multiagent missions</td><td>MacKenzie, Douglas C and Cameron, Jonathan M and Arkin, Ronald C</td><td>1995</td>
+              <td><a href="#lyons2013getting" id="lyons2013getting">lyons2013getting<a/></td><td style="font-weight:bold;">Getting it right the first time: Robot mission guarantees in the presence of uncertainty</td><td>Lyons, Damian M and Arkin, Ronald C and Nirmal, Paramesh and Liu, T-M and Deeb, J and others</td><td>2013</td>
               <td>unknown</td>
               </tr>
 <tr style="border-top:1px solid #000;">
-              <td><a href="#mosemann2001automatic" id="mosemann2001automatic">mosemann2001automatic<a/></td><td style="font-weight:bold;">Automatic decomposition of planned assembly sequences into skill primitives</td><td>Mosemann, Heiko and Wahl, Friedrich M</td><td>2001</td>
-              <td>other</td>
-              </tr>
-<tr style="border-top:1px solid #000;">
-              <td><a href="#rugg1994formal" id="rugg1994formal">rugg1994formal<a/></td><td style="font-weight:bold;"><a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber351142">A formal semantics for multiple vehicle task and motion planning</a></td><td>Rugg-Gunn, Neil and Cameron, Stephen</td><td>1994</td>
-              <td>other</td>
-              </tr>
-<tr style="border-top:1px solid #000;">
-              <td><a href="#schneider2014declarative" id="schneider2014declarative">schneider2014declarative<a/></td><td style="font-weight:bold;">Declarative specification of task-based grasping with constraint validation</td><td>Schneider, Sven and Hochgeschwender, Nico and Kraetzschmar, Gerhard K</td><td>2014</td>
-              <td>ecore</td>
-              </tr>
-<tr style="border-top:1px solid #000;">
-              <td><a href="#zhang2003control" id="zhang2003control">zhang2003control<a/></td><td style="font-weight:bold;">Control of small formations using shape coordinates</td><td>Zhang, Fumin and Goldgeier, Michael and Krishnaprasad, Perinkulam S</td><td>2003</td>
-              <td>SDD</td>
+              <td><a href="#sun2012model" id="sun2012model">sun2012model<a/></td><td style="font-weight:bold;">A model-driven approach to support engineering changes in industrial robotics software</td><td>Sun, Yu and Gray, Jeff and Bulheller, Karlheinz and von Baillou, Nicolaus</td><td>2012</td>
+              <td></td>
               </tr>
 
 </tbody></table><br />
-<h3>Product Maintenance</h3>
-<p>In the Product Maintenance phase, the robot application is operated and maintained. This includes eventually the analysis of log files and the tuning of system parameters.</p>
+<h3>System Deployment</h3>
+<p>In the System Deployment phase, top-level component(s) are packaged into a complete application system which defines a mapping of components and composites to computational units. Furthermore, features and procedures for system launch management are developed.</p>
 
 <table class="sortable">
 <thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
-              <td><a href="#dantam2011motion" id="dantam2011motion">dantam2011motion<a/></td><td style="font-weight:bold;">The motion grammar for physical human-robot games</td><td>Dantam, Neil and Koine, P and Stilman, Mike</td><td>2011</td>
-              <td>other</td>
+              <td><a href="#bouzouia1998three" id="bouzouia1998three">bouzouia1998three<a/></td><td style="font-weight:bold;">A three-layer workcell control architecture design</td><td>Bouzouia, Brahim and Guerroumi, Fawzi and Boukhezar, Abdelmalek</td><td>1998</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#datta2012robostudio" id="datta2012robostudio">datta2012robostudio<a/></td><td style="font-weight:bold;">Robostudio: A visual programming environment for rapid authoring and customization of complex services on a personal service robot</td><td>Datta, Chandan and Jayawardena, Chandimal and Kuo, I Han and MacDonald, Bruce A</td><td>2012</td>
+              <td>unknown</td>
               </tr>
 
 </tbody></table><br />

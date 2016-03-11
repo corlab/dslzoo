@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="images/favicon.png">
 
-    <title>Motion Planning – Robotics DSL Zoo</title>
+    <title>Security and Safety – Robotics DSL Zoo</title>
 
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="sortable/bootstrap-sortable.css">
@@ -55,9 +55,9 @@
 
 <h1>Robotics DSL Zoo</h1>
 
-<h2>Subdomain „Motion Planning“</h2>
-<p>Motion Planning covers collision-free trajectory planning for mobile platforms as well as robot actuators.
-        This subdomain corresponds to Part A, Chapter 5 in the Handbook of Robotics.</p>
+<h2>Subdomain „Security and Safety“</h2>
+<p>Prevention of unauthorized access to and manipulation of information and other resources. Limiting of damage, continuation of service, speed-up of repair, and how to fail and recover securely. Ensuring safety of humans in the presence of robots.
+        This discipline corresponds to the Section 2.2.7 in the SWEBOK.</p>
 <h3>Scenario Building</h3>
 <p>In the Scenario Building phase, environment features, constraints and characteristics are defined. Furthermore, the robot's task is defined.
 This includes the specification of customer acceptance tests to be performed in the specified and potentially generalized environment.</p>
@@ -65,6 +65,10 @@ This includes the specification of customer acceptance tests to be performed in 
 <table class="sortable">
 <thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
               <td><a href="#finucane2010ltlmop" id="finucane2010ltlmop">finucane2010ltlmop<a/></td><td style="font-weight:bold;">LTLMoP: Experimenting with language, temporal logic and robot control</td><td>Finucane, Cameron and Jing, Gangyuan and Kress-Gazit, Hadas</td><td>2010</td>
+              <td>LTL</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#raman2012avoiding" id="raman2012avoiding">raman2012avoiding<a/></td><td style="font-weight:bold;">Avoiding forgetfulness: Structured English specifications for high-level robot control with implicit memory</td><td>Raman, Vasumathi and Xu, Bingxin and Kress-Gazit, Hadas</td><td>2012</td>
               <td>LTL</td>
               </tr>
 
@@ -76,30 +80,28 @@ Also an initial functional design stating which functionalities interact with ea
 
 <table class="sortable">
 <thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
-              <td><a href="#feniello2014program" id="feniello2014program">feniello2014program<a/></td><td style="font-weight:bold;">Program synthesis by examples for object repositioning tasks</td><td>Feniello, Ashley and Dang, Hao and Birchfield, Stan</td><td>2014</td>
+              <td><a href="#adam2014towards" id="adam2014towards">adam2014towards<a/></td><td style="font-weight:bold;">Towards rule-based dynamic safety monitoring for mobile robots</td><td>Adam, Sorin and Larsen, Morten and Jensen, Kjeld and Schultz, Ulrik Pagh</td><td>2014</td>
               <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#braberman2013controller" id="braberman2013controller">braberman2013controller<a/></td><td style="font-weight:bold;">Controller synthesis: From modelling to enactment</td><td>Braberman, V\ \ictor and D Ippolito, Nicolas and Piterman, Nir and Sykes, Daniel and Uchitel, Sebastian</td><td>2013</td>
+              <td></td>
               </tr>
 <tr style="border-top:1px solid #000;">
               <td><a href="#finucane2010ltlmop" id="finucane2010ltlmop">finucane2010ltlmop<a/></td><td style="font-weight:bold;">LTLMoP: Experimenting with language, temporal logic and robot control</td><td>Finucane, Cameron and Jing, Gangyuan and Kress-Gazit, Hadas</td><td>2010</td>
               <td>LTL</td>
               </tr>
 <tr style="border-top:1px solid #000;">
-              <td><a href="#kanayama2000s" id="kanayama2000s">kanayama2000s<a/></td><td style="font-weight:bold;">It s time to make mobile robots programmable</td><td>Kanayama, Yutaka J and Wu, C Thomas</td><td>2000</td>
-              <td></td>
-              </tr>
-<tr style="border-top:1px solid #000;">
               <td><a href="#kress2007structured" id="kress2007structured">kress2007structured<a/></td><td style="font-weight:bold;">From structured english to robot motion</td><td>Kress-Gazit, Hadas and Fainekos, Georgios E and Pappas, George J</td><td>2007</td>
               <td>LTL</td>
               </tr>
-
-</tbody></table><br />
-<h3>Platform Building</h3>
-<p>In the Platform Building phase, the robot hardware is determined. This includes the selection and potential configuration of robot's sensors and actuators meeting the requirements defined in the functional design phase.</p>
-
-<table class="sortable">
-<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
-              <td><a href="#schneider2014declarative" id="schneider2014declarative">schneider2014declarative<a/></td><td style="font-weight:bold;">Declarative specification of task-based grasping with constraint validation</td><td>Schneider, Sven and Hochgeschwender, Nico and Kraetzschmar, Gerhard K</td><td>2014</td>
-              <td>ecore</td>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#lyons2013getting" id="lyons2013getting">lyons2013getting<a/></td><td style="font-weight:bold;">Getting it right the first time: Robot mission guarantees in the presence of uncertainty</td><td>Lyons, Damian M and Arkin, Ronald C and Nirmal, Paramesh and Liu, T-M and Deeb, J and others</td><td>2013</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#ramirez2011automatic" id="ramirez2011automatic">ramirez2011automatic<a/></td><td style="font-weight:bold;">Automatic derivation of utility functions for monitoring software requirements</td><td>Ramirez, Andres J and Cheng, Betty HC</td><td>2011</td>
+              <td></td>
               </tr>
 
 </tbody></table><br />
@@ -109,56 +111,32 @@ This also includes the specification and eventually generation of additional kno
 
 <table class="sortable">
 <thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
-              <td><a href="#dantam2011motion" id="dantam2011motion">dantam2011motion<a/></td><td style="font-weight:bold;">The motion grammar for physical human-robot games</td><td>Dantam, Neil and Koine, P and Stilman, Mike</td><td>2011</td>
-              <td>other</td>
-              </tr>
-<tr style="border-top:1px solid #000;">
-              <td><a href="#dantam2012linguistic" id="dantam2012linguistic">dantam2012linguistic<a/></td><td style="font-weight:bold;">Linguistic transfer of human assembly tasks to robots</td><td>Dantam, Neil and Essa, Irfan and Stilman, Mike</td><td>2012</td>
-              <td>(E)BNF</td>
-              </tr>
-<tr style="border-top:1px solid #000;">
-              <td><a href="#dantam2013correct" id="dantam2013correct">dantam2013correct<a/></td><td style="font-weight:bold;">Correct Software Synthesis for Stable Speed-Controlled Robotic Walking.</td><td>Dantam, Neil and Hereid, Ayonga and Ames, Aaron D and Stilman, Mike</td><td>2013</td>
-              <td>CFG?</td>
-              </tr>
-<tr style="border-top:1px solid #000;">
-              <td><a href="#feniello2014program" id="feniello2014program">feniello2014program<a/></td><td style="font-weight:bold;">Program synthesis by examples for object repositioning tasks</td><td>Feniello, Ashley and Dang, Hao and Birchfield, Stan</td><td>2014</td>
+              <td><a href="#adam2014towards" id="adam2014towards">adam2014towards<a/></td><td style="font-weight:bold;">Towards rule-based dynamic safety monitoring for mobile robots</td><td>Adam, Sorin and Larsen, Morten and Jensen, Kjeld and Schultz, Ulrik Pagh</td><td>2014</td>
               <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#braberman2013controller" id="braberman2013controller">braberman2013controller<a/></td><td style="font-weight:bold;">Controller synthesis: From modelling to enactment</td><td>Braberman, V\ \ictor and D Ippolito, Nicolas and Piterman, Nir and Sykes, Daniel and Uchitel, Sebastian</td><td>2013</td>
+              <td></td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#chaki2014model" id="chaki2014model">chaki2014model<a/></td><td style="font-weight:bold;">Model-Driven Verifying Compilation of Synchronous Distributed Applications</td><td>Chaki, Sagar and Edmondson, James</td><td>2014</td>
+              <td>(E)BNF</td>
               </tr>
 <tr style="border-top:1px solid #000;">
               <td><a href="#finucane2010ltlmop" id="finucane2010ltlmop">finucane2010ltlmop<a/></td><td style="font-weight:bold;">LTLMoP: Experimenting with language, temporal logic and robot control</td><td>Finucane, Cameron and Jing, Gangyuan and Kress-Gazit, Hadas</td><td>2010</td>
               <td>LTL</td>
               </tr>
 <tr style="border-top:1px solid #000;">
-              <td><a href="#hsieh2007adaptive" id="hsieh2007adaptive">hsieh2007adaptive<a/></td><td style="font-weight:bold;">Adaptive teams of autonomous aerial and ground robots for situational awareness</td><td>Hsieh, M Ani and Cowley, Anthony and Keller, James F and Chaimowicz, Luiz and Grocholsky, Ben and Kumar, Vijay and Taylor, Camillo J and Endo, Yoichiro and Arkin, Ronald C and Jung, Boyoon and others</td><td>2007</td>
-              <td>unknown</td>
-              </tr>
-<tr style="border-top:1px solid #000;">
-              <td><a href="#kanayama2000s" id="kanayama2000s">kanayama2000s<a/></td><td style="font-weight:bold;">It s time to make mobile robots programmable</td><td>Kanayama, Yutaka J and Wu, C Thomas</td><td>2000</td>
-              <td></td>
-              </tr>
-<tr style="border-top:1px solid #000;">
               <td><a href="#kress2007structured" id="kress2007structured">kress2007structured<a/></td><td style="font-weight:bold;">From structured english to robot motion</td><td>Kress-Gazit, Hadas and Fainekos, Georgios E and Pappas, George J</td><td>2007</td>
               <td>LTL</td>
               </tr>
 <tr style="border-top:1px solid #000;">
-              <td><a href="#mackenzie1995specification" id="mackenzie1995specification">mackenzie1995specification<a/></td><td style="font-weight:bold;">Specification and execution of multiagent missions</td><td>MacKenzie, Douglas C and Cameron, Jonathan M and Arkin, Ronald C</td><td>1995</td>
+              <td><a href="#lyons2013getting" id="lyons2013getting">lyons2013getting<a/></td><td style="font-weight:bold;">Getting it right the first time: Robot mission guarantees in the presence of uncertainty</td><td>Lyons, Damian M and Arkin, Ronald C and Nirmal, Paramesh and Liu, T-M and Deeb, J and others</td><td>2013</td>
               <td>unknown</td>
               </tr>
 <tr style="border-top:1px solid #000;">
-              <td><a href="#mosemann2001automatic" id="mosemann2001automatic">mosemann2001automatic<a/></td><td style="font-weight:bold;">Automatic decomposition of planned assembly sequences into skill primitives</td><td>Mosemann, Heiko and Wahl, Friedrich M</td><td>2001</td>
-              <td>other</td>
-              </tr>
-<tr style="border-top:1px solid #000;">
-              <td><a href="#rugg1994formal" id="rugg1994formal">rugg1994formal<a/></td><td style="font-weight:bold;"><a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber351142">A formal semantics for multiple vehicle task and motion planning</a></td><td>Rugg-Gunn, Neil and Cameron, Stephen</td><td>1994</td>
-              <td>other</td>
-              </tr>
-<tr style="border-top:1px solid #000;">
-              <td><a href="#schneider2014declarative" id="schneider2014declarative">schneider2014declarative<a/></td><td style="font-weight:bold;">Declarative specification of task-based grasping with constraint validation</td><td>Schneider, Sven and Hochgeschwender, Nico and Kraetzschmar, Gerhard K</td><td>2014</td>
-              <td>ecore</td>
-              </tr>
-<tr style="border-top:1px solid #000;">
-              <td><a href="#zhang2003control" id="zhang2003control">zhang2003control<a/></td><td style="font-weight:bold;">Control of small formations using shape coordinates</td><td>Zhang, Fumin and Goldgeier, Michael and Krishnaprasad, Perinkulam S</td><td>2003</td>
-              <td>SDD</td>
+              <td><a href="#ramirez2011automatic" id="ramirez2011automatic">ramirez2011automatic<a/></td><td style="font-weight:bold;">Automatic derivation of utility functions for monitoring software requirements</td><td>Ramirez, Andres J and Cheng, Betty HC</td><td>2011</td>
+              <td></td>
               </tr>
 
 </tbody></table><br />
@@ -167,8 +145,12 @@ This also includes the specification and eventually generation of additional kno
 
 <table class="sortable">
 <thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
-              <td><a href="#dantam2011motion" id="dantam2011motion">dantam2011motion<a/></td><td style="font-weight:bold;">The motion grammar for physical human-robot games</td><td>Dantam, Neil and Koine, P and Stilman, Mike</td><td>2011</td>
-              <td>other</td>
+              <td><a href="#adam2014towards" id="adam2014towards">adam2014towards<a/></td><td style="font-weight:bold;">Towards rule-based dynamic safety monitoring for mobile robots</td><td>Adam, Sorin and Larsen, Morten and Jensen, Kjeld and Schultz, Ulrik Pagh</td><td>2014</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#ramirez2011automatic" id="ramirez2011automatic">ramirez2011automatic<a/></td><td style="font-weight:bold;">Automatic derivation of utility functions for monitoring software requirements</td><td>Ramirez, Andres J and Cheng, Betty HC</td><td>2011</td>
+              <td></td>
               </tr>
 
 </tbody></table><br />

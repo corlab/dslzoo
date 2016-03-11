@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/favicon.png">
+
+    <title>Distribution of Components – Robotics DSL Zoo</title>
+
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="sortable/bootstrap-sortable.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/custom.css">
+    
+	<script language="javascript" type="text/javascript" src="flot/jquery.js"></script>
+	<script language="javascript" type="text/javascript" src="flot/jquery.flot.js"></script>
+	<script language="javascript" type="text/javascript" src="flot/jquery.flot.categories.js"></script>
+	
+	<script type="text/javascript" src="dist/d3-cloud/lib/d3/d3.js"></script>
+	<script type="text/javascript" src="dist/d3-cloud/d3.layout.cloud.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+  </head>
+
+  <body><nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./index.html">Robotics DSL Zoo</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="./index.html">Home</a></li>
+            <li><a href="./all.html">Index</a></li>
+            <li><a href="./subdomains.html">Subdomains</a></li>
+            <li><a href="./architectures-and-programming-disciplines.html">A&P Disciplines</a></li>
+            <li><a href="./phases.html">Development Phases</a></li>
+            <li><a href="./contribute.html">Contribute</a></li>
+            <li><a href="http://www.dslrob.org">DSLRob</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="starter-template">
+
+<h1>Robotics DSL Zoo</h1>
+
+<h2>Subdomain „Distribution of Components“</h2>
+<p>Distribution of the software across the hardware, communication of components, and how can middleware be used to deal with heterogeneous software.
+        This discipline corresponds to the Section 2.2.4 in the SWEBOK.</p>
+<h3>Functional Design</h3>
+<p>In the Functional Design phase, hardware requirements and top-level functionalities are derived based on the scenario definition.
+Furthermore, top-level functionalities are decomposed and dependencies among them are identified.
+Also an initial functional design stating which functionalities interact with each other is developed.</p>
+
+<table class="sortable">
+<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
+              <td><a href="#dhouib2012robotml" id="dhouib2012robotml">dhouib2012robotml<a/></td><td style="font-weight:bold;">Robotml, a domain-specific language to design, simulate and deploy robotic applications</td><td>Dhouib, Saadia and Kchir, Selma and Stinckwich, Serge and Ziadi, Tewfik and Ziane, Mikal</td><td>2012</td>
+              <td>UML/MOF</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#hochgeschwender2013model" id="hochgeschwender2013model">hochgeschwender2013model<a/></td><td style="font-weight:bold;">A model-based approach to software deployment in robotics</td><td>Hochgeschwender, Nico and Gherardi, Luca and Shakhirmardanov, Azamat and Kraetzschmar, Gerhard K and Brugali, Davide and Bruyninckx, Herman</td><td>2013</td>
+              <td>ecore</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#ortiz2014component" id="ortiz2014component">ortiz2014component<a/></td><td style="font-weight:bold;">A Component-Based Meta-Model and Framework in the Model Driven Toolchain C-Forge</td><td>Ortiz, Francisco J and Alonso, Diego and Rosique, Francisca and S\ anchez-Ledesma, Francisco and Pastor, Juan A</td><td>2014</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#schlegel2010design" id="schlegel2010design">schlegel2010design<a/></td><td style="font-weight:bold;">Design abstraction and processes in robotics: From code-driven to model-driven engineering</td><td>Schlegel, Christian and Steck, Andreas and Brugali, Davide and Knoll, Alois</td><td>2010</td>
+              <td>UML/MOF</td>
+              </tr>
+
+</tbody></table><br />
+<h3>Platform Building</h3>
+<p>In the Platform Building phase, the robot hardware is determined. This includes the selection and potential configuration of robot's sensors and actuators meeting the requirements defined in the functional design phase.</p>
+
+<table class="sortable">
+<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
+              <td><a href="#bordignon2011generalized" id="bordignon2011generalized">bordignon2011generalized<a/></td><td style="font-weight:bold;">Generalized programming of modular robots through kinematic configurations</td><td>Bordignon, Mirko and Stoy, Kasper and Schultz, Ulrik Pagh</td><td>2011</td>
+              <td></td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#gobillot2014modeling" id="gobillot2014modeling">gobillot2014modeling<a/></td><td style="font-weight:bold;">A Modeling Framework for Software Architecture Specification and Validation</td><td>Gobillot, Nicolas and Lesire, Charles and Doose, David</td><td>2014</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#morelli2014control" id="morelli2014control">morelli2014control<a/></td><td style="font-weight:bold;">Control and Scheduling Co-design for a Simulated Quadcopter Robot: A Model-Driven Approach</td><td>Morelli, Matteo and Di Natale, Marco</td><td>2014</td>
+              <td>ecore</td>
+              </tr>
+
+</tbody></table><br />
+<h3>Capability Building</h3>
+<p>In the Capability Building phase, basic and composite components are constructed up to the application-level and constraints for their deployment are specified.
+This also includes the specification and eventually generation of additional knowledge required for component execution such as knowledge bases and training data.</p>
+
+<table class="sortable">
+<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
+              <td><a href="#aggarwal1994specification" id="aggarwal1994specification">aggarwal1994specification<a/></td><td style="font-weight:bold;">Specification and automated implementation of coordination protocols in distributed controls for flexible manufacturing cells</td><td>Aggarwal, Sudhir and Mitra, Sandeep and Jagdale, Sanjay S</td><td>1994</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#alonso2010v3cmm" id="alonso2010v3cmm">alonso2010v3cmm<a/></td><td style="font-weight:bold;">V3cmm: A 3-view component meta-model for model-driven robotic software development</td><td>Alonso, Diego and Vicente-Chicote, Cristina and Ortiz, Francisco and Pastor, Juan and Alvarez, Barbara</td><td>2010</td>
+              <td>ecore</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#bordignon2011generalized" id="bordignon2011generalized">bordignon2011generalized<a/></td><td style="font-weight:bold;">Generalized programming of modular robots through kinematic configurations</td><td>Bordignon, Mirko and Stoy, Kasper and Schultz, Ulrik Pagh</td><td>2011</td>
+              <td></td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#chaki2014model" id="chaki2014model">chaki2014model<a/></td><td style="font-weight:bold;">Model-Driven Verifying Compilation of Synchronous Distributed Applications</td><td>Chaki, Sagar and Edmondson, James</td><td>2014</td>
+              <td>(E)BNF</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#de2007distributed" id="de2007distributed">de2007distributed<a/></td><td style="font-weight:bold;"><a href="http://ieeexplore.ieee.org/xpls/abs\_all.jsp?arnumber4209667">Distributed watchpoints: Debugging large multi-robot systems</a></td><td>De Rosa, Michael and Campbell, Jason and Pillai, Padmanabhan and Goldstein, S and Lee, Peter and Mowry, T</td><td>2007</td>
+              <td>(E)BNF</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#dhouib2012robotml" id="dhouib2012robotml">dhouib2012robotml<a/></td><td style="font-weight:bold;">Robotml, a domain-specific language to design, simulate and deploy robotic applications</td><td>Dhouib, Saadia and Kchir, Selma and Stinckwich, Serge and Ziadi, Tewfik and Ziane, Mikal</td><td>2012</td>
+              <td>UML/MOF</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#fleury1997g" id="fleury1997g">fleury1997g<a/></td><td style="font-weight:bold;">G en oM: A Tool for the Specification and the Implementation of Operating Modules in a Distributed Robot Architecture</td><td>Fleury, Sara and Herrb, Matthieu and Chatila, Raja</td><td>1997</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#gobillot2014modeling" id="gobillot2014modeling">gobillot2014modeling<a/></td><td style="font-weight:bold;">A Modeling Framework for Software Architecture Specification and Validation</td><td>Gobillot, Nicolas and Lesire, Charles and Doose, David</td><td>2014</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#graves1999distributed" id="graves1999distributed">graves1999distributed<a/></td><td style="font-weight:bold;"><a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber770434 http://ieeexplore.ieee.org/xpls/abs\_all.jsp?arnumber770434">Distributed generic control for multiple types of telerobot</a></td><td>Graves, Alan R and Czarnecki, Chris</td><td>1999</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#hochgeschwender2013model" id="hochgeschwender2013model">hochgeschwender2013model<a/></td><td style="font-weight:bold;">A model-based approach to software deployment in robotics</td><td>Hochgeschwender, Nico and Gherardi, Luca and Shakhirmardanov, Azamat and Kraetzschmar, Gerhard K and Brugali, Davide and Bruyninckx, Herman</td><td>2013</td>
+              <td>ecore</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#hongxing2009component" id="hongxing2009component">hongxing2009component<a/></td><td style="font-weight:bold;">A component based design framework for robot software architecture</td><td>Hongxing, Wei and Xinming, Duan and Shiyi, Li and Guofeng, Tong and Tianmiao, Wang</td><td>2009</td>
+              <td>(E)BNF</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#mallet2002specification" id="mallet2002specification">mallet2002specification<a/></td><td style="font-weight:bold;">A specification of generic robotics software components: future evolutions of G en o M in the Orocos context</td><td>Mallet, Anthony and Fleury, Sara and Bruyninckx, Herman</td><td>2002</td>
+              <td>(E)BNF</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#mallet2010genom3" id="mallet2010genom3">mallet2010genom3<a/></td><td style="font-weight:bold;">GenoM3: Building middleware-independent robotic components</td><td>Mallet, Anthony and Pasteur, C\ edric and Herrb, Matthieu and Lemaignan, S\ everin and Ingrand, F\ elix</td><td>2010</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#morelli2014control" id="morelli2014control">morelli2014control<a/></td><td style="font-weight:bold;">Control and Scheduling Co-design for a Simulated Quadcopter Robot: A Model-Driven Approach</td><td>Morelli, Matteo and Di Natale, Marco</td><td>2014</td>
+              <td>ecore</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#ortiz2014component" id="ortiz2014component">ortiz2014component<a/></td><td style="font-weight:bold;">A Component-Based Meta-Model and Framework in the Model Driven Toolchain C-Forge</td><td>Ortiz, Francisco J and Alonso, Diego and Rosique, Francisca and S\ anchez-Ledesma, Francisco and Pastor, Juan A</td><td>2014</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#schlegel2010design" id="schlegel2010design">schlegel2010design<a/></td><td style="font-weight:bold;">Design abstraction and processes in robotics: From code-driven to model-driven engineering</td><td>Schlegel, Christian and Steck, Andreas and Brugali, Davide and Knoll, Alois</td><td>2010</td>
+              <td>UML/MOF</td>
+              </tr>
+
+</tbody></table><br />
+<h3>System Deployment</h3>
+<p>In the System Deployment phase, top-level component(s) are packaged into a complete application system which defines a mapping of components and composites to computational units. Furthermore, features and procedures for system launch management are developed.</p>
+
+<table class="sortable">
+<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
+              <td><a href="#alonso2010v3cmm" id="alonso2010v3cmm">alonso2010v3cmm<a/></td><td style="font-weight:bold;">V3cmm: A 3-view component meta-model for model-driven robotic software development</td><td>Alonso, Diego and Vicente-Chicote, Cristina and Ortiz, Francisco and Pastor, Juan and Alvarez, Barbara</td><td>2010</td>
+              <td>ecore</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#dhouib2012robotml" id="dhouib2012robotml">dhouib2012robotml<a/></td><td style="font-weight:bold;">Robotml, a domain-specific language to design, simulate and deploy robotic applications</td><td>Dhouib, Saadia and Kchir, Selma and Stinckwich, Serge and Ziadi, Tewfik and Ziane, Mikal</td><td>2012</td>
+              <td>UML/MOF</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#gobillot2014modeling" id="gobillot2014modeling">gobillot2014modeling<a/></td><td style="font-weight:bold;">A Modeling Framework for Software Architecture Specification and Validation</td><td>Gobillot, Nicolas and Lesire, Charles and Doose, David</td><td>2014</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#hochgeschwender2013model" id="hochgeschwender2013model">hochgeschwender2013model<a/></td><td style="font-weight:bold;">A model-based approach to software deployment in robotics</td><td>Hochgeschwender, Nico and Gherardi, Luca and Shakhirmardanov, Azamat and Kraetzschmar, Gerhard K and Brugali, Davide and Bruyninckx, Herman</td><td>2013</td>
+              <td>ecore</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#mallet2002specification" id="mallet2002specification">mallet2002specification<a/></td><td style="font-weight:bold;">A specification of generic robotics software components: future evolutions of G en o M in the Orocos context</td><td>Mallet, Anthony and Fleury, Sara and Bruyninckx, Herman</td><td>2002</td>
+              <td>(E)BNF</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#morelli2014control" id="morelli2014control">morelli2014control<a/></td><td style="font-weight:bold;">Control and Scheduling Co-design for a Simulated Quadcopter Robot: A Model-Driven Approach</td><td>Morelli, Matteo and Di Natale, Marco</td><td>2014</td>
+              <td>ecore</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#ortiz2014component" id="ortiz2014component">ortiz2014component<a/></td><td style="font-weight:bold;">A Component-Based Meta-Model and Framework in the Model Driven Toolchain C-Forge</td><td>Ortiz, Francisco J and Alonso, Diego and Rosique, Francisca and S\ anchez-Ledesma, Francisco and Pastor, Juan A</td><td>2014</td>
+              <td>unknown</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#schlegel2010design" id="schlegel2010design">schlegel2010design<a/></td><td style="font-weight:bold;">Design abstraction and processes in robotics: From code-driven to model-driven engineering</td><td>Schlegel, Christian and Steck, Andreas and Brugali, Davide and Knoll, Alois</td><td>2010</td>
+              <td>UML/MOF</td>
+              </tr>
+
+</tbody></table><br />
+<h3>System Benchmarking</h3>
+<p>In the System Benchmarking phase, certain test procedures targeting different quality attributes
+	are performed such as stress testing, safety and security testing, reliability and durability testing, and performance testing.</p>
+
+<table class="sortable">
+<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
+              <td><a href="#de2007distributed" id="de2007distributed">de2007distributed<a/></td><td style="font-weight:bold;"><a href="http://ieeexplore.ieee.org/xpls/abs\_all.jsp?arnumber4209667">Distributed watchpoints: Debugging large multi-robot systems</a></td><td>De Rosa, Michael and Campbell, Jason and Pillai, Padmanabhan and Goldstein, S and Lee, Peter and Mowry, T</td><td>2007</td>
+              <td>(E)BNF</td>
+              </tr>
+
+</tbody></table><br />
+<h3>Product Maintenance</h3>
+<p>In the Product Maintenance phase, the robot application is operated and maintained. This includes eventually the analysis of log files and the tuning of system parameters.</p>
+
+<table class="sortable">
+<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
+              <td><a href="#de2007distributed" id="de2007distributed">de2007distributed<a/></td><td style="font-weight:bold;"><a href="http://ieeexplore.ieee.org/xpls/abs\_all.jsp?arnumber4209667">Distributed watchpoints: Debugging large multi-robot systems</a></td><td>De Rosa, Michael and Campbell, Jason and Pillai, Padmanabhan and Goldstein, S and Lee, Peter and Mowry, T</td><td>2007</td>
+              <td>(E)BNF</td>
+              </tr>
+
+</tbody></table><br />
+</div>
+
+    </div>
+    
+    <div class="container">
+    <br />
+    <hr />
+    <a style="font-size:85%; color:#555;" title="A Survey on Domain-Specific Modeling Languages in Robotics" href="">A. Nordmann, N. Hochgeschwender, D.Wigand and S. Wrede, “A Survey on Domain-Specific Modeling Languages in Robotics”, Journal of Software Engineering for Robotics (JOSER), 2016</a>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="sortable/moment.min.js"></script>
+    <script src="sortable/bootstrap-sortable.js"></script>
+    
+  </body>
+</html>
