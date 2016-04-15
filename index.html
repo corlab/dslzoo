@@ -67,82 +67,85 @@
 <a href="https://pub.uni-bielefeld.de/publication/2788380">A. Nordmann, N. Hochgeschwender, D. Wigand, and S. Wrede, “A Survey on Domain-Specific Modeling and Languages in Robotics”, Journal of Software Engineering for Robotics (JOSER), 2016.</a></p><td/><td></td></tr></table><div>
 <svg id="cloudcontainer" name="cloudcontainer" width="100%" style="width:100%;" />
 <script>
+  var wordcloud, size = [700, 310];
+  
   var fill = d3.scale.ordinal().range(["#0570b0", "#023858", "#d0d1e6", "#a6bddb", "#74a9cf", "#54799f", "#3690c0", "#045a8d", "#3690c0"]);
-  var words = [{ "text" : "primitives", "size" : 10, "color":	"#55556e"},
-          { "text" : "programming", "size" : 34, "color":	"#55558c"},
-          { "text" : "modeldriven", "size" : 18, "color":	"#555578"},
-          { "text" : "multiple", "size" : 18, "color":	"#555578"},
-          { "text" : "enabling", "size" : 10, "color":	"#55556e"},
-          { "text" : "metamodel", "size" : 10, "color":	"#55556e"},
-          { "text" : "modeling", "size" : 26, "color":	"#555582"},
-          { "text" : "hierarchical", "size" : 18, "color":	"#555578"},
-          { "text" : "complex", "size" : 10, "color":	"#55556e"},
-          { "text" : "object", "size" : 10, "color":	"#55556e"},
-          { "text" : "validation", "size" : 10, "color":	"#55556e"},
-          { "text" : "kinematics", "size" : 10, "color":	"#55556e"},
-          { "text" : "manufacturing", "size" : 10, "color":	"#55556e"},
+  var fontSize = d3.scale.log().range([1, 25]);
+  
+  var words = [{ "text" : "development", "size" : 18, "color":	"#555578"},
           { "text" : "languages", "size" : 18, "color":	"#555578"},
-          { "text" : "systems", "size" : 34, "color":	"#55558c"},
-          { "text" : "runtime", "size" : 10, "color":	"#55556e"},
-          { "text" : "state", "size" : 10, "color":	"#55556e"},
-          { "text" : "humanrobot", "size" : 10, "color":	"#55556e"},
-          { "text" : "coordination", "size" : 10, "color":	"#55556e"},
-          { "text" : "semantics", "size" : 10, "color":	"#55556e"},
-          { "text" : "mobile", "size" : 18, "color":	"#555578"},
-          { "text" : "implementation", "size" : 10, "color":	"#55556e"},
-          { "text" : "modelbased", "size" : 10, "color":	"#55556e"},
-          { "text" : "declarative", "size" : 18, "color":	"#555578"},
-          { "text" : "behavior", "size" : 18, "color":	"#555578"},
-          { "text" : "component", "size" : 10, "color":	"#55556e"},
-          { "text" : "space", "size" : 10, "color":	"#55556e"},
-          { "text" : "exploration", "size" : 10, "color":	"#55556e"},
-          { "text" : "execution", "size" : 18, "color":	"#555578"},
-          { "text" : "approach", "size" : 26, "color":	"#555582"},
-          { "text" : "architectures", "size" : 18, "color":	"#555578"},
+          { "text" : "highlevel", "size" : 10, "color":	"#55556e"},
+          { "text" : "missions", "size" : 10, "color":	"#55556e"},
+          { "text" : "robotic", "size" : 34, "color":	"#55558c"},
+          { "text" : "generic", "size" : 10, "color":	"#55556e"},
+          { "text" : "task", "size" : 18, "color":	"#555578"},
+          { "text" : "formal", "size" : 10, "color":	"#55556e"},
+          { "text" : "robotics", "size" : 34, "color":	"#55558c"},
+          { "text" : "design", "size" : 34, "color":	"#55558c"},
+          { "text" : "domainspecific", "size" : 18, "color":	"#555578"},
+          { "text" : "modeling", "size" : 26, "color":	"#555582"},
+          { "text" : "skill", "size" : 10, "color":	"#55556e"},
+          { "text" : "planning", "size" : 10, "color":	"#55556e"},
+          { "text" : "code", "size" : 10, "color":	"#55556e"},
+          { "text" : "programming", "size" : 34, "color":	"#55558c"},
+          { "text" : "engineering", "size" : 18, "color":	"#555578"},
+          { "text" : "autonomous", "size" : 18, "color":	"#555578"},
+          { "text" : "monitoring", "size" : 10, "color":	"#55556e"},
+          { "text" : "tasks", "size" : 18, "color":	"#555578"},
+          { "text" : "framework", "size" : 26, "color":	"#555582"},
           { "text" : "robot", "size" : 74, "color":	"#5555be"},
           { "text" : "system", "size" : 18, "color":	"#555578"},
-          { "text" : "synthesis", "size" : 18, "color":	"#555578"},
-          { "text" : "oriented", "size" : 10, "color":	"#55556e"},
-          { "text" : "highlevel", "size" : 10, "color":	"#55556e"},
-          { "text" : "managing", "size" : 10, "color":	"#55556e"},
+          { "text" : "reactive", "size" : 18, "color":	"#555578"},
+          { "text" : "components", "size" : 10, "color":	"#55556e"},
+          { "text" : "architectures", "size" : 18, "color":	"#555578"},
+          { "text" : "robots", "size" : 42, "color":	"#555596"},
           { "text" : "reconfigurable", "size" : 10, "color":	"#55556e"},
-          { "text" : "specifying", "size" : 10, "color":	"#55556e"},
-          { "text" : "environment", "size" : 18, "color":	"#555578"},
-          { "text" : "model", "size" : 10, "color":	"#55556e"},
-          { "text" : "planning", "size" : 10, "color":	"#55556e"},
-          { "text" : "automatic", "size" : 18, "color":	"#555578"},
+          { "text" : "componentbased", "size" : 18, "color":	"#555578"},
           { "text" : "distributed", "size" : 18, "color":	"#555578"},
+          { "text" : "perception", "size" : 10, "color":	"#55556e"},
+          { "text" : "controller", "size" : 10, "color":	"#55556e"},
+          { "text" : "synthesis", "size" : 18, "color":	"#555578"},
+          { "text" : "specifying", "size" : 10, "color":	"#55556e"},
+          { "text" : "specific", "size" : 18, "color":	"#555578"},
+          { "text" : "towards", "size" : 18, "color":	"#555578"},
+          { "text" : "coordination", "size" : 10, "color":	"#55556e"},
+          { "text" : "hierarchical", "size" : 18, "color":	"#555578"},
           { "text" : "service", "size" : 10, "color":	"#55556e"},
-          { "text" : "kinematic", "size" : 10, "color":	"#55556e"},
-          { "text" : "applications", "size" : 18, "color":	"#555578"},
-          { "text" : "reactivity", "size" : 10, "color":	"#55556e"},
-          { "text" : "from", "size" : 18, "color":	"#555578"},
-          { "text" : "logic", "size" : 10, "color":	"#55556e"},
+          { "text" : "structured", "size" : 10, "color":	"#55556e"},
+          { "text" : "execution", "size" : 18, "color":	"#555578"},
+          { "text" : "specification", "size" : 34, "color":	"#55558c"},
+          { "text" : "modelling", "size" : 10, "color":	"#55556e"},
+          { "text" : "description", "size" : 18, "color":	"#555578"},
+          { "text" : "manufacturing", "size" : 10, "color":	"#55556e"},
+          { "text" : "language", "size" : 66, "color":	"#5555b4"},
+          { "text" : "complex", "size" : 10, "color":	"#55556e"},
+          { "text" : "mobile", "size" : 18, "color":	"#555578"},
+          { "text" : "environment", "size" : 18, "color":	"#555578"},
+          { "text" : "modeldriven", "size" : 18, "color":	"#555578"},
           ];
-    d3.layout.cloud().size([900, 300])
-      .words(words)
-      .padding(5)
-      .rotate(function() { return 0; })
-      .font("sans serif")
-      .fontSize(function(d) { return d.size; })
-      .on("end", draw)
-      .start();
+    d3.layout.cloud()
+		.size(size)
+		.words(words)
+		.font("Impact")
+		.fontSize(function(d) { return fontSize(+d.size*d.size/40); })
+		.rotate(function() { return ~~(Math.random() * 3) * 90 - 90; })
+		.on("end", draw)
+		.start();
   function draw(words) {
     d3.select("#cloudcontainer")
         .attr("height", 300)
         .append("g")
-        .attr("transform", "translate(450,150)")
+        .attr("transform", "translate(450,155)")
         .selectAll("text")
-        .data(words)
-        .enter().append("text")
-        .style("font-size", function(d) { return d.size / 9.9 + "vh"; })
-        .style("font-family", "sans-serif")
-        .style("fill", function(d, i) { return fill(i); })
-        .attr("text-anchor", "middle")
-        .attr("transform", function(d) {
-          return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
-        })
-        .text(function(d) { return d.text; });
+			.data(words)
+			.enter().append("text")
+			.style("font-size", function(d) { return d.size + "px"; })
+			.style("fill", function(d) { return fill(d.text.toLowerCase()); })
+			.attr("text-anchor", "middle")
+			.attr("transform", function(d) {
+			return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+			})
+			.text(function(d) { return d.text; });
   }
 </script>
 </div><p></p>
