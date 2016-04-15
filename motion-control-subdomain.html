@@ -64,7 +64,7 @@
     google.setOnLoadCallback(drawChart);
     function drawChart() {
       var data = google.visualization.arrayToDataTable([
-        ['phase', '#publications'],    ['Scenario Building', 1],    ['Functional Design', 7],    ['Platform Building', 6],    ['Capability Building', 21],    ['System Deployment', 1],    ['System Benchmarking', 0],    ['Product Deployment', 0],    ['Product Maintenance', 0],  ]);
+        ['phase', '#publications'],    ['Scenario Building', 1],    ['Functional Design', 8],    ['Platform Building', 6],    ['Capability Building', 22],    ['System Deployment', 1],    ['System Benchmarking', 0],    ['Product Deployment', 0],    ['Product Maintenance', 0],  ]);
       var options = {
         title: '#publications per development phase',
         legend: { position: 'none' },
@@ -79,7 +79,7 @@
     google.setOnLoadCallback(drawChart);
     function drawChart() {
       var data = google.visualization.arrayToDataTable([
-        ['year', '#publications'],    ['1984', 0],    ['1985', 0],    ['1986', 0],    ['1987', 0],    ['1988', 0],    ['1989', 0],    ['1990', 0],    ['1991', 0],    ['1992', 0],    ['1993', 0],    ['1994', 1],    ['1995', 1],    ['1996', 0],    ['1997', 0],    ['1998', 1],    ['1999', 2],    ['2000', 1],    ['2001', 1],    ['2002', 1],    ['2003', 3],    ['2004', 0],    ['2005', 1],    ['2006', 0],    ['2007', 1],    ['2008', 0],    ['2009', 1],    ['2010', 1],    ['2011', 1],    ['2012', 1],    ['2013', 3],    ['2014', 2],    ['2015', 0],    ['2016', 0],  ]);
+        ['year', '#publications'],    ['1984', 0],    ['1985', 0],    ['1986', 0],    ['1987', 0],    ['1988', 0],    ['1989', 0],    ['1990', 0],    ['1991', 0],    ['1992', 0],    ['1993', 0],    ['1994', 1],    ['1995', 1],    ['1996', 0],    ['1997', 0],    ['1998', 1],    ['1999', 2],    ['2000', 1],    ['2001', 1],    ['2002', 1],    ['2003', 3],    ['2004', 0],    ['2005', 1],    ['2006', 0],    ['2007', 1],    ['2008', 0],    ['2009', 1],    ['2010', 1],    ['2011', 1],    ['2012', 1],    ['2013', 3],    ['2014', 2],    ['2015', 1],    ['2016', 0],  ]);
       var options = {
         title: '#publications per year',
         legend: { position: 'none' },
@@ -92,7 +92,7 @@
 <p>In the Scenario Building phase, environment features, constraints and characteristics are defined. Furthermore, the robot's task is defined.
 This includes the specification of customer acceptance tests to be performed in the specified and potentially generalized environment.</p>
 
-<table class="sortable">
+<table class="sortable" style="font-size:85%;">
 <thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
               <td><a href="#finucane2010ltlmop" id="finucane2010ltlmop">finucane2010ltlmop<a/></td><td style="font-weight:bold;">LTLMoP: Experimenting with language, temporal logic and robot control</td><td>Finucane, Cameron and Jing, Gangyuan and Kress-Gazit, Hadas</td><td>2010</td>
               <td>LTL</td>
@@ -104,7 +104,7 @@ This includes the specification of customer acceptance tests to be performed in 
 Furthermore, top-level functionalities are decomposed and dependencies among them are identified.
 Also an initial functional design stating which functionalities interact with each other is developed.</p>
 
-<table class="sortable">
+<table class="sortable" style="font-size:85%;">
 <thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
               <td><a href="#buch2014applying" id="buch2014applying">buch2014applying<a/></td><td style="font-weight:bold;">Applying Simulation and a Domain-Specific Language for an Adaptive Action Library</td><td>Buch, Jacob P\orksen and Laursen, Johan Sund and S\orensen, Lars Car\oe and Ellekilde, Lars-Peter and Kraft, Dirk and Schultz, Ulrik Pagh and Petersen, Henrik Gordon</td><td>2014</td>
               <td>(E)BNF</td>
@@ -130,6 +130,10 @@ Also an initial functional design stating which functionalities interact with ea
               <td>other</td>
               </tr>
 <tr style="border-top:1px solid #000;">
+              <td><a href="#nordmann2015modeling" id="nordmann2015modeling">nordmann2015modeling<a/></td><td style="font-weight:bold;"><a href="https://pub.uni-bielefeld.de/download/2717042/2753034">Modeling of Movement Control Architectures based on Motion Primitives using Domain-Specific Languages</a></td><td>Arne Nordmann and Sebastian Wrede and Jochen J. Steil</td><td>2015</td>
+              <td></td>
+              </tr>
+<tr style="border-top:1px solid #000;">
               <td><a href="#thomas2013new" id="thomas2013new">thomas2013new<a/></td><td style="font-weight:bold;"><a href="http://www.se-rwth.de/publications/A-New-Skill-Based-Robot-Programming-Language-Using-UML-P-Statecharts.pdf">A New Skill Based Robot Programming Language Using UML/P Statecharts</a></td><td>Thomas, Ulrike and Hirzinger, Gerd and Rumpe, Bernhard and Schulze, Christoph and Wortmann, Andreas</td><td>2013</td>
               <td>other</td>
               </tr>
@@ -138,7 +142,7 @@ Also an initial functional design stating which functionalities interact with ea
 <h3>Platform Building</h3>
 <p>In the Platform Building phase, the robot hardware is determined. This includes the selection and potential configuration of robot's sensors and actuators meeting the requirements defined in the functional design phase.</p>
 
-<table class="sortable">
+<table class="sortable" style="font-size:85%;">
 <thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
               <td><a href="#kim2003task" id="kim2003task">kim2003task<a/></td><td style="font-weight:bold;">Task description language for underwater robots</td><td>Kim, Tae Won and Yuh, Junku</td><td>2003</td>
               <td>(E)BNF</td>
@@ -165,7 +169,7 @@ Also an initial functional design stating which functionalities interact with ea
 <p>In the Capability Building phase, basic and composite components are constructed up to the application-level and constraints for their deployment are specified.
 This also includes the specification and eventually generation of additional knowledge required for component execution such as knowledge bases and training data.</p>
 
-<table class="sortable">
+<table class="sortable" style="font-size:85%;">
 <thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
               <td><a href="#barth2012goto" id="barth2012goto">barth2012goto<a/></td><td style="font-weight:bold;">A GOTO-based concept for intuitive robot programming</td><td>Barth, Katharina and Henrich, Dominik</td><td>2012</td>
               <td>other</td>
@@ -227,6 +231,10 @@ This also includes the specification and eventually generation of additional kno
               <td>unknown</td>
               </tr>
 <tr style="border-top:1px solid #000;">
+              <td><a href="#nordmann2015modeling" id="nordmann2015modeling">nordmann2015modeling<a/></td><td style="font-weight:bold;"><a href="https://pub.uni-bielefeld.de/download/2717042/2753034">Modeling of Movement Control Architectures based on Motion Primitives using Domain-Specific Languages</a></td><td>Arne Nordmann and Sebastian Wrede and Jochen J. Steil</td><td>2015</td>
+              <td></td>
+              </tr>
+<tr style="border-top:1px solid #000;">
               <td><a href="#ramadorai1994generic" id="ramadorai1994generic">ramadorai1994generic<a/></td><td style="font-weight:bold;">A generic kinematics software package</td><td>Ramadorai, Arvind K and Ganapathy, U and Guida, F</td><td>1994</td>
               <td>unknown</td>
               </tr>
@@ -251,7 +259,7 @@ This also includes the specification and eventually generation of additional kno
 <h3>System Deployment</h3>
 <p>In the System Deployment phase, top-level component(s) are packaged into a complete application system which defines a mapping of components and composites to computational units. Furthermore, features and procedures for system launch management are developed.</p>
 
-<table class="sortable">
+<table class="sortable" style="font-size:85%;">
 <thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
               <td><a href="#morelli2014control" id="morelli2014control">morelli2014control<a/></td><td style="font-weight:bold;">Control and Scheduling Co-design for a Simulated Quadcopter Robot: A Model-Driven Approach</td><td>Morelli, Matteo and Di Natale, Marco</td><td>2014</td>
               <td>ecore</td>
