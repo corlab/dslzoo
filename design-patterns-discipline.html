@@ -64,7 +64,7 @@
     google.setOnLoadCallback(drawChart);
     function drawChart() {
       var data = google.visualization.arrayToDataTable([
-        ['phase', '#publications'],    ['Scenario Building', 0],    ['Functional Design', 2],    ['Platform Building', 0],    ['Capability Building', 4],    ['System Deployment', 0],    ['System Benchmarking', 0],    ['Product Deployment', 0],    ['Product Maintenance', 0],  ]);
+        ['phase', '#publications'],    ['Scenario Building', 0],    ['Functional Design', 2],    ['Platform Building', 1],    ['Capability Building', 5],    ['System Deployment', 1],    ['System Benchmarking', 0],    ['Product Deployment', 0],    ['Product Maintenance', 0],  ]);
       var options = {
         title: '#publications per development phase',
         legend: { position: 'none' },
@@ -79,7 +79,7 @@
     google.setOnLoadCallback(drawChart);
     function drawChart() {
       var data = google.visualization.arrayToDataTable([
-        ['year', '#publications'],    ['1984', 0],    ['1985', 0],    ['1986', 0],    ['1987', 0],    ['1988', 0],    ['1989', 0],    ['1990', 0],    ['1991', 0],    ['1992', 0],    ['1993', 0],    ['1994', 0],    ['1995', 0],    ['1996', 0],    ['1997', 0],    ['1998', 0],    ['1999', 0],    ['2000', 0],    ['2001', 1],    ['2002', 0],    ['2003', 0],    ['2004', 0],    ['2005', 0],    ['2006', 0],    ['2007', 0],    ['2008', 0],    ['2009', 0],    ['2010', 0],    ['2011', 0],    ['2012', 1],    ['2013', 0],    ['2014', 2],    ['2015', 0],    ['2016', 0],  ]);
+        ['year', '#publications'],    ['1984', 0],    ['1985', 0],    ['1986', 0],    ['1987', 0],    ['1988', 0],    ['1989', 0],    ['1990', 0],    ['1991', 0],    ['1992', 0],    ['1993', 0],    ['1994', 0],    ['1995', 0],    ['1996', 0],    ['1997', 0],    ['1998', 0],    ['1999', 0],    ['2000', 0],    ['2001', 1],    ['2002', 0],    ['2003', 0],    ['2004', 0],    ['2005', 0],    ['2006', 0],    ['2007', 0],    ['2008', 0],    ['2009', 0],    ['2010', 0],    ['2011', 0],    ['2012', 1],    ['2013', 0],    ['2014', 2],    ['2015', 1],    ['2016', 0],  ]);
       var options = {
         title: '#publications per year',
         legend: { position: 'none' },
@@ -104,6 +104,16 @@ Also an initial functional design stating which functionalities interact with ea
               </tr>
 
 </tbody></table><br />
+<h3>Platform Building</h3>
+<p>In the Platform Building phase, the robot hardware is determined. This includes the selection and potential configuration of robot's sensors and actuators meeting the requirements defined in the functional design phase.</p>
+
+<table class="sortable">
+<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
+              <td><a href="#ringert2015language" id="ringert2015language">ringert2015language<a/></td><td style="font-weight:bold;"><a href="http://joser.unibg.it/index.php/joser/article/view/87">Language and code generator composition for model-driven engineering of robotics component \& connector systems</a></td><td>Ringert, Jan Oliver and Alexander, Roth and Bernhard, Rumpe and Andreas, Wortmann</td><td>2015</td>
+              <td></td>
+              </tr>
+
+</tbody></table><br />
 <h3>Capability Building</h3>
 <p>In the Capability Building phase, basic and composite components are constructed up to the application-level and constraints for their deployment are specified.
 This also includes the specification and eventually generation of additional knowledge required for component execution such as knowledge bases and training data.</p>
@@ -124,6 +134,20 @@ This also includes the specification and eventually generation of additional kno
 <tr style="border-top:1px solid #000;">
               <td><a href="#mosemann2001automatic" id="mosemann2001automatic">mosemann2001automatic<a/></td><td style="font-weight:bold;">Automatic decomposition of planned assembly sequences into skill primitives</td><td>Mosemann, Heiko and Wahl, Friedrich M</td><td>2001</td>
               <td>other</td>
+              </tr>
+<tr style="border-top:1px solid #000;">
+              <td><a href="#ringert2015language" id="ringert2015language">ringert2015language<a/></td><td style="font-weight:bold;"><a href="http://joser.unibg.it/index.php/joser/article/view/87">Language and code generator composition for model-driven engineering of robotics component \& connector systems</a></td><td>Ringert, Jan Oliver and Alexander, Roth and Bernhard, Rumpe and Andreas, Wortmann</td><td>2015</td>
+              <td></td>
+              </tr>
+
+</tbody></table><br />
+<h3>System Deployment</h3>
+<p>In the System Deployment phase, top-level component(s) are packaged into a complete application system which defines a mapping of components and composites to computational units. Furthermore, features and procedures for system launch management are developed.</p>
+
+<table class="sortable">
+<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
+              <td><a href="#ringert2015language" id="ringert2015language">ringert2015language<a/></td><td style="font-weight:bold;"><a href="http://joser.unibg.it/index.php/joser/article/view/87">Language and code generator composition for model-driven engineering of robotics component \& connector systems</a></td><td>Ringert, Jan Oliver and Alexander, Roth and Bernhard, Rumpe and Andreas, Wortmann</td><td>2015</td>
+              <td></td>
               </tr>
 
 </tbody></table><br />
