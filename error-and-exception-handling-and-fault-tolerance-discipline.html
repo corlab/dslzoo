@@ -63,7 +63,7 @@
     google.setOnLoadCallback(drawChart);
     function drawChart() {
       var data = google.visualization.arrayToDataTable([
-        ['phase', '#publications'],    ['Scenario Building', 0],    ['Functional Design', 0],    ['Platform Building', 0],    ['Capability Building', 0],    ['System Deployment', 0],    ['System Benchmarking', 0],    ['Product Deployment', 0],    ['Product Maintenance', 0],  ]);
+        ['phase', '#publications'],    ['Scenario Building', 0],    ['Functional Design', 0],    ['Platform Building', 0],    ['Capability Building', 0],    ['System Deployment', 0],    ['System Benchmarking', 1],    ['Product Deployment', 1],    ['Product Maintenance', 1],  ]);
       var options = {
         title: '#publications per development phase',
         legend: { position: 'none' },
@@ -78,7 +78,7 @@
     google.setOnLoadCallback(drawChart);
     function drawChart() {
       var data = google.visualization.arrayToDataTable([
-        ['year', '#publications'],    ['1984', 0],    ['1985', 0],    ['1986', 0],    ['1987', 0],    ['1988', 0],    ['1989', 0],    ['1990', 0],    ['1991', 0],    ['1992', 0],    ['1993', 0],    ['1994', 0],    ['1995', 0],    ['1996', 0],    ['1997', 0],    ['1998', 0],    ['1999', 0],    ['2000', 0],    ['2001', 0],    ['2002', 0],    ['2003', 0],    ['2004', 0],    ['2005', 0],    ['2006', 0],    ['2007', 0],    ['2008', 0],    ['2009', 0],    ['2010', 0],    ['2011', 0],    ['2012', 0],    ['2013', 0],    ['2014', 0],    ['2015', 0],    ['2016', 0],  ]);
+        ['year', '#publications'],    ['1984', 0],    ['1985', 0],    ['1986', 0],    ['1987', 0],    ['1988', 0],    ['1989', 0],    ['1990', 0],    ['1991', 0],    ['1992', 0],    ['1993', 0],    ['1994', 0],    ['1995', 0],    ['1996', 0],    ['1997', 0],    ['1998', 0],    ['1999', 0],    ['2000', 0],    ['2001', 0],    ['2002', 0],    ['2003', 0],    ['2004', 0],    ['2005', 0],    ['2006', 0],    ['2007', 0],    ['2008', 0],    ['2009', 0],    ['2010', 0],    ['2011', 0],    ['2012', 0],    ['2013', 0],    ['2014', 0],    ['2015', 0],    ['2016', 1],  ]);
       var options = {
         title: '#publications per year',
         legend: { position: 'none' },
@@ -87,7 +87,38 @@
       chart_disc.draw(data, options);
     }
         </script>
-        <div id="chart_div_year" style="width: 550px; height: 200px; float:left;"></div></div>
+        <div id="chart_div_year" style="width: 550px; height: 200px; float:left;"></div><h3>System Benchmarking</h3>
+<p>In the System Benchmarking phase, certain test procedures targeting different quality attributes
+	are performed such as stress testing, safety and security testing, reliability and durability testing, and performance testing.</p>
+
+<table class="sortable">
+<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
+              <td><a href="#saglietti2016modeldriven" id="saglietti2016modeldriven">saglietti2016modeldriven<a/></td><td style="font-weight:bold;"><a href="http://doi.acm.org/10.1145/3022099.3022102">Model-driven Structural and Statistical Testing of Robot Cooperation and Reconfiguration</a></td><td>Saglietti, Francesca and Meitner, Matthias</td><td>2016</td>
+              <td></td>
+              </tr>
+
+</tbody></table><br />
+<h3>Product Deployment</h3>
+<p>In the Product Deployment phase, an application is tailored to a specific robot system. This includes also the installation of maintenance instrumentation and a final target platform system testing.</p>
+
+<table class="sortable">
+<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
+              <td><a href="#saglietti2016modeldriven" id="saglietti2016modeldriven">saglietti2016modeldriven<a/></td><td style="font-weight:bold;"><a href="http://doi.acm.org/10.1145/3022099.3022102">Model-driven Structural and Statistical Testing of Robot Cooperation and Reconfiguration</a></td><td>Saglietti, Francesca and Meitner, Matthias</td><td>2016</td>
+              <td></td>
+              </tr>
+
+</tbody></table><br />
+<h3>Product Maintenance</h3>
+<p>In the Product Maintenance phase, the robot application is operated and maintained. This includes eventually the analysis of log files and the tuning of system parameters.</p>
+
+<table class="sortable">
+<thead><tr><th>Key</th><th>Title</th><th>Authors</th><th width="10%">Year</th><th>Formalism</th></tr></thead><tbody><tr style="border-top:1px solid #000;">
+              <td><a href="#saglietti2016modeldriven" id="saglietti2016modeldriven">saglietti2016modeldriven<a/></td><td style="font-weight:bold;"><a href="http://doi.acm.org/10.1145/3022099.3022102">Model-driven Structural and Statistical Testing of Robot Cooperation and Reconfiguration</a></td><td>Saglietti, Francesca and Meitner, Matthias</td><td>2016</td>
+              <td></td>
+              </tr>
+
+</tbody></table><br />
+</div>
 
     </div>
     
