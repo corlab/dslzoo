@@ -14,10 +14,13 @@ import sys
 import markdown
 
 NOTE = (
-    '<div class="alert alert-info" role="alert" style="margin:0;border-radius:0">'
-    "This is a dynamic, live zoo. The citable state for the SIMPAR 2014 and "
-    "JOSER 2016 surveys lies on corlab, in pinned states that do not change. "
-    '<a href="./versions.html">Where to find it, and why it stays stable</a></div>'
+    '<div class="alert alert-info" role="alert" '
+    'style="margin:0;border:5px solid #000;border-radius:0;font-size:16px">'
+    "This is a <strong>dynamic, live zoo</strong>. The <strong>citable state</strong> "
+    "for the <strong>SIMPAR 2014</strong> and <strong>JOSER 2016</strong> surveys "
+    "<strong>lies on corlab</strong>, in <strong>pinned states that do not "
+    'change</strong>. <a href="./versions.html"><strong>Where to find it, and why '
+    "it stays stable</strong></a></div>"
 )
 NAV_ENTRY = '<li><a href="./versions.html">Versions</a></li>'
 CONTRIBUTE_LI = re.compile(r'<li[^>]*>\s*<a href="\./contribute\.html">Contribute</a>\s*</li>')
