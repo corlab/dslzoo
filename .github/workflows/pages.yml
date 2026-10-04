@@ -1,0 +1,51 @@
+# Publishes the site with GitHub Pages through GitHub Actions: a copy of branch
+# gh-pages with the citation note added (.github/citation-note.py; versions
+# page from docs/STABLE-REFERENCES.md). The gh-pages branch stays untouched:
+# switching the Pages source back to it restores the unchanged site. Replace
+# the checkout and note steps with the generator build once it lands.
+name: Deploy site
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - .github/workflows/pages.yml
+      - .github/citation-note.py
+      - docs/STABLE-REFERENCES.md
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7
+        with:
+          ref: gh-pages
+          path: site
+      - run: rm -rf site/.git
+      - run: python3 -m venv .venv && .venv/bin/pip install markdown
+      - run: .venv/bin/python .github/citation-note.py site docs/STABLE-REFERENCES.md
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
